@@ -1,0 +1,40 @@
+* { 
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: coral;
+    color: darkblue;
+}
+
+.book h1 {
+    color: black;
+    margin-top: 0.5rem;
+}
+
+.booklist {
+    color: turquoise;
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+    /*grid-template-columns: repeat(3, lfr);*/
+}
+
+@media screen and (min-width:768px) {
+    .booklist {
+        grid-template-columns: repeat(3, 1fr);
+        color: teal;
+    }
+}
+
+.book {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
