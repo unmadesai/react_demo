@@ -12,13 +12,17 @@ import ApexChart from './App.js';
 import SymptomIntensity from './SymptomIntensity.js';
 import WorryIntensity from './WorryIntensity.js';
 import EmotionFrustated from './EmotionFrustated.js';
+import SymptomOccurence from './SymptomOccurence.js';
+import Emotion from './Emotions.js';
 
 ReactDOM.render(
   //<App />,
   //<SymptomIntensity />,
+  <SymptomOccurence />,
+  //<Emotion />,
   //<WorryIntensity />,
   //<WorryCertainty />,
-  <EmotionFrustated />,
+  //<EmotionFrustated />,
   document.getElementById('root')
   //<ApexChart />
 );
