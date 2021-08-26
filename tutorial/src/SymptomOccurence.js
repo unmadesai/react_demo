@@ -1398,6 +1398,7 @@ class SymptomOccurence extends React.Component {
               height: 350,
               type: 'rangeBar'
             },
+            colors: ['#F5180D'],
             plotOptions: {
               bar: {
                 horizontal: true

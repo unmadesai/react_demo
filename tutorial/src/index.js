@@ -14,12 +14,20 @@ import WorryIntensity from './WorryIntensity.js';
 import EmotionFrustated from './EmotionFrustated.js';
 import SymptomOccurence from './SymptomOccurence.js';
 import Emotion from './Emotions.js';
+import ExpectationReality from './ExpectationReality.js';
+import Sleep from './Sleep.js';
+import PeerWorry from './PeerInteractionWorry.js';
+import PeerQuality from './PeerInteractionQuality.js';
 
 ReactDOM.render(
   //<App />,
   //<SymptomIntensity />,
-  <SymptomOccurence />,
+  //<SymptomOccurence />,
+  //<ExpectationReality />,
   //<Emotion />,
+  //<Sleep />, fml not working
+  <PeerQuality />,
+  //<PeerWorry />,
   //<WorryIntensity />,
   //<WorryCertainty />,
   //<EmotionFrustated />,
