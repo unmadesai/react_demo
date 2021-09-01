@@ -107,7 +107,7 @@ class Emotion extends React.Component {
       render() {
         return (
             <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="bubble" height={500} width={500}/>
+                <Chart options={this.state.options} series={this.state.series} type="bubble" height={500} width={350}/>
             </div>
         );
       }

@@ -9,6 +9,7 @@ class SymptomOccurence extends React.Component {
         
           series: [
             {
+              name: "Occurence of symptoms",
               data: [
                 //headache morning
                 {
@@ -1394,6 +1395,9 @@ class SymptomOccurence extends React.Component {
             }
           ],
           options: {
+            title: {
+              text: "Occurence of symptoms",
+            },
             chart: {
               height: 350,
               type: 'rangeBar'

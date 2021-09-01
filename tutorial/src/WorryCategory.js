@@ -15,7 +15,7 @@ import Chart from "react-apexcharts";
 //     return series;
 //   }
 
-class ExpectationReality extends React.Component {
+class WorryCategory extends React.Component {
     constructor(props) {
         super(props);
 
@@ -23,7 +23,7 @@ class ExpectationReality extends React.Component {
           
             series: [{
                 name: 'Morning',
-                colors: '#81A2EF',
+                //colors: '#81A2EF',
                 data: [[new Date('2021-08-16, 09:00 +0800').getTime(),20], 
                        [new Date('2021-08-17, 09:00 +0800').getTime(),30], 
                        [new Date('2021-08-18, 09:00 +0800').getTime(),40], 
@@ -34,7 +34,7 @@ class ExpectationReality extends React.Component {
               },
               {
                 name: 'Afternoon',
-                colors: '#2B61E4',
+                //colors: '#2B61E4',
                 data: [[new Date('2021-08-16, 14:00 +0800').getTime(),50], 
                        [new Date('2021-08-17, 14:00 +0800').getTime(),20], 
                        [new Date('2021-08-18, 14:00 +0800').getTime(),30], 
@@ -45,7 +45,7 @@ class ExpectationReality extends React.Component {
               },
               {
                 name: 'Evening',
-                colors: '#2B61E4',
+                //colors: '#2B61E4',
                 data: [[new Date('2021-08-16, 19:00 +0800').getTime(),20], 
                        [new Date('2021-08-17, 19:00 +0800').getTime(),70], 
                        [new Date('2021-08-18, 19:00 +0800').getTime(),50], 
@@ -73,13 +73,17 @@ class ExpectationReality extends React.Component {
             ],
             options: {
               title: {
-                text: "Expectation vs Reality",
+                text: "Category of Worries",
               },
               chart: {
                 height: 350,
                 type: 'scatter',
                 zoom: {
-                  type: 'xy'
+                  //type: 'xy'
+                  enabled: false,
+                },
+                toolbar: {
+                  show: false
                 }
               },
               colors: ['#81A2EF','#2B61E4','#2B61E4'],
@@ -89,12 +93,12 @@ class ExpectationReality extends React.Component {
               grid: {
                 xaxis: {
                   lines: {
-                    show: true
+                    show: false
                   }
                 },
                 yaxis: {
                   lines: {
-                    show: true
+                    show: false
                   }
                 },
               },
@@ -102,10 +106,36 @@ class ExpectationReality extends React.Component {
                 type: 'datetime',
               },
               yaxis: {
-                max: 100
-              }
+                max: 100,
+                show: false
+              },
+              markers: {
+                size: 20
+              },
+              fill: {
+                type: 'image',
+                opacity: 1,
+                image: {
+                  src: ['images/cardiogram.png', 'images/family.png'],
+                  width: 40,
+                  height: 40
+                }
+              },
             },
-          
+            legend: {
+              labels: {
+                useSeriesColors: true
+              },
+              markers: {
+                customHTML: [
+                  function() {
+                    return ''
+                  }, function() {
+                    return ''
+                  }
+                ]
+              }
+            }
           
           };
 }
@@ -122,4 +152,4 @@ render() {
 
 }
 
-export default ExpectationReality;
+export default WorryCategory;

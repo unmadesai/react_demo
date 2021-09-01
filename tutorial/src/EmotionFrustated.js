@@ -263,12 +263,12 @@ class EmotionFrustated extends React.Component {
         render() {
           return (
             <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="line" height={350} width={900} />
-                <Chart options={this.state.options2} series={this.state.series2} type="line" height={350} width={900} />
-                <Chart options={this.state.options3} series={this.state.series3} type="line" height={350} width={900} />
-                <Chart options={this.state.options4} series={this.state.series4} type="line" height={350} width={900} />
-                <Chart options={this.state.options5} series={this.state.series5} type="line" height={350} width={900} />
-                <Chart options={this.state.options6} series={this.state.series6} type="line" height={350} width={900} />
+                <Chart options={this.state.options} series={this.state.series} type="line" height={350} />
+                <Chart options={this.state.options2} series={this.state.series2} type="line" height={350} />
+                <Chart options={this.state.options3} series={this.state.series3} type="line" height={350} />
+                <Chart options={this.state.options4} series={this.state.series4} type="line" height={350} />
+                <Chart options={this.state.options5} series={this.state.series5} type="line" height={350} />
+                <Chart options={this.state.options6} series={this.state.series6} type="line" height={350} />
             </div>
           );
         }

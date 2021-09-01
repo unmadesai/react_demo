@@ -58,6 +58,9 @@ class PeerInteractionQuality extends React.Component {
             //   },
             ],
             options: {
+              title: {
+                text: "Peer Interaction Quality",
+              },
               chart: {
                 height: 350,
                 type: 'scatter',
