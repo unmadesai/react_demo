@@ -22,37 +22,71 @@ class WorryCategory extends React.Component {
         this.state = {
           
             series: [{
-                name: 'Morning',
+                name: 'Family',
                 //colors: '#81A2EF',
-                data: [[new Date('2021-08-16, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),30], 
-                       [new Date('2021-08-18, 09:00 +0800').getTime(),40], 
-                       [new Date('2021-08-19, 09:00 +0800').getTime(),60], 
-                       [new Date('2021-08-20, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-21, 09:00 +0800').getTime(),30],
-                       [new Date('2021-08-22, 09:00 +0800').getTime(),54]]
+                data: [[new Date('2021-08-16, 09:00 +0800').getTime(),80], 
+                        //comment out if missing for that day
+                       [new Date('2021-08-17, 09:00 +0800').getTime(),80], 
+                       [new Date('2021-08-18, 09:00 +0800').getTime(),80], 
+                       [new Date('2021-08-19, 09:00 +0800').getTime(),80], 
+                       [new Date('2021-08-20, 09:00 +0800').getTime(),80], 
+                       [new Date('2021-08-21, 09:00 +0800').getTime(),80],
+                       [new Date('2021-08-22, 09:00 +0800').getTime(),80]]
               },
               {
-                name: 'Afternoon',
+                name: 'Friends or Peers',
+                //colors: '#2B61E4',
+                data: [[new Date('2021-08-16, 14:00 +0800').getTime(),80], 
+                       [new Date('2021-08-17, 14:00 +0800').getTime(),80], 
+                       [new Date('2021-08-18, 14:00 +0800').getTime(),80], 
+                       [new Date('2021-08-19, 14:00 +0800').getTime(),80], 
+                       [new Date('2021-08-20, 14:00 +0800').getTime(),80], 
+                       [new Date('2021-08-21, 14:00 +0800').getTime(),80],
+                       [new Date('2021-08-22, 14:00 +0800').getTime(),80]]
+              },
+              {
+                name: 'People I don\'t know',
+                //colors: '#2B61E4',
+                data: [[new Date('2021-08-16, 09:00 +0800').getTime(),50], 
+                       [new Date('2021-08-17, 09:00 +0800').getTime(),50], 
+                       [new Date('2021-08-18, 09:00 +0800').getTime(),50], 
+                       [new Date('2021-08-19, 09:00 +0800').getTime(),50], 
+                       [new Date('2021-08-20, 09:00 +0800').getTime(),50], 
+                       [new Date('2021-08-21, 09:00 +0800').getTime(),50],
+                       [new Date('2021-08-22, 09:00 +0800').getTime(),50]]
+              },
+              {
+                name: 'School',
                 //colors: '#2B61E4',
                 data: [[new Date('2021-08-16, 14:00 +0800').getTime(),50], 
-                       [new Date('2021-08-17, 14:00 +0800').getTime(),20], 
-                       [new Date('2021-08-18, 14:00 +0800').getTime(),30], 
-                       [new Date('2021-08-19, 14:00 +0800').getTime(),70], 
-                       [new Date('2021-08-20, 14:00 +0800').getTime(),55], 
-                       [new Date('2021-08-21, 14:00 +0800').getTime(),35],
-                       [new Date('2021-08-22, 14:00 +0800').getTime(),45]]
+                       [new Date('2021-08-17, 14:00 +0800').getTime(),50], 
+                       [new Date('2021-08-18, 14:00 +0800').getTime(),50], 
+                       [new Date('2021-08-19, 14:00 +0800').getTime(),50], 
+                       [new Date('2021-08-20, 14:00 +0800').getTime(),50], 
+                       [new Date('2021-08-21, 14:00 +0800').getTime(),50],
+                       [new Date('2021-08-22, 14:00 +0800').getTime(),50]]
               },
               {
-                name: 'Evening',
+                name: 'Health and safety',
                 //colors: '#2B61E4',
-                data: [[new Date('2021-08-16, 19:00 +0800').getTime(),20], 
-                       [new Date('2021-08-17, 19:00 +0800').getTime(),70], 
-                       [new Date('2021-08-18, 19:00 +0800').getTime(),50], 
-                       [new Date('2021-08-19, 19:00 +0800').getTime(),65], 
-                       [new Date('2021-08-20, 19:00 +0800').getTime(),75], 
-                       [new Date('2021-08-21, 19:00 +0800').getTime(),34],
-                       [new Date('2021-08-22, 19:00 +0800').getTime(),29]]
+                data: [[new Date('2021-08-16, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-17, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-18, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-19, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-20, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-21, 09:00 +0800').getTime(),20],
+                       [new Date('2021-08-22, 09:00 +0800').getTime(),20]]
+              },
+              {
+                name: 'Sports or extracurriculars',
+                //colors: '#2B61E4',
+                data: [[new Date('2021-08-16, 14:00 +0800').getTime(),20], 
+                       [new Date('2021-08-17, 14:00 +0800').getTime(),20], 
+                       [new Date('2021-08-18, 14:00 +0800').getTime(),20], 
+                       [new Date('2021-08-19, 14:00 +0800').getTime(),20], 
+                       [new Date('2021-08-20, 14:00 +0800').getTime(),20], 
+                       [new Date('2021-08-21, 14:00 +0800').getTime(),20],
+                       [new Date('2021-08-22, 14:00 +0800').getTime(),20]]
               },
             //   {
             //     name: 'TEAM 2',
@@ -110,15 +144,16 @@ class WorryCategory extends React.Component {
                 show: false
               },
               markers: {
-                size: 20
+                size: 12
               },
               fill: {
                 type: 'image',
                 opacity: 1,
                 image: {
-                  src: ['images/cardiogram.png', 'images/family.png'],
-                  width: 40,
-                  height: 40
+                  src: ['images/worry_categories/family.png', 'images/worry_categories/friends.png', 'images/worry_categories/stranger.png', 
+                  'images/worry_categories/school.png', 'images/worry_categories/health_safety.png', 'images/worry_categories/sports.png'],
+                  width: 20,
+                  height: 20
                 }
               },
             },

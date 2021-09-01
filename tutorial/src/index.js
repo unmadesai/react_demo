@@ -21,6 +21,7 @@ import PeerWorry from './PeerInteractionWorry.js';
 import PeerQuality from './PeerInteractionQuality.js';
 import WorryCategory from './WorryCategory.js';
 import WorryCategoryDefault from './WorryCategoryDefault.js';
+import SchoolAttendance from './SchoolAttendance.js';
 
 ReactDOM.render(
   <div>
@@ -31,7 +32,8 @@ ReactDOM.render(
   <WorryVsCertainty />
   <ExpectationReality />
   <WorryCategory />
-  <WorryCategoryDefault />
+  <SchoolAttendance />
+  {/* <WorryCategoryDefault /> */}
   <PeerWorry />
   <PeerQuality />
   <Emotion />
