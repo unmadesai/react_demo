@@ -11,6 +11,33 @@ class SymptomOccurence extends React.Component {
             {
               name: "Occurence of symptoms",
               data: [
+                				//headache morning
+                        {
+                          x: 'Headache',
+                          y: [
+                            //sunday morning
+                            new Date('2021-08-15, 09:00').getTime(),
+                            new Date('2021-08-15, 13:00').getTime(),
+                          ]
+                        },
+                        //headache afternoon
+                        {
+                          x: 'Headache',
+                          y: [
+                            //sunday afternoon
+                            new Date('2021-08-15, 14:00').getTime(),
+                            new Date('2021-08-15, 18:00').getTime()
+                          ]
+                        },
+                        //headache evening
+                        {
+                          x: 'Headache',
+                          y: [
+                            //sunday evening
+                            new Date('2021-08-15, 19:00').getTime(),
+                            new Date('2021-08-15, 23:00').getTime()
+                          ]
+                        },
                 //headache morning
                 {
                   x: 'Headache',
@@ -200,9 +227,197 @@ class SymptomOccurence extends React.Component {
                     new Date('2021-08-22, 23:00').getTime()
                   ]
                 },
+                 //headache morning
+                 {
+                  x: 'Headache',
+                  y: [
+                    //monday morning
+                    new Date('2021-08-23, 09:00').getTime(),
+                    new Date('2021-08-23, 13:00').getTime(),
+                  ]
+                },
+                //headache afternoon
+                {
+                  x: 'Headache',
+                  y: [
+                    //monday afternoon
+                    new Date('2021-08-23, 14:00').getTime(),
+                    new Date('2021-08-23, 18:00').getTime()
+                  ]
+                },
+                //headache evening
+                {
+                  x: 'Headache',
+                  y: [
+                    //monday evening
+                    new Date('2021-08-23, 19:00').getTime(),
+                    new Date('2021-08-23, 23:00').getTime()
+                  ]
+                },
+                //headache morning
+                {
+                  x: 'Headache',
+                  y: [
+                    //tuesday morning
+                    new Date('2021-08-24, 09:00').getTime(),
+                    new Date('2021-08-24, 13:00').getTime(),
+                  ]
+                },
+                //headache afternoon
+                {
+                  x: 'Headache',
+                  y: [
+                    //tuesday afternoon
+                    new Date('2021-08-24, 14:00').getTime(),
+                    new Date('2021-08-24, 18:00').getTime()
+                  ]
+                },
+                //headache evening
+                {
+                  x: 'Headache',
+                  y: [
+                    //tuesday evening
+                    new Date('2021-08-24, 19:00').getTime(),
+                    new Date('2021-08-24, 23:00').getTime()
+                  ]
+                },
+                //headache morning
+                {
+                  x: 'Headache',
+                  y: [
+                    //wednesday morning
+                    new Date('2021-08-25, 09:00').getTime(),
+                    new Date('2021-08-25, 13:00').getTime(),
+                  ]
+                },
+                //headache afternoon
+                {
+                  x: 'Headache',
+                  y: [
+                    //wednesday afternoon
+                    new Date('2021-08-25, 14:00').getTime(),
+                    new Date('2021-08-25, 18:00').getTime()
+                  ]
+                },
+                //headache evening
+                {
+                  x: 'Headache',
+                  y: [
+                    //wednesday evening
+                    new Date('2021-08-25, 19:00').getTime(),
+                    new Date('2021-08-25, 23:00').getTime()
+                  ]
+                },
+                //headache morning
+                {
+                  x: 'Headache',
+                  y: [
+                    //thursday morning
+                    new Date('2021-08-26, 09:00').getTime(),
+                    new Date('2021-08-26, 13:00').getTime(),
+                  ]
+                },
+                //headache afternoon
+                {
+                  x: 'Headache',
+                  y: [
+                    //thursday afternoon
+                    new Date('2021-08-26, 14:00').getTime(),
+                    new Date('2021-08-26, 18:00').getTime()
+                  ]
+                },
+                //headache evening
+                {
+                  x: 'Headache',
+                  y: [
+                    //thursday evening
+                    new Date('2021-08-26, 19:00').getTime(),
+                    new Date('2021-08-26, 23:00').getTime()
+                  ]
+                },
+                //headache morning
+                {
+                  x: 'Headache',
+                  y: [
+                    //friday morning
+                    new Date('2021-08-27, 09:00').getTime(),
+                    new Date('2021-08-27, 13:00').getTime(),
+                  ]
+                },
+                //headache afternoon
+                {
+                  x: 'Headache',
+                  y: [
+                    //friday afternoon
+                    new Date('2021-08-27, 14:00').getTime(),
+                    new Date('2021-08-27, 18:00').getTime()
+                  ]
+                },
+                //headache evening
+                {
+                  x: 'Headache',
+                  y: [
+                    //friday evening
+                    new Date('2021-08-27, 19:00').getTime(),
+                    new Date('2021-08-27, 23:00').getTime()
+                  ]
+                },
+                //headache morning
+                {
+                  x: 'Headache',
+                  y: [
+                    //saturday morning
+                    new Date('2021-08-28, 09:00').getTime(),
+                    new Date('2021-08-28, 13:00').getTime(),
+                  ]
+                },
+                //headache afternoon
+                {
+                  x: 'Headache',
+                  y: [
+                    //saturday afternoon
+                    new Date('2021-08-28, 14:00').getTime(),
+                    new Date('2021-08-28, 18:00').getTime()
+                  ]
+                },
+                //headache evening
+                {
+                  x: 'Headache',
+                  y: [
+                    //saturday evening
+                    new Date('2021-08-28, 19:00').getTime(),
+                    new Date('2021-08-28, 23:00').getTime()
+                  ]
+                },
                 //
                 //
-                //
+                //Dizziness
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //sunday morning
+                    new Date('2021-08-15, 09:00').getTime(),
+                    new Date('2021-08-15, 13:00').getTime(),
+                  ]
+                },
+                //Dizziness afternoon
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //sunday afternoon
+                    new Date('2021-08-15, 14:00').getTime(),
+                    new Date('2021-08-15, 18:00').getTime()
+                  ]
+                },
+                //Dizziness evening
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //sunday evening
+                    new Date('2021-08-15, 19:00').getTime(),
+                    new Date('2021-08-15, 23:00').getTime()
+                  ]
+                },
                 //Dizziness morning
                 {
                   x: 'Dizziness',
@@ -392,9 +607,198 @@ class SymptomOccurence extends React.Component {
                     new Date('2021-08-22, 23:00').getTime()
                   ]
                 },
+                //Dizziness morning
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //monday morning
+                    new Date('2021-08-23, 09:00').getTime(),
+                    new Date('2021-08-23, 13:00').getTime(),
+                  ]
+                },
+                //Dizziness afternoon
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //monday afternoon
+                    new Date('2021-08-23, 14:00').getTime(),
+                    new Date('2021-08-23, 18:00').getTime()
+                  ]
+                },
+                //Dizziness evening
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //monday evening
+                    new Date('2021-08-23, 19:00').getTime(),
+                    new Date('2021-08-23, 23:00').getTime()
+                  ]
+                },
+                //Dizziness morning
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //tuesday morning
+                    new Date('2021-08-24, 09:00').getTime(),
+                    new Date('2021-08-24, 13:00').getTime(),
+                  ]
+                },
+                //Dizziness afternoon
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //tuesday afternoon
+                    new Date('2021-08-24, 14:00').getTime(),
+                    new Date('2021-08-24, 18:00').getTime()
+                  ]
+                },
+                //Dizziness evening
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //tuesday evening
+                    new Date('2021-08-24, 19:00').getTime(),
+                    new Date('2021-08-24, 23:00').getTime()
+                  ]
+                },
+                //Dizziness morning
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //wednesday morning
+                    new Date('2021-08-25, 09:00').getTime(),
+                    new Date('2021-08-25, 13:00').getTime(),
+                  ]
+                },
+                //Dizziness afternoon
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //wednesday afternoon
+                    new Date('2021-08-25, 14:00').getTime(),
+                    new Date('2021-08-25, 18:00').getTime()
+                  ]
+                },
+                //Dizziness evening
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //wednesday evening
+                    new Date('2021-08-25, 19:00').getTime(),
+                    new Date('2021-08-25, 23:00').getTime()
+                  ]
+                },
+                //Dizziness morning
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //thursday morning
+                    new Date('2021-08-26, 09:00').getTime(),
+                    new Date('2021-08-26, 13:00').getTime(),
+                  ]
+                },
+                //Dizziness afternoon
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //thursday afternoon
+                    new Date('2021-08-26, 14:00').getTime(),
+                    new Date('2021-08-26, 18:00').getTime()
+                  ]
+                },
+                //Dizziness evening
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //thursday evening
+                    new Date('2021-08-26, 19:00').getTime(),
+                    new Date('2021-08-26, 23:00').getTime()
+                  ]
+                },
+                //Dizziness morning
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //friday morning
+                    new Date('2021-08-27, 09:00').getTime(),
+                    new Date('2021-08-27, 13:00').getTime(),
+                  ]
+                },
+                //Dizziness afternoon
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //friday afternoon
+                    new Date('2021-08-27, 14:00').getTime(),
+                    new Date('2021-08-27, 18:00').getTime()
+                  ]
+                },
+                //Dizziness evening
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //friday evening
+                    new Date('2021-08-27, 19:00').getTime(),
+                    new Date('2021-08-27, 23:00').getTime()
+                  ]
+                },
+                //Dizziness morning
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //saturday morning
+                    new Date('2021-08-28, 09:00').getTime(),
+                    new Date('2021-08-28, 13:00').getTime(),
+                  ]
+                },
+                //Dizziness afternoon
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //saturday afternoon
+                    new Date('2021-08-28, 14:00').getTime(),
+                    new Date('2021-08-28, 18:00').getTime()
+                  ]
+                },
+                //Dizziness evening
+                {
+                  x: 'Dizziness',
+                  y: [
+                    //saturday evening
+                    new Date('2021-08-28, 19:00').getTime(),
+                    new Date('2021-08-28, 23:00').getTime()
+                  ]
+                },
                 //
                 //
                 //
+                //Fast heartbeat morning
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //sunday morning
+                    new Date('2021-08-15, 09:00').getTime(),
+                    new Date('2021-08-15, 13:00').getTime(),
+                  ]
+                },
+                //Fast heartbeat afternoon
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //sunday afternoon
+                    new Date('2021-08-15, 14:00').getTime(),
+                    new Date('2021-08-15, 18:00').getTime()
+                  ]
+                },
+                //Fast heartbeat evening
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //sunday evening
+                    new Date('2021-08-15, 19:00').getTime(),
+                    new Date('2021-08-15, 23:00').getTime()
+                  ]
+                },
                 //Fast heartbeat morning
                 {
                   x: 'Fast heartbeat',
@@ -584,9 +988,198 @@ class SymptomOccurence extends React.Component {
                     new Date('2021-08-22, 23:00').getTime()
                   ]
                 },
+                //Fast heartbeat morning
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //monday morning
+                    new Date('2021-08-23, 09:00').getTime(),
+                    new Date('2021-08-23, 13:00').getTime(),
+                  ]
+                },
+                //Fast heartbeat afternoon
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //monday afternoon
+                    new Date('2021-08-23, 14:00').getTime(),
+                    new Date('2021-08-23, 18:00').getTime()
+                  ]
+                },
+                //Fast heartbeat evening
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //monday evening
+                    new Date('2021-08-23, 19:00').getTime(),
+                    new Date('2021-08-23, 23:00').getTime()
+                  ]
+                },
+                //Fast heartbeat morning
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //tuesday morning
+                    new Date('2021-08-24, 09:00').getTime(),
+                    new Date('2021-08-24, 13:00').getTime(),
+                  ]
+                },
+                //Fast heartbeat afternoon
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //tuesday afternoon
+                    new Date('2021-08-24, 14:00').getTime(),
+                    new Date('2021-08-24, 18:00').getTime()
+                  ]
+                },
+                //Fast heartbeat evening
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //tuesday evening
+                    new Date('2021-08-24, 19:00').getTime(),
+                    new Date('2021-08-24, 23:00').getTime()
+                  ]
+                },
+                //Fast heartbeat morning
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //wednesday morning
+                    new Date('2021-08-25, 09:00').getTime(),
+                    new Date('2021-08-25, 13:00').getTime(),
+                  ]
+                },
+                //Fast heartbeat afternoon
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //wednesday afternoon
+                    new Date('2021-08-25, 14:00').getTime(),
+                    new Date('2021-08-25, 18:00').getTime()
+                  ]
+                },
+                //Fast heartbeat evening
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //wednesday evening
+                    new Date('2021-08-25, 19:00').getTime(),
+                    new Date('2021-08-25, 23:00').getTime()
+                  ]
+                },
+                //Fast heartbeat morning
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //thursday morning
+                    new Date('2021-08-26, 09:00').getTime(),
+                    new Date('2021-08-26, 13:00').getTime(),
+                  ]
+                },
+                //Fast heartbeat afternoon
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //thursday afternoon
+                    new Date('2021-08-26, 14:00').getTime(),
+                    new Date('2021-08-26, 18:00').getTime()
+                  ]
+                },
+                //Fast heartbeat evening
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //thursday evening
+                    new Date('2021-08-26, 19:00').getTime(),
+                    new Date('2021-08-26, 23:00').getTime()
+                  ]
+                },
+                //Fast heartbeat morning
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //friday morning
+                    new Date('2021-08-27, 09:00').getTime(),
+                    new Date('2021-08-27, 13:00').getTime(),
+                  ]
+                },
+                //Fast heartbeat afternoon
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //friday afternoon
+                    new Date('2021-08-27, 14:00').getTime(),
+                    new Date('2021-08-27, 18:00').getTime()
+                  ]
+                },
+                //Fast heartbeat evening
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //friday evening
+                    new Date('2021-08-27, 19:00').getTime(),
+                    new Date('2021-08-27, 23:00').getTime()
+                  ]
+                },
+                //Fast heartbeat morning
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //saturday morning
+                    new Date('2021-08-28, 09:00').getTime(),
+                    new Date('2021-08-28, 13:00').getTime(),
+                  ]
+                },
+                //Fast heartbeat afternoon
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //saturday afternoon
+                    new Date('2021-08-28, 14:00').getTime(),
+                    new Date('2021-08-28, 18:00').getTime()
+                  ]
+                },
+                //Fast heartbeat evening
+                {
+                  x: 'Fast heartbeat',
+                  y: [
+                    //saturday evening
+                    new Date('2021-08-28, 19:00').getTime(),
+                    new Date('2021-08-28, 23:00').getTime()
+                  ]
+                },
                 //
                 //
                 //
+                //Nausea morning
+                {
+                  x: 'Nausea',
+                  y: [
+                    //sunday morning
+                    new Date('2021-08-15, 09:00').getTime(),
+                    new Date('2021-08-15, 13:00').getTime(),
+                  ]
+                },
+                //Nausea afternoon
+                {
+                  x: 'Nausea',
+                  y: [
+                    //sunday afternoon
+                    new Date('2021-08-15, 14:00').getTime(),
+                    new Date('2021-08-15, 18:00').getTime()
+                  ]
+                },
+                //Nausea evening
+                {
+                  x: 'Nausea',
+                  y: [
+                    //sunday evening
+                    new Date('2021-08-15, 19:00').getTime(),
+                    new Date('2021-08-15, 23:00').getTime()
+                  ]
+                },
                 //Nausea morning
                 {
                   x: 'Nausea',
@@ -776,9 +1369,198 @@ class SymptomOccurence extends React.Component {
                     new Date('2021-08-22, 23:00').getTime()
                   ]
                 },
+                //Nausea morning
+                {
+                  x: 'Nausea',
+                  y: [
+                    //monday morning
+                    new Date('2021-08-23, 09:00').getTime(),
+                    new Date('2021-08-23, 13:00').getTime(),
+                  ]
+                },
+                //Nausea afternoon
+                {
+                  x: 'Nausea',
+                  y: [
+                    //monday afternoon
+                    new Date('2021-08-23, 14:00').getTime(),
+                    new Date('2021-08-23, 18:00').getTime()
+                  ]
+                },
+                //Nausea evening
+                {
+                  x: 'Nausea',
+                  y: [
+                    //monday evening
+                    new Date('2021-08-23, 19:00').getTime(),
+                    new Date('2021-08-23, 23:00').getTime()
+                  ]
+                },
+                //Nausea morning
+                {
+                  x: 'Nausea',
+                  y: [
+                    //tuesday morning
+                    new Date('2021-08-24, 09:00').getTime(),
+                    new Date('2021-08-24, 13:00').getTime(),
+                  ]
+                },
+                //Nausea afternoon
+                {
+                  x: 'Nausea',
+                  y: [
+                    //tuesday afternoon
+                    new Date('2021-08-24, 14:00').getTime(),
+                    new Date('2021-08-24, 18:00').getTime()
+                  ]
+                },
+                //Nausea evening
+                {
+                  x: 'Nausea',
+                  y: [
+                    //tuesday evening
+                    new Date('2021-08-24, 19:00').getTime(),
+                    new Date('2021-08-24, 23:00').getTime()
+                  ]
+                },
+                //Nausea morning
+                {
+                  x: 'Nausea',
+                  y: [
+                    //wednesday morning
+                    new Date('2021-08-25, 09:00').getTime(),
+                    new Date('2021-08-25, 13:00').getTime(),
+                  ]
+                },
+                //Nausea afternoon
+                {
+                  x: 'Nausea',
+                  y: [
+                    //wednesday afternoon
+                    new Date('2021-08-25, 14:00').getTime(),
+                    new Date('2021-08-25, 18:00').getTime()
+                  ]
+                },
+                //Nausea evening
+                {
+                  x: 'Nausea',
+                  y: [
+                    //wednesday evening
+                    new Date('2021-08-25, 19:00').getTime(),
+                    new Date('2021-08-25, 23:00').getTime()
+                  ]
+                },
+                //Nausea morning
+                {
+                  x: 'Nausea',
+                  y: [
+                    //thursday morning
+                    new Date('2021-08-26, 09:00').getTime(),
+                    new Date('2021-08-26, 13:00').getTime(),
+                  ]
+                },
+                //Nausea afternoon
+                {
+                  x: 'Nausea',
+                  y: [
+                    //thursday afternoon
+                    new Date('2021-08-26, 14:00').getTime(),
+                    new Date('2021-08-26, 18:00').getTime()
+                  ]
+                },
+                //Nausea evening
+                {
+                  x: 'Nausea',
+                  y: [
+                    //thursday evening
+                    new Date('2021-08-26, 19:00').getTime(),
+                    new Date('2021-08-26, 23:00').getTime()
+                  ]
+                },
+                //Nausea morning
+                {
+                  x: 'Nausea',
+                  y: [
+                    //friday morning
+                    new Date('2021-08-27, 09:00').getTime(),
+                    new Date('2021-08-27, 13:00').getTime(),
+                  ]
+                },
+                //Nausea afternoon
+                {
+                  x: 'Nausea',
+                  y: [
+                    //friday afternoon
+                    new Date('2021-08-27, 14:00').getTime(),
+                    new Date('2021-08-27, 18:00').getTime()
+                  ]
+                },
+                //Nausea evening
+                {
+                  x: 'Nausea',
+                  y: [
+                    //friday evening
+                    new Date('2021-08-27, 19:00').getTime(),
+                    new Date('2021-08-27, 23:00').getTime()
+                  ]
+                },
+                //Nausea morning
+                {
+                  x: 'Nausea',
+                  y: [
+                    //saturday morning
+                    new Date('2021-08-28, 09:00').getTime(),
+                    new Date('2021-08-28, 13:00').getTime(),
+                  ]
+                },
+                //Nausea afternoon
+                {
+                  x: 'Nausea',
+                  y: [
+                    //saturday afternoon
+                    new Date('2021-08-28, 14:00').getTime(),
+                    new Date('2021-08-28, 18:00').getTime()
+                  ]
+                },
+                //Nausea evening
+                {
+                  x: 'Nausea',
+                  y: [
+                    //saturday evening
+                    new Date('2021-08-28, 19:00').getTime(),
+                    new Date('2021-08-28, 23:00').getTime()
+                  ]
+                },
                 //
                 //
                 //
+                //Stomachache morning
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //sunday morning
+                    new Date('2021-08-15, 09:00').getTime(),
+                    new Date('2021-08-15, 13:00').getTime(),
+                  ]
+                },
+                //Stomachache afternoon
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //sunday afternoon
+                    new Date('2021-08-15, 14:00').getTime(),
+                    new Date('2021-08-15, 18:00').getTime()
+                  ]
+                },
+                //Stomachache evening
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //sunday evening
+                    new Date('2021-08-15, 19:00').getTime(),
+                    new Date('2021-08-15, 23:00').getTime()
+                  ]
+                },
                 //Stomachache morning
                 {
                   x: 'Stomachache',
@@ -966,6 +1748,198 @@ class SymptomOccurence extends React.Component {
                     //sunday evening
                     new Date('2021-08-22, 19:00').getTime(),
                     new Date('2021-08-22, 23:00').getTime()
+                  ]
+                },
+                //Stomachache morning
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //monday morning
+                    new Date('2021-08-23, 09:00').getTime(),
+                    new Date('2021-08-23, 13:00').getTime(),
+                  ]
+                },
+                //Stomachache afternoon
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //monday afternoon
+                    new Date('2021-08-23, 14:00').getTime(),
+                    new Date('2021-08-23, 18:00').getTime()
+                  ]
+                },
+                //Stomachache evening
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //monday evening
+                    new Date('2021-08-23, 19:00').getTime(),
+                    new Date('2021-08-23, 23:00').getTime()
+                  ]
+                },
+                //Stomachache morning
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //tuesday morning
+                    new Date('2021-08-24, 09:00').getTime(),
+                    new Date('2021-08-24, 13:00').getTime(),
+                  ]
+                },
+                //Stomachache afternoon
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //tuesday afternoon
+                    new Date('2021-08-24, 14:00').getTime(),
+                    new Date('2021-08-24, 18:00').getTime()
+                  ]
+                },
+                //Stomachache evening
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //tuesday evening
+                    new Date('2021-08-24, 19:00').getTime(),
+                    new Date('2021-08-24, 23:00').getTime()
+                  ]
+                },
+                //Stomachache morning
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //wednesday morning
+                    new Date('2021-08-25, 09:00').getTime(),
+                    new Date('2021-08-25, 13:00').getTime(),
+                  ]
+                },
+                //Stomachache afternoon
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //wednesday afternoon
+                    new Date('2021-08-25, 14:00').getTime(),
+                    new Date('2021-08-25, 18:00').getTime()
+                  ]
+                },
+                //Stomachache evening
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //wednesday evening
+                    new Date('2021-08-25, 19:00').getTime(),
+                    new Date('2021-08-25, 23:00').getTime()
+                  ]
+                },
+                //Stomachache morning
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //thursday morning
+                    new Date('2021-08-26, 09:00').getTime(),
+                    new Date('2021-08-26, 13:00').getTime(),
+                  ]
+                },
+                //Stomachache afternoon
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //thursday afternoon
+                    new Date('2021-08-26, 14:00').getTime(),
+                    new Date('2021-08-26, 18:00').getTime()
+                  ]
+                },
+                //Stomachache evening
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //thursday evening
+                    new Date('2021-08-26, 19:00').getTime(),
+                    new Date('2021-08-26, 23:00').getTime()
+                  ]
+                },
+                //Stomachache morning
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //friday morning
+                    new Date('2021-08-27, 09:00').getTime(),
+                    new Date('2021-08-27, 13:00').getTime(),
+                  ]
+                },
+                //Stomachache afternoon
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //friday afternoon
+                    new Date('2021-08-27, 14:00').getTime(),
+                    new Date('2021-08-27, 18:00').getTime()
+                  ]
+                },
+                //Stomachache evening
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //friday evening
+                    new Date('2021-08-27, 19:00').getTime(),
+                    new Date('2021-08-27, 23:00').getTime()
+                  ]
+                },
+                //Stomachache morning
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //saturday morning
+                    new Date('2021-08-28, 09:00').getTime(),
+                    new Date('2021-08-28, 13:00').getTime(),
+                  ]
+                },
+                //Stomachache afternoon
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //saturday afternoon
+                    new Date('2021-08-28, 14:00').getTime(),
+                    new Date('2021-08-28, 18:00').getTime()
+                  ]
+                },
+                //Stomachache evening
+                {
+                  x: 'Stomachache',
+                  y: [
+                    //saturday evening
+                    new Date('2021-08-28, 19:00').getTime(),
+                    new Date('2021-08-28, 23:00').getTime()
+                  ]
+                },
+                //
+                //
+                //
+                //Lower back pain morning
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //sunday morning
+                    new Date('2021-08-15, 09:00').getTime(),
+                    new Date('2021-08-15, 13:00').getTime(),
+                  ]
+                },
+                //Lower back pain afternoon
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //sunday afternoon
+                    new Date('2021-08-15, 14:00').getTime(),
+                    new Date('2021-08-15, 18:00').getTime()
+                  ]
+                },
+                //Lower back pain evening
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //sunday evening
+                    new Date('2021-08-15, 19:00').getTime(),
+                    new Date('2021-08-15, 23:00').getTime()
                   ]
                 },
                 //Lower back pain morning
@@ -1157,9 +2131,198 @@ class SymptomOccurence extends React.Component {
                     new Date('2021-08-22, 23:00').getTime()
                   ]
                 },
+                //Lower back pain morning
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //monday morning
+                    new Date('2021-08-23, 09:00').getTime(),
+                    new Date('2021-08-23, 13:00').getTime(),
+                  ]
+                },
+                //Lower back pain afternoon
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //monday afternoon
+                    new Date('2021-08-23, 14:00').getTime(),
+                    new Date('2021-08-23, 18:00').getTime()
+                  ]
+                },
+                //Lower back pain evening
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //monday evening
+                    new Date('2021-08-23, 19:00').getTime(),
+                    new Date('2021-08-23, 23:00').getTime()
+                  ]
+                },
+                //Lower back pain morning
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //tuesday morning
+                    new Date('2021-08-24, 09:00').getTime(),
+                    new Date('2021-08-24, 13:00').getTime(),
+                  ]
+                },
+                //Lower back pain afternoon
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //tuesday afternoon
+                    new Date('2021-08-24, 14:00').getTime(),
+                    new Date('2021-08-24, 18:00').getTime()
+                  ]
+                },
+                //Lower back pain evening
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //tuesday evening
+                    new Date('2021-08-24, 19:00').getTime(),
+                    new Date('2021-08-24, 23:00').getTime()
+                  ]
+                },
+                //Lower back pain morning
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //wednesday morning
+                    new Date('2021-08-25, 09:00').getTime(),
+                    new Date('2021-08-25, 13:00').getTime(),
+                  ]
+                },
+                //Lower back pain afternoon
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //wednesday afternoon
+                    new Date('2021-08-25, 14:00').getTime(),
+                    new Date('2021-08-25, 18:00').getTime()
+                  ]
+                },
+                //Lower back pain evening
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //wednesday evening
+                    new Date('2021-08-25, 19:00').getTime(),
+                    new Date('2021-08-25, 23:00').getTime()
+                  ]
+                },
+                //Lower back pain morning
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //thursday morning
+                    new Date('2021-08-26, 09:00').getTime(),
+                    new Date('2021-08-26, 13:00').getTime(),
+                  ]
+                },
+                //Lower back pain afternoon
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //thursday afternoon
+                    new Date('2021-08-26, 14:00').getTime(),
+                    new Date('2021-08-26, 18:00').getTime()
+                  ]
+                },
+                //Lower back pain evening
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //thursday evening
+                    new Date('2021-08-26, 19:00').getTime(),
+                    new Date('2021-08-26, 23:00').getTime()
+                  ]
+                },
+                //Lower back pain morning
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //friday morning
+                    new Date('2021-08-27, 09:00').getTime(),
+                    new Date('2021-08-27, 13:00').getTime(),
+                  ]
+                },
+                //Lower back pain afternoon
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //friday afternoon
+                    new Date('2021-08-27, 14:00').getTime(),
+                    new Date('2021-08-27, 18:00').getTime()
+                  ]
+                },
+                //Lower back pain evening
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //friday evening
+                    new Date('2021-08-27, 19:00').getTime(),
+                    new Date('2021-08-27, 23:00').getTime()
+                  ]
+                },
+                //Lower back pain morning
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //saturday morning
+                    new Date('2021-08-28, 09:00').getTime(),
+                    new Date('2021-08-28, 13:00').getTime(),
+                  ]
+                },
+                //Lower back pain afternoon
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //saturday afternoon
+                    new Date('2021-08-28, 14:00').getTime(),
+                    new Date('2021-08-28, 18:00').getTime()
+                  ]
+                },
+                //Lower back pain evening
+                {
+                  x: 'Lower back pain',
+                  y: [
+                    //saturday evening
+                    new Date('2021-08-28, 19:00').getTime(),
+                    new Date('2021-08-28, 23:00').getTime()
+                  ]
+                },
                 //
                 //
                 //
+                //Limb pain morning
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //sunday morning
+                    new Date('2021-08-15, 09:00').getTime(),
+                    new Date('2021-08-15, 13:00').getTime(),
+                  ]
+                },
+                //Limb pain afternoon
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //sunday afternoon
+                    new Date('2021-08-15, 14:00').getTime(),
+                    new Date('2021-08-15, 18:00').getTime()
+                  ]
+                },
+                //Limb pain evening
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //sunday evening
+                    new Date('2021-08-15, 19:00').getTime(),
+                    new Date('2021-08-15, 23:00').getTime()
+                  ]
+                },
                 //Limb pain morning
                 {
                   x: 'Limb pain',
@@ -1347,6 +2510,168 @@ class SymptomOccurence extends React.Component {
                     //sunday evening
                     new Date('2021-08-22, 19:00').getTime(),
                     new Date('2021-08-22, 23:00').getTime()
+                  ]
+                },
+                //Limb pain morning
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //monday morning
+                    new Date('2021-08-23, 09:00').getTime(),
+                    new Date('2021-08-23, 13:00').getTime(),
+                  ]
+                },
+                //Limb pain afternoon
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //monday afternoon
+                    new Date('2021-08-23, 14:00').getTime(),
+                    new Date('2021-08-23, 18:00').getTime()
+                  ]
+                },
+                //Limb pain evening
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //monday evening
+                    new Date('2021-08-23, 19:00').getTime(),
+                    new Date('2021-08-23, 23:00').getTime()
+                  ]
+                },
+                //Limb pain morning
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //tuesday morning
+                    new Date('2021-08-24, 09:00').getTime(),
+                    new Date('2021-08-24, 13:00').getTime(),
+                  ]
+                },
+                //Limb pain afternoon
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //tuesday afternoon
+                    new Date('2021-08-24, 14:00').getTime(),
+                    new Date('2021-08-24, 18:00').getTime()
+                  ]
+                },
+                //Limb pain evening
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //tuesday evening
+                    new Date('2021-08-24, 19:00').getTime(),
+                    new Date('2021-08-24, 23:00').getTime()
+                  ]
+                },
+                //Limb pain morning
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //wednesday morning
+                    new Date('2021-08-25, 09:00').getTime(),
+                    new Date('2021-08-25, 13:00').getTime(),
+                  ]
+                },
+                //Limb pain afternoon
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //wednesday afternoon
+                    new Date('2021-08-25, 14:00').getTime(),
+                    new Date('2021-08-25, 18:00').getTime()
+                  ]
+                },
+                //Limb pain evening
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //wednesday evening
+                    new Date('2021-08-25, 19:00').getTime(),
+                    new Date('2021-08-25, 23:00').getTime()
+                  ]
+                },
+                //Limb pain morning
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //thursday morning
+                    new Date('2021-08-26, 09:00').getTime(),
+                    new Date('2021-08-26, 13:00').getTime(),
+                  ]
+                },
+                //Limb pain afternoon
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //thursday afternoon
+                    new Date('2021-08-26, 14:00').getTime(),
+                    new Date('2021-08-26, 18:00').getTime()
+                  ]
+                },
+                //Limb pain evening
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //thursday evening
+                    new Date('2021-08-26, 19:00').getTime(),
+                    new Date('2021-08-26, 23:00').getTime()
+                  ]
+                },
+                //Limb pain morning
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //friday morning
+                    new Date('2021-08-27, 09:00').getTime(),
+                    new Date('2021-08-27, 13:00').getTime(),
+                  ]
+                },
+                //Limb pain afternoon
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //friday afternoon
+                    new Date('2021-08-27, 14:00').getTime(),
+                    new Date('2021-08-27, 18:00').getTime()
+                  ]
+                },
+                //Limb pain evening
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //friday evening
+                    new Date('2021-08-27, 19:00').getTime(),
+                    new Date('2021-08-27, 23:00').getTime()
+                  ]
+                },
+                //Limb pain morning
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //saturday morning
+                    new Date('2021-08-28, 09:00').getTime(),
+                    new Date('2021-08-28, 13:00').getTime(),
+                  ]
+                },
+                //Limb pain afternoon
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //saturday afternoon
+                    new Date('2021-08-28, 14:00').getTime(),
+                    new Date('2021-08-28, 18:00').getTime()
+                  ]
+                },
+                //Limb pain evening
+                {
+                  x: 'Limb pain',
+                  y: [
+                    //saturday evening
+                    new Date('2021-08-28, 19:00').getTime(),
+                    new Date('2021-08-28, 23:00').getTime()
                   ]
                 },
                 // {
@@ -1399,8 +2724,14 @@ class SymptomOccurence extends React.Component {
               text: "Occurence of symptoms",
             },
             chart: {
-              height: 350,
-              type: 'rangeBar'
+              //height: 350,
+              type: 'rangeBar',
+              zoom: {
+                enabled: false
+              },
+              toolbar: {
+                show: false
+              }
             },
             colors: ['#F5180D'],
             plotOptions: {
@@ -1409,7 +2740,10 @@ class SymptomOccurence extends React.Component {
               }
             },
             xaxis: {
-              type: 'datetime'
+              type: 'datetime',
+              labels: {
+                show: false,
+              }
             }
           },
         
@@ -1422,7 +2756,7 @@ class SymptomOccurence extends React.Component {
       render() {
         return (
             <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="rangeBar" height={250} />
+                <Chart options={this.state.options} series={this.state.series} type="rangeBar" height={200} width={870}/>
             </div>
         );
       }

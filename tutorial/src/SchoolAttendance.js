@@ -24,39 +24,52 @@ class SchoolAttendance extends React.Component {
             series: [{
                 name: 'Present',
                 //colors: '#81A2EF',
-                data: [[new Date('2021-08-16, 12:00 +0800').getTime(),50], 
+                data: [[new Date('2021-08-15, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-16, 12:00 +0800').getTime(),10], 
                         //comment out if absent for that day
-                       [new Date('2021-08-17, 12:00 +0800').getTime(),50], 
-                       [new Date('2021-08-18, 12:00 +0800').getTime(),50], 
-                       //[new Date('2021-08-19, 12:00 +0800').getTime(),80], 
-                       [new Date('2021-08-20, 12:00 +0800').getTime(),50], 
-                       //[new Date('2021-08-21, 12:00 +0800').getTime(),80],
-                       [new Date('2021-08-22, 12:00 +0800').getTime(),50]]
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),10], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),10], 
+                       //[new Date('2021-08-19, 12:00 +0800').getTime(),10], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),10], 
+                       //[new Date('2021-08-21, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-23, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-24, 12:00 +0800').getTime(),10],
+                       //[new Date('2021-08-25, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-26, 12:00 +0800').getTime(),10],
+                       //[new Date('2021-08-27, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-28, 12:00 +0800').getTime(),10]]
               },
               {
                 name: 'Absent',
                 //colors: '#2B61E4',
-                data: [//[new Date('2021-08-16, 12:00 +0800').getTime(),50], 
+                data: [//[new Date('2021-08-16, 12:00 +0800').getTime(),10], 
                       //comment out if present for that day
                       //if absent, add in corresponding reason segment too
-                       //[new Date('2021-08-17, 12:00 +0800').getTime(),50], 
-                       //[new Date('2021-08-18, 12:00 +0800').getTime(),50], 
-                       [new Date('2021-08-19, 12:00 +0800').getTime(),50], 
-                       //[new Date('2021-08-20, 12:00 +0800').getTime(),50], 
-                       [new Date('2021-08-21, 12:00 +0800').getTime(),50],
-                       //[new Date('2021-08-22, 12:00 +0800').getTime(),50]
+                       //[new Date('2021-08-17, 12:00 +0800').getTime(),10], 
+                       //[new Date('2021-08-18, 12:00 +0800').getTime(),10], 
+                       [new Date('2021-08-19, 12:00 +0800').getTime(),10], 
+                       //[new Date('2021-08-20, 12:00 +0800').getTime(),10], 
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),10],
+                       //[new Date('2021-08-22, 12:00 +0800').getTime(),10],
+                       //[new Date('2021-08-23, 12:00 +0800').getTime(),10],
+                       //[new Date('2021-08-24, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-25, 12:00 +0800').getTime(),10],
+                       //[new Date('2021-08-26, 12:00 +0800').getTime(),10],
+                       [new Date('2021-08-27, 12:00 +0800').getTime(),10],
+                       //[new Date('2021-08-28, 12:00 +0800').getTime(),10]
                       ]
               },
               {
                 name: 'School Holiday', //reason 1
                 //colors: '#2B61E4',
-                data: [[new Date('2021-08-16, 12:00 +0800').getTime(),20], 
-                      //  [new Date('2021-08-17, 12:00 +0800').getTime(),20], 
-                      //  [new Date('2021-08-18, 12:00 +0800').getTime(),20], 
-                      //  [new Date('2021-08-19, 12:00 +0800').getTime(),20], 
-                      //  [new Date('2021-08-20, 12:00 +0800').getTime(),20], 
-                      //  [new Date('2021-08-21, 12:00 +0800').getTime(),20],
-                      //  [new Date('2021-08-22, 12:00 +0800').getTime(),20]
+                data: [[new Date('2021-08-16, 12:00 +0800').getTime(),4], 
+                      //  [new Date('2021-08-17, 12:00 +0800').getTime(),4], 
+                      //  [new Date('2021-08-18, 12:00 +0800').getTime(),4], 
+                      //  [new Date('2021-08-19, 12:00 +0800').getTime(),4], 
+                      //  [new Date('2021-08-20, 12:00 +0800').getTime(),4], 
+                      //  [new Date('2021-08-21, 12:00 +0800').getTime(),4],
+                      //  [new Date('2021-08-22, 12:00 +0800').getTime(),4]
                     ]
               },
               {
@@ -64,12 +77,18 @@ class SchoolAttendance extends React.Component {
                 //colors: '#2B61E4',
                 data: [
                   //[new Date('2021-08-16, 12:00 +0800').getTime(),20], 
-                       [new Date('2021-08-17, 12:00 +0800').getTime(),20], 
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),4], 
                       //  [new Date('2021-08-18, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-19, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-20, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-21, 12:00 +0800').getTime(),20],
                       //  [new Date('2021-08-22, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-23, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-24, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-25, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-26, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-27, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-28, 12:00 +0800').getTime(),20]
                     ]
               },
               {
@@ -77,11 +96,17 @@ class SchoolAttendance extends React.Component {
                 //colors: '#2B61E4',
                 data: [//[new Date('2021-08-16, 12:00 +0800').getTime(),20], 
                        //[new Date('2021-08-17, 12:00 +0800').getTime(),20], 
-                       [new Date('2021-08-18, 12:00 +0800').getTime(),20], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),4], 
                       //  [new Date('2021-08-19, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-20, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-21, 12:00 +0800').getTime(),20],
                       //  [new Date('2021-08-22, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-23, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-24, 12:00 +0800').getTime(),20]
+                        [new Date('2021-08-25, 12:00 +0800').getTime(),4]
+                      //  [new Date('2021-08-26, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-27, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-28, 12:00 +0800').getTime(),20]
                     ]
               },
               {
@@ -90,10 +115,16 @@ class SchoolAttendance extends React.Component {
                 data: [//[new Date('2021-08-16, 12:00 +0800').getTime(),20], 
                 //        [new Date('2021-08-17, 12:00 +0800').getTime(),20], 
                 //        [new Date('2021-08-18, 12:00 +0800').getTime(),20], 
-                        [new Date('2021-08-19, 12:00 +0800').getTime(),20], 
+                        [new Date('2021-08-19, 12:00 +0800').getTime(),4], 
                       // [new Date('2021-08-20, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-21, 12:00 +0800').getTime(),20],
                       //  [new Date('2021-08-22, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-23, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-24, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-25, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-26, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-27, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-28, 12:00 +0800').getTime(),20]
                     ]
               },
               {
@@ -104,9 +135,15 @@ class SchoolAttendance extends React.Component {
                 //        [new Date('2021-08-17, 12:00 +0800').getTime(),20], 
                 //        [new Date('2021-08-18, 12:00 +0800').getTime(),20], 
                 //        [new Date('2021-08-19, 12:00 +0800').getTime(),20], 
-                       [new Date('2021-08-20, 12:00 +0800').getTime(),20], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),4], 
                       // [new Date('2021-08-21, 12:00 +0800').getTime(),20],
                       //  [new Date('2021-08-22, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-23, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-24, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-25, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-26, 12:00 +0800').getTime(),20]
+                        [new Date('2021-08-27, 12:00 +0800').getTime(),4]
+                      //  [new Date('2021-08-28, 12:00 +0800').getTime(),20]
                     ]
               },
               {
@@ -118,8 +155,14 @@ class SchoolAttendance extends React.Component {
                 //        [new Date('2021-08-18, 12:00 +0800').getTime(),20], 
                 //        [new Date('2021-08-19, 12:00 +0800').getTime(),20], 
                 //        [new Date('2021-08-20, 12:00 +0800').getTime(),20], 
-                       [new Date('2021-08-21, 12:00 +0800').getTime(),20],
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),4],
                       //  [new Date('2021-08-22, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-23, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-24, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-25, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-26, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-27, 12:00 +0800').getTime(),20]
+                      //  [new Date('2021-08-28, 12:00 +0800').getTime(),20]
                     ]
               },
               {
@@ -132,7 +175,7 @@ class SchoolAttendance extends React.Component {
                       //  [new Date('2021-08-19, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-20, 12:00 +0800').getTime(),20], 
                       //  [new Date('2021-08-21, 12:00 +0800').getTime(),20],
-                       [new Date('2021-08-22, 12:00 +0800').getTime(),20]]
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),4]]
               },
               
             ],
@@ -171,7 +214,7 @@ class SchoolAttendance extends React.Component {
                 type: 'datetime',
               },
               yaxis: {
-                max: 100,
+                max: 10,
                 show: false
               },
               markers: {
@@ -214,7 +257,7 @@ class SchoolAttendance extends React.Component {
 render() {
   return (
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} />
+          <Chart options={this.state.options} series={this.state.series} type="scatter" height={200} />
       </div>
   );
 }

@@ -8,12 +8,8 @@ class Sleep extends React.Component {
         this.state = {
           
             series: [{
-              name: 'Sleep',
-              data: [8,10,6,6,8,12,10]
-            },
-            {
                 name: 'Sleep reverse',
-                data: [-8,-10,-6,-6,-8,-12,-10]
+                data: [8,10,6,6,8,12,10,8,10,6,6,8,12,10]
               },
             ],
             options: {
@@ -25,11 +21,11 @@ class Sleep extends React.Component {
                 bar: {
                   colors: {
                     ranges: [{
-                      from: -100,
-                      to: -46,
+                      from: 100,
+                      to: 46,
                       color: '#F15B46'
                     }, {
-                      from: -45,
+                      from: 45,
                       to: 0,
                       color: '#FEB019'
                     }]
@@ -53,28 +49,13 @@ class Sleep extends React.Component {
               xaxis: [{
                 type: 'datetime',
                 position: 'top',
-                categories: [
-                  '2021-08-16', '2021-08-17', '2021-08-18', '2021-08-19', '2021-08-20', '2021-08-21',
-                  '2021-08-22'],
+                categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
                 labels: {
                   rotate: -90
                 },
                 title: {
                         text: "A"
-                    },
-              },
-              {
-                type: 'datetime',
-                position: 'top',
-                categories: [
-                  '2021-08-16', '2021-08-17', '2021-08-18', '2021-08-19', '2021-08-20', '2021-08-21',
-                  '2021-08-22'],
-                labels: {
-                  rotate: -90
-                },
-                opposite: true,
-                title: {
-                        text: "B"
                     },
               }]
             },

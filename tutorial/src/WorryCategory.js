@@ -24,69 +24,111 @@ class WorryCategory extends React.Component {
             series: [{
                 name: 'Family',
                 //colors: '#81A2EF',
-                data: [[new Date('2021-08-16, 09:00 +0800').getTime(),80], 
+                data: [[new Date('2021-08-15, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-16, 12:00 +0800').getTime(),180], 
                         //comment out if missing for that day
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),80], 
-                       [new Date('2021-08-18, 09:00 +0800').getTime(),80], 
-                       [new Date('2021-08-19, 09:00 +0800').getTime(),80], 
-                       [new Date('2021-08-20, 09:00 +0800').getTime(),80], 
-                       [new Date('2021-08-21, 09:00 +0800').getTime(),80],
-                       [new Date('2021-08-22, 09:00 +0800').getTime(),80]]
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),180], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),180], 
+                       [new Date('2021-08-19, 12:00 +0800').getTime(),180], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),180], 
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-23, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-24, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-25, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-26, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-27, 12:00 +0800').getTime(),180],
+                       [new Date('2021-08-28, 12:00 +0800').getTime(),180]]
               },
               {
                 name: 'Friends or Peers',
                 //colors: '#2B61E4',
-                data: [[new Date('2021-08-16, 14:00 +0800').getTime(),80], 
-                       [new Date('2021-08-17, 14:00 +0800').getTime(),80], 
-                       [new Date('2021-08-18, 14:00 +0800').getTime(),80], 
-                       [new Date('2021-08-19, 14:00 +0800').getTime(),80], 
-                       [new Date('2021-08-20, 14:00 +0800').getTime(),80], 
-                       [new Date('2021-08-21, 14:00 +0800').getTime(),80],
-                       [new Date('2021-08-22, 14:00 +0800').getTime(),80]]
+                data: [[new Date('2021-08-15, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-16, 12:00 +0800').getTime(),150], 
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),150], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),150], 
+                       [new Date('2021-08-19, 12:00 +0800').getTime(),150], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),150], 
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-23, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-24, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-25, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-26, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-27, 12:00 +0800').getTime(),150],
+                       [new Date('2021-08-28, 12:00 +0800').getTime(),150]]
               },
               {
                 name: 'People I don\'t know',
                 //colors: '#2B61E4',
-                data: [[new Date('2021-08-16, 09:00 +0800').getTime(),50], 
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),50], 
-                       [new Date('2021-08-18, 09:00 +0800').getTime(),50], 
-                       [new Date('2021-08-19, 09:00 +0800').getTime(),50], 
-                       [new Date('2021-08-20, 09:00 +0800').getTime(),50], 
-                       [new Date('2021-08-21, 09:00 +0800').getTime(),50],
-                       [new Date('2021-08-22, 09:00 +0800').getTime(),50]]
+                data: [[new Date('2021-08-15, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-16, 12:00 +0800').getTime(),120], 
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),120], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),120], 
+                       [new Date('2021-08-19, 12:00 +0800').getTime(),120], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),120], 
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-23, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-24, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-25, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-26, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-27, 12:00 +0800').getTime(),120],
+                       [new Date('2021-08-28, 12:00 +0800').getTime(),120]]
               },
               {
                 name: 'School',
                 //colors: '#2B61E4',
-                data: [[new Date('2021-08-16, 14:00 +0800').getTime(),50], 
-                       [new Date('2021-08-17, 14:00 +0800').getTime(),50], 
-                       [new Date('2021-08-18, 14:00 +0800').getTime(),50], 
-                       [new Date('2021-08-19, 14:00 +0800').getTime(),50], 
-                       [new Date('2021-08-20, 14:00 +0800').getTime(),50], 
-                       [new Date('2021-08-21, 14:00 +0800').getTime(),50],
-                       [new Date('2021-08-22, 14:00 +0800').getTime(),50]]
+                data: [[new Date('2021-08-15, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-16, 12:00 +0800').getTime(),90], 
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),90], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),90], 
+                       [new Date('2021-08-19, 12:00 +0800').getTime(),90], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),90], 
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-23, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-24, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-25, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-26, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-27, 12:00 +0800').getTime(),90],
+                       [new Date('2021-08-28, 12:00 +0800').getTime(),90]]
               },
               {
                 name: 'Health and safety',
                 //colors: '#2B61E4',
-                data: [[new Date('2021-08-16, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-18, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-19, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-20, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-21, 09:00 +0800').getTime(),20],
-                       [new Date('2021-08-22, 09:00 +0800').getTime(),20]]
+                data: [[new Date('2021-08-15, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-16, 12:00 +0800').getTime(),60], 
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),60], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),60], 
+                       [new Date('2021-08-19, 12:00 +0800').getTime(),60], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),60], 
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-23, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-24, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-25, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-26, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-27, 12:00 +0800').getTime(),60],
+                       [new Date('2021-08-28, 12:00 +0800').getTime(),60]]
               },
               {
                 name: 'Sports or extracurriculars',
                 //colors: '#2B61E4',
-                data: [[new Date('2021-08-16, 14:00 +0800').getTime(),20], 
-                       [new Date('2021-08-17, 14:00 +0800').getTime(),20], 
-                       [new Date('2021-08-18, 14:00 +0800').getTime(),20], 
-                       [new Date('2021-08-19, 14:00 +0800').getTime(),20], 
-                       [new Date('2021-08-20, 14:00 +0800').getTime(),20], 
-                       [new Date('2021-08-21, 14:00 +0800').getTime(),20],
-                       [new Date('2021-08-22, 14:00 +0800').getTime(),20]]
+                data: [[new Date('2021-08-15, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-16, 12:00 +0800').getTime(),30], 
+                       [new Date('2021-08-17, 12:00 +0800').getTime(),30], 
+                       [new Date('2021-08-18, 12:00 +0800').getTime(),30], 
+                       [new Date('2021-08-19, 12:00 +0800').getTime(),30], 
+                       [new Date('2021-08-20, 12:00 +0800').getTime(),30], 
+                       [new Date('2021-08-21, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-22, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-23, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-24, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-25, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-26, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-27, 12:00 +0800').getTime(),30],
+                       [new Date('2021-08-28, 12:00 +0800').getTime(),30]]
               },
             //   {
             //     name: 'TEAM 2',
@@ -127,22 +169,34 @@ class WorryCategory extends React.Component {
               grid: {
                 xaxis: {
                   lines: {
-                    show: false
+                    show: false,
                   }
                 },
                 yaxis: {
                   lines: {
-                    show: false
+                    show: false,
                   }
                 },
               },
+              dataLabels: {
+                enabled: false,
+              },
               xaxis: {
                 type: 'datetime',
+                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                tickAmount: 1,
+                // labels: {
+                //   show: true,
+                // }
               },
               yaxis: {
-                max: 100,
+                max: 200,
                 show: false
               },
+              // legend: {
+              //   show: true,
+              // },
               markers: {
                 size: 12
               },
@@ -152,21 +206,36 @@ class WorryCategory extends React.Component {
                 image: {
                   src: ['images/worry_categories/family.png', 'images/worry_categories/friends.png', 'images/worry_categories/stranger.png', 
                   'images/worry_categories/school.png', 'images/worry_categories/health_safety.png', 'images/worry_categories/sports.png'],
-                  width: 20,
-                  height: 20
+                  width: 15,
+                  height: 15
                 }
               },
             },
             legend: {
-              labels: {
-                useSeriesColors: true
-              },
+              // labels: {
+              //   useSeriesColors: true
+              // },
+              // markers: {
+              //   size: 12
+              // },
+              // fill: {
+              //   type: 'image',
+              //   opacity: 1,
+              //   image: {
+              //     src: ['images/worry_categories/family.png', 'images/worry_categories/friends.png', 'images/worry_categories/stranger.png', 
+              //     'images/worry_categories/school.png', 'images/worry_categories/health_safety.png', 'images/worry_categories/sports.png'],
+              //     width: 15,
+              //     height: 15
+              //   }
+              // },
               markers: {
                 customHTML: [
                   function() {
-                    return ''
-                  }, function() {
-                    return ''
+                    return (
+                      <div>
+                        <img src="images/worry_categories/family.png" />
+                      </div>
+                    );
                   }
                 ]
               }

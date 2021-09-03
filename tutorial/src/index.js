@@ -16,12 +16,12 @@ import EmotionFrustated from './EmotionFrustated.js';
 import SymptomOccurence from './SymptomOccurence.js';
 import Emotion from './Emotions.js';
 import ExpectationReality from './ExpectationReality.js';
-import Sleep from './Sleep.js';
 import PeerWorry from './PeerInteractionWorry.js';
 import PeerQuality from './PeerInteractionQuality.js';
 import WorryCategory from './WorryCategory.js';
 import WorryCategoryDefault from './WorryCategoryDefault.js';
 import SchoolAttendance from './SchoolAttendance.js';
+//import Sleep from './Sleep.js';
 
 ReactDOM.render(
   <div>
@@ -37,8 +37,8 @@ ReactDOM.render(
   <PeerWorry />
   <PeerQuality />
   <Emotion />
-  {/* <Sleep />*/}
   <EmotionFrustated />
+  {/* <Sleep /> */}
   </div>,
   document.getElementById('root')
   //<ApexChart />

@@ -3,7 +3,8 @@ import Chart from "react-apexcharts";
 
 function generateData(count, yrange) {
     var i = 0;
-    var week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    var week = ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+    '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
     var series = [];
     while (i < count) {
       var x= week[i];
@@ -31,7 +32,7 @@ class WorryIntensity extends React.Component {
           series: [
           {
             name: 'Morning',
-            data: generateData(7, {
+            data: generateData(14, {
               min: 0,
               max: 100
             })
@@ -78,9 +79,18 @@ class WorryIntensity extends React.Component {
             chart: {
               height: 350,
               type: 'heatmap',
+              zoom: {
+                enabled: false
+              },
+              toolbar: {
+                show: false
+              }
             },
             dataLabels: {
               enabled: false
+            },
+            legend: {
+              show: true,
             },
             //colors: ["#E70E02"],
             title: {
@@ -97,7 +107,7 @@ class WorryIntensity extends React.Component {
     return (
         <div>
           <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={350} />
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={120} />
           </div>
           <div id="html-dist"></div>
         </div>

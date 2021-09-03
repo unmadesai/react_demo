@@ -3,14 +3,15 @@ import Chart from "react-apexcharts";
 
 function generateData(count, yrange) {
     var i = 0;
-    var week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    var week = ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
     var series = [];
     while (i < count) {
       var x= week[i];
         //var x = 'w' + (i + 1).toString();
       var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-    //   console.log(y);
-    //   if(y>=0 && y<=20) {
+      //   console.log(y);
+      //   if(y>=0 && y<=20) {
 
     //   }
       series.push({
@@ -30,21 +31,21 @@ class SymptomIntensity extends React.Component {
         
           series: [{
             name: 'Evening',
-            data: generateData(7, {
+            data: generateData(14, {
               min: 0,
               max: 100
             })
           },
           {
             name: 'Afternoon',
-            data: generateData(7, {
+            data: generateData(14, {
               min: 0,
               max: 100
             })
           },
           {
             name: 'Morning',
-            data: generateData(7, {
+            data: generateData(14, {
               min: 0,
               max: 100
             })
@@ -91,6 +92,12 @@ class SymptomIntensity extends React.Component {
             chart: {
               height: 350,
               type: 'heatmap',
+              zoom: {
+                enabled: false
+              },
+              toolbar: {
+                show: false
+              }
             },
             dataLabels: {
               enabled: false
@@ -110,7 +117,7 @@ class SymptomIntensity extends React.Component {
     return (
         <div>
           <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={350} />
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={200} />
           </div>
           <div id="html-dist"></div>
         </div>

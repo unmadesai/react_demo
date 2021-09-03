@@ -42,7 +42,7 @@ class Emotion extends React.Component {
           },
           {
             name: 'Happy',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),35,50),
+            data: dataGeneration(new Date('2021-08-16, 09:00 +0802').getTime(),38,50),
           },
           {
             name: 'Miserable',
@@ -50,15 +50,15 @@ class Emotion extends React.Component {
           },
           {
             name: 'Silly/Happier',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0805').getTime(),70,80),
+            data: dataGeneration(new Date('2021-08-16, 09:00 +0806').getTime(),60,80),
           },
           {
             name: 'Angry',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),70,60),
+            data: dataGeneration(new Date('2021-08-16, 09:00 +0803').getTime(),65,120),
           },
           {
             name: 'Frustrated',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0805').getTime(),30,80),
+            data: dataGeneration(new Date('2021-08-16, 09:00 +0805').getTime(),40,90),
           }
         ],
           options: {
@@ -76,25 +76,41 @@ class Emotion extends React.Component {
             title: {
                 text: 'Emotions Summarized'
             },
+            grid: {
+              xaxis: {
+                lines: {
+                  show: false,
+                }
+              },
+              yaxis: {
+                lines: {
+                  show: false,
+                }
+              },
+            },
             xaxis: {
                 //tickAmount: 6,
                 type: 'datetime',
-                lines: {
-                  show: false
-                }
+                min: "2021-08-16, 09:00 +0810",
+                max: "2021-08-16, 09:00 +0800",
+                show: false,
+                // lines: {
+                //   show: false
+                // }
             },
             yaxis: {
-                max: 100,
-                //enabled: false,
-                axisBorder: {
-                  show: false
-                },
-                axisTicks: {
-                  show: false,
-                },
-                lines: {
-                  show: false,
-                }
+                min:30,
+                max:70,
+                show: false,
+                // axisBorder: {
+                //   show: false
+                // },
+                // axisTicks: {
+                //   show: false,
+                // },
+                // lines: {
+                //   show: false,
+                // }
             }
           },
         
