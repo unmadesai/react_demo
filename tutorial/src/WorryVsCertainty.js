@@ -9,10 +9,10 @@ class WorryVsCertainty extends React.Component {
     
       series: [{
         name: 'How worried I was',
-        data: [56, 75, 82, 56, 64, 58, 50, 78, 65, 47, 58, 12, 41, 75]
+        data: [76,79,72,100,100,100,100,100,100,74,78,88,91,98]
       }, {
         name: 'How certain I was',
-        data: [76, 50, 22, 98, 55, 80, 91, 45, 58, 54, 10, 16, 67, 55]
+        data: [63,81,100,100,100,100,74,100,100,88,78,91,89,98]
       }],
       options: {
         title: {

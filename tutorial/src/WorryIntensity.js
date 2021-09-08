@@ -5,11 +5,13 @@ function generateData(count, yrange) {
     var i = 0;
     var week = ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
     '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
+    var intensity = [76,79,72,100,100,100,100,100,100,74,78,88,91,98];
     var series = [];
     while (i < count) {
       var x= week[i];
         //var x = 'w' + (i + 1).toString();
-      var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+      //var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+      var y = intensity[i];
     //   console.log(y);
     //   if(y>=0 && y<=20) {
 
