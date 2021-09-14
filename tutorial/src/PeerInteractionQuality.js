@@ -24,7 +24,7 @@ class PeerInteractionQuality extends React.Component {
                 //        //[new Date('2021-08-26, 09:00 +0800').getTime(),-40], 
                 //        //[new Date('2021-08-27, 09:00 +0800').getTime(),0],
                 //        [new Date('2021-08-28, 09:00 +0800').getTime(),40]]
-                       data: [20,20,20,,,,,,-20,20,,,,40]
+                       data: [20,20,20,,,,,-20,20,,,,,40]
               },
               {
                 name: 'Afternoon',

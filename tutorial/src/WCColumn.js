@@ -10,17 +10,17 @@ class WCColumn extends React.Component {
         {
           type: 'bar',
           name: 'How worried I was',
-          data: [44, 55, 41, 64, 22, 43, 21,58,52,65,32,18,84,22]
+          data: [76,79,72,100,100,100,100,100,100,74,78,88,91,98]
         }, 
         {
             type: 'bar',
             name: 'How certain I was',
-          data: [53, 32, 33, 52, 13, 44, 32,75,15,23,65,32,45,85]
+          data: [63,81,100,100,100,100,74,100,100,88,78,91,89,98]
         },
         {
             type: 'scatter',
             name: 'Did the event happen',
-          data: [95,,95,95,95,95,95,95,95,95,95,95,95,95]
+          data: [105,105,105,105,,,105,105,105,105,,105,105,105]
         }],
         options: {
           chart: {
