@@ -3,8 +3,10 @@ import Chart from "react-apexcharts";
 
 function generateData(count, yrange) {
     var i = 0;
-    var week = ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-    '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
+    // var week = ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+    // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
+    var week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
     var intensity = [76,79,72,100,100,100,100,100,100,74,78,88,91,98];
     var series = [];
     while (i < count) {
@@ -29,8 +31,7 @@ class WorryIntensity extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-        
+        this.state = {        
           series: [
           {
             name: 'Morning',
@@ -38,7 +39,7 @@ class WorryIntensity extends React.Component {
               min: 0,
               max: 100
             })
-          },
+          },          
           ],
           options: {
             plotOptions: {
@@ -79,8 +80,8 @@ class WorryIntensity extends React.Component {
                 }
               },
             chart: {
-              height: 350,
-              type: 'heatmap',
+              //height: 350,
+              //type: 'heatmap',
               zoom: {
                 enabled: false
               },
@@ -109,7 +110,7 @@ class WorryIntensity extends React.Component {
     return (
         <div>
           <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={120} />
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={120} style={{marginLeft: "1em", marginRight: "-0.5em"}}/>
           </div>
           <div id="html-dist"></div>
         </div>

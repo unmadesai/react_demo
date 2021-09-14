@@ -121,8 +121,10 @@ class EmotionFrustated extends React.Component {
                 },
               },
               xaxis: {
-                categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
               }
             },
           
@@ -168,8 +170,10 @@ class EmotionFrustated extends React.Component {
             //     },
             //   },
               xaxis: {
-                categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
               }
             },
             
@@ -215,8 +219,10 @@ class EmotionFrustated extends React.Component {
             //     },
             //   },
               xaxis: {
-                categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
               }
             },
 
@@ -262,8 +268,10 @@ class EmotionFrustated extends React.Component {
             //     },
             //   },
               xaxis: {
-                categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
               }
             },
 
@@ -309,8 +317,10 @@ class EmotionFrustated extends React.Component {
             //     },
             //   },
               xaxis: {
-                categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
               }
             },
 
@@ -359,8 +369,10 @@ class EmotionFrustated extends React.Component {
             //     },
             //   },
               xaxis: {
-                categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
               }
             },
 
@@ -374,8 +386,8 @@ class EmotionFrustated extends React.Component {
           return (
             
             <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="line" height={250} width={300}/>
-                <Chart options={this.state.options2} series={this.state.series2} type="line" height={250} width={300} />
+                <Chart options={this.state.options} series={this.state.series} type="line" height={250} width={300}
+                 options={this.state.options2} series={this.state.series2} type="line" height={250} width={300} />
                 <Chart options={this.state.options3} series={this.state.series3} type="line" height={250} width={300} />
                 <Chart options={this.state.options4} series={this.state.series4} type="line" height={250} width={300}/>
                 <Chart options={this.state.options5} series={this.state.series5} type="line" height={250} width={300}/>

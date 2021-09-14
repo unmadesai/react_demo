@@ -74,9 +74,11 @@ class Emotion extends React.Component {
                 opacity: 0.8
             },
             title: {
-                text: 'Emotions Summarized'
+                text: 'Emotions Summarized',
+                //offsetX: 40
             },
             grid: {
+              show: false,
               xaxis: {
                 lines: {
                   show: false,
@@ -89,10 +91,13 @@ class Emotion extends React.Component {
               },
             },
             xaxis: {
+                labels: {
+                  show:false,
+                },
                 //tickAmount: 6,
                 type: 'datetime',
-                min: "2021-08-16, 09:00 +0810",
-                max: "2021-08-16, 09:00 +0800",
+                // min: "2021-08-16, 09:00 +0810",
+                // max: "2021-08-16, 09:00 +0800",
                 show: false,
                 // lines: {
                 //   show: false
@@ -102,6 +107,9 @@ class Emotion extends React.Component {
                 min:30,
                 max:70,
                 show: false,
+                labels: {
+                  show:false,
+                },
                 // axisBorder: {
                 //   show: false
                 // },

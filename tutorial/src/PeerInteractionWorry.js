@@ -47,8 +47,10 @@ class PeerInteractionWorry extends React.Component {
           colors: ['transparent']
         },
         xaxis: {
-          categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-          '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+          // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+          // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+          categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+            'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
         },
         yaxis: {
           // title: {
@@ -77,7 +79,7 @@ class PeerInteractionWorry extends React.Component {
 render() {
     return (
         <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="bar" height={250}/>
+            <Chart options={this.state.options} series={this.state.series} type="bar" height={250} style={{marginLeft: "2em", marginRight: "0em" }}/>
         </div>
     );
   }

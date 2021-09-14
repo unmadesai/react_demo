@@ -22,58 +22,64 @@ class ExpectationReality extends React.Component {
         this.state = {
           
             series: [{
+              type:'scatter',
                 name: 'Morning',
                 colors: '#81A2EF',
-                data: [[new Date('2021-08-15, 09:00 +0800').getTime(),65],
-                       [new Date('2021-08-16, 09:00 +0800').getTime(),81], 
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),78], 
-                       [new Date('2021-08-18, 09:00 +0800').getTime(),100], 
-                       [new Date('2021-08-19, 09:00 +0800').getTime(),100], 
-                       [new Date('2021-08-20, 09:00 +0800').getTime(),100], 
-                       [new Date('2021-08-21, 09:00 +0800').getTime(),77],
-                       [new Date('2021-08-22, 09:00 +0800').getTime(),100],
-                       [new Date('2021-08-23, 09:00 +0800').getTime(),100],
-                       [new Date('2021-08-24, 09:00 +0800').getTime(),70],
-                       [new Date('2021-08-25, 09:00 +0800').getTime(),64],
-                       [new Date('2021-08-26, 09:00 +0800').getTime(),92],
-                       [new Date('2021-08-27, 09:00 +0800').getTime(),92],
-                       [new Date('2021-08-28, 09:00 +0800').getTime(),96]]
+                // data: [[new Date('2021-08-15, 09:00 +0800').getTime(),65],
+                //        [new Date('2021-08-16, 09:00 +0800').getTime(),81], 
+                //        [new Date('2021-08-17, 09:00 +0800').getTime(),78], 
+                //        [new Date('2021-08-18, 09:00 +0800').getTime(),100], 
+                //        [new Date('2021-08-19, 09:00 +0800').getTime(),100], 
+                //        [new Date('2021-08-20, 09:00 +0800').getTime(),100], 
+                //        [new Date('2021-08-21, 09:00 +0800').getTime(),77],
+                //        [new Date('2021-08-22, 09:00 +0800').getTime(),100],
+                //        [new Date('2021-08-23, 09:00 +0800').getTime(),100],
+                //        [new Date('2021-08-24, 09:00 +0800').getTime(),70],
+                //        [new Date('2021-08-25, 09:00 +0800').getTime(),64],
+                //        [new Date('2021-08-26, 09:00 +0800').getTime(),92],
+                //        [new Date('2021-08-27, 09:00 +0800').getTime(),92],
+                //        [new Date('2021-08-28, 09:00 +0800').getTime(),96]]
+                data: [65,81,78,100,100,100,77,100,100,70,64,92,92,96]
               },
               {
+                type: 'scatter',
                 name: 'Afternoon',
                 colors: '#2B61E4',
-                data: [[new Date('2021-08-15, 14:00 +0800').getTime(),69],
-                       [new Date('2021-08-16, 14:00 +0800').getTime(),63], 
-                       [new Date('2021-08-17, 14:00 +0800').getTime(),100], 
-                       [new Date('2021-08-18, 14:00 +0800').getTime(),63], 
-                       [new Date('2021-08-19, 14:00 +0800').getTime(),0], 
-                       [new Date('2021-08-20, 14:00 +0800').getTime(),0], 
-                       [new Date('2021-08-21, 14:00 +0800').getTime(),100],
-                       [new Date('2021-08-22, 14:00 +0800').getTime(),100],
-                       [new Date('2021-08-23, 14:00 +0800').getTime(),67],
-                       [new Date('2021-08-24, 14:00 +0800').getTime(),73],
-                       [new Date('2021-08-25, 14:00 +0800').getTime(),0],
-                       [new Date('2021-08-26, 14:00 +0800').getTime(),72],
-                       [new Date('2021-08-27, 14:00 +0800').getTime(),96],
-                       [new Date('2021-08-28, 14:00 +0800').getTime(),84]]
+                // data: [[new Date('2021-08-15, 14:00 +0800').getTime(),69],
+                //        [new Date('2021-08-16, 14:00 +0800').getTime(),63], 
+                //        [new Date('2021-08-17, 14:00 +0800').getTime(),100], 
+                //        [new Date('2021-08-18, 14:00 +0800').getTime(),63], 
+                //        [new Date('2021-08-19, 14:00 +0800').getTime(),0], 
+                //        [new Date('2021-08-20, 14:00 +0800').getTime(),0], 
+                //        [new Date('2021-08-21, 14:00 +0800').getTime(),100],
+                //        [new Date('2021-08-22, 14:00 +0800').getTime(),100],
+                //        [new Date('2021-08-23, 14:00 +0800').getTime(),67],
+                //        [new Date('2021-08-24, 14:00 +0800').getTime(),73],
+                //        [new Date('2021-08-25, 14:00 +0800').getTime(),0],
+                //        [new Date('2021-08-26, 14:00 +0800').getTime(),72],
+                //        [new Date('2021-08-27, 14:00 +0800').getTime(),96],
+                //        [new Date('2021-08-28, 14:00 +0800').getTime(),84]]
+                data: [65,81,78,100,100,100,77,100,100,70,64,92,92,96]
               },
               {
+                type: 'scatter',
                 name: 'Evening',
                 colors: '#2B61E4',
-                data: [[new Date('2021-08-15, 19:00 +0800').getTime(),75],
-                       [new Date('2021-08-16, 19:00 +0800').getTime(),70], 
-                       [new Date('2021-08-17, 19:00 +0800').getTime(),100], 
-                       [new Date('2021-08-18, 19:00 +0800').getTime(),96], 
-                       [new Date('2021-08-19, 19:00 +0800').getTime(),91], 
-                       [new Date('2021-08-20, 19:00 +0800').getTime(),72], 
-                       [new Date('2021-08-21, 19:00 +0800').getTime(),100],
-                       [new Date('2021-08-22, 19:00 +0800').getTime(),100],
-                       [new Date('2021-08-23, 19:00 +0800').getTime(),84],
-                       [new Date('2021-08-24, 19:00 +0800').getTime(),62],
-                       [new Date('2021-08-25, 19:00 +0800').getTime(),0],
-                       [new Date('2021-08-26, 19:00 +0800').getTime(),88],
-                       [new Date('2021-08-27, 19:00 +0800').getTime(),96],
-                       [new Date('2021-08-28, 19:00 +0800').getTime(),0]]
+                // data: [[new Date('2021-08-15, 19:00 +0800').getTime(),75],
+                //        [new Date('2021-08-16, 19:00 +0800').getTime(),70], 
+                //        [new Date('2021-08-17, 19:00 +0800').getTime(),100], 
+                //        [new Date('2021-08-18, 19:00 +0800').getTime(),96], 
+                //        [new Date('2021-08-19, 19:00 +0800').getTime(),91], 
+                //        [new Date('2021-08-20, 19:00 +0800').getTime(),72], 
+                //        [new Date('2021-08-21, 19:00 +0800').getTime(),100],
+                //        [new Date('2021-08-22, 19:00 +0800').getTime(),100],
+                //        [new Date('2021-08-23, 19:00 +0800').getTime(),84],
+                //        [new Date('2021-08-24, 19:00 +0800').getTime(),62],
+                //        [new Date('2021-08-25, 19:00 +0800').getTime(),0],
+                //        [new Date('2021-08-26, 19:00 +0800').getTime(),88],
+                //        [new Date('2021-08-27, 19:00 +0800').getTime(),96],
+                //        [new Date('2021-08-28, 19:00 +0800').getTime(),0]]
+                data: [65,81,100,77,100,100,70,64,92,78,100,100,92,96]
               },
             //   {
             //     name: 'TEAM 2',
@@ -98,7 +104,7 @@ class ExpectationReality extends React.Component {
               },
               chart: {
                 height: 350,
-                type: 'scatter',
+                //type: 'scatter',
                 zoom: {
                   enabled: false
                 },
@@ -123,7 +129,17 @@ class ExpectationReality extends React.Component {
                 },
               },
               xaxis: {
-                type: 'datetime',
+                //type: 'datetime',
+                type: 'category',
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+            'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                datetimeUTC: false,
+                axisTicks:{
+                    show: true,
+                },
+                //tickAmount: 1,
+                tickPlacement: 'on'
+
               },
               yaxis: {
                 max: 100
@@ -139,7 +155,7 @@ class ExpectationReality extends React.Component {
 render() {
   return (
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} />
+          <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} style={{marginLeft: "2em", marginRight: "0em" }}/>
       </div>
   );
 }

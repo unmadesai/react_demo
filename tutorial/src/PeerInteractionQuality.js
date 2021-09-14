@@ -10,56 +10,59 @@ class PeerInteractionQuality extends React.Component {
             series: [{
                 name: 'Morning',
                 colors: '#81A2EF',
-                data: [[new Date('2021-08-15, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-16, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),20], 
-                       //[new Date('2021-08-18, 09:00 +0800').getTime(),0], 
-                       //[new Date('2021-08-19, 09:00 +0800').getTime(),-40], 
-                       //[new Date('2021-08-20, 09:00 +0800').getTime(),20],
-                       //[new Date('2021-08-21, 09:00 +0800').getTime(),-40],
-                       [new Date('2021-08-22, 09:00 +0800').getTime(),-20], 
-                       [new Date('2021-08-23, 09:00 +0800').getTime(),20], 
-                       //[new Date('2021-08-24, 09:00 +0800').getTime(),0], 
-                       //[new Date('2021-08-25, 09:00 +0800').getTime(),-20], 
-                       //[new Date('2021-08-26, 09:00 +0800').getTime(),-40], 
-                       //[new Date('2021-08-27, 09:00 +0800').getTime(),0],
-                       [new Date('2021-08-28, 09:00 +0800').getTime(),40]]
+                // data: [[new Date('2021-08-15, 09:00 +0800').getTime(),20], 
+                //        [new Date('2021-08-16, 09:00 +0800').getTime(),20], 
+                //        [new Date('2021-08-17, 09:00 +0800').getTime(),20], 
+                //        //[new Date('2021-08-18, 09:00 +0800').getTime(),0], 
+                //        //[new Date('2021-08-19, 09:00 +0800').getTime(),-40], 
+                //        //[new Date('2021-08-20, 09:00 +0800').getTime(),20],
+                //        //[new Date('2021-08-21, 09:00 +0800').getTime(),-40],
+                //        [new Date('2021-08-22, 09:00 +0800').getTime(),-20], 
+                //        [new Date('2021-08-23, 09:00 +0800').getTime(),20], 
+                //        //[new Date('2021-08-24, 09:00 +0800').getTime(),0], 
+                //        //[new Date('2021-08-25, 09:00 +0800').getTime(),-20], 
+                //        //[new Date('2021-08-26, 09:00 +0800').getTime(),-40], 
+                //        //[new Date('2021-08-27, 09:00 +0800').getTime(),0],
+                //        [new Date('2021-08-28, 09:00 +0800').getTime(),40]]
+                       data: [20,20,20,,,,,,-20,20,,,,40]
               },
               {
                 name: 'Afternoon',
                 colors: '#2B61E4',
-                data: [[new Date('2021-08-15, 14:00 +0800').getTime(),20], 
-                [new Date('2021-08-16, 14:00 +0800').getTime(),20], 
-                //[new Date('2021-08-17, 14:00 +0800').getTime(),20], 
-                //[new Date('2021-08-18, 14:00 +0800').getTime(),40], 
-                [new Date('2021-08-19, 14:00 +0800').getTime(),20], 
-                [new Date('2021-08-20, 14:00 +0800').getTime(),-40],
-                [new Date('2021-08-21, 14:00 +0800').getTime(),40],
-                //[new Date('2021-08-22, 14:00 +0800').getTime(),-20], 
-                //[new Date('2021-08-23, 14:00 +0800').getTime(),-20], 
-                //[new Date('2021-08-24, 14:00 +0800').getTime(),40], 
-                //[new Date('2021-08-25, 14:00 +0800').getTime(),20], 
-                [new Date('2021-08-26, 14:00 +0800').getTime(),20], 
-                [new Date('2021-08-27, 14:00 +0800').getTime(),20],
-                [new Date('2021-08-28, 14:00 +0800').getTime(),20]]
+                // data: [[new Date('2021-08-15, 14:00 +0800').getTime(),20], 
+                // [new Date('2021-08-16, 14:00 +0800').getTime(),20], 
+                // //[new Date('2021-08-17, 14:00 +0800').getTime(),20], 
+                // //[new Date('2021-08-18, 14:00 +0800').getTime(),40], 
+                // [new Date('2021-08-19, 14:00 +0800').getTime(),20], 
+                // [new Date('2021-08-20, 14:00 +0800').getTime(),-40],
+                // [new Date('2021-08-21, 14:00 +0800').getTime(),40],
+                // //[new Date('2021-08-22, 14:00 +0800').getTime(),-20], 
+                // //[new Date('2021-08-23, 14:00 +0800').getTime(),-20], 
+                // //[new Date('2021-08-24, 14:00 +0800').getTime(),40], 
+                // //[new Date('2021-08-25, 14:00 +0800').getTime(),20], 
+                // [new Date('2021-08-26, 14:00 +0800').getTime(),20], 
+                // [new Date('2021-08-27, 14:00 +0800').getTime(),20],
+                // [new Date('2021-08-28, 14:00 +0800').getTime(),20]]
+                data: [20,20,,,20,-40,40,,,,,20,20,20]
               },
               {
                 name: 'Evening',
                 colors: '#2B61E4',
-                data: [[new Date('2021-08-15, 19:00 +0800').getTime(),20], 
-                [new Date('2021-08-16, 19:00 +0800').getTime(),20], 
-                //[new Date('2021-08-17, 19:00 +0800').getTime(),0], 
-                //[new Date('2021-08-18, 19:00 +0800').getTime(),20], 
-                [new Date('2021-08-19, 19:00 +0800').getTime(),-20], 
-                [new Date('2021-08-20, 19:00 +0800').getTime(),20],
-                //[new Date('2021-08-21, 19:00 +0800').getTime(),40],
-                //[new Date('2021-08-22, 19:00 +0800').getTime(),-20], 
-                [new Date('2021-08-23, 19:00 +0800').getTime(),20], 
-                //[new Date('2021-08-24, 19:00 +0800').getTime(),20], 
-                //[new Date('2021-08-25, 19:00 +0800').getTime(),40], 
-                //[new Date('2021-08-26, 19:00 +0800').getTime(),40], 
-                [new Date('2021-08-27, 19:00 +0800').getTime(),20],
-                [new Date('2021-08-28, 19:00 +0800').getTime(),20]]
+                // data: [[new Date('2021-08-15, 19:00 +0800').getTime(),20], 
+                // [new Date('2021-08-16, 19:00 +0800').getTime(),20], 
+                // //[new Date('2021-08-17, 19:00 +0800').getTime(),0], 
+                // //[new Date('2021-08-18, 19:00 +0800').getTime(),20], 
+                // [new Date('2021-08-19, 19:00 +0800').getTime(),-20], 
+                // [new Date('2021-08-20, 19:00 +0800').getTime(),20],
+                // //[new Date('2021-08-21, 19:00 +0800').getTime(),40],
+                // //[new Date('2021-08-22, 19:00 +0800').getTime(),-20], 
+                // [new Date('2021-08-23, 19:00 +0800').getTime(),20], 
+                // //[new Date('2021-08-24, 19:00 +0800').getTime(),20], 
+                // //[new Date('2021-08-25, 19:00 +0800').getTime(),40], 
+                // //[new Date('2021-08-26, 19:00 +0800').getTime(),40], 
+                // [new Date('2021-08-27, 19:00 +0800').getTime(),20],
+                // [new Date('2021-08-28, 19:00 +0800').getTime(),20]]
+                data: [20,20,,,-20,20,,20,,,20,20,,]
               },
             //   {
             //     name: 'TEAM 2',
@@ -81,6 +84,7 @@ class PeerInteractionQuality extends React.Component {
             options: {
               title: {
                 text: "Peer Interaction Quality",
+                offsetX: 40
               },
               chart: {
                 height: 350,
@@ -109,7 +113,15 @@ class PeerInteractionQuality extends React.Component {
                 },
               },
               xaxis: {
-                type: 'datetime',
+                //type: 'datetime',
+                type: 'category',
+                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+            'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                datetimeUTC: false,
+                axisTicks:{
+                    show: true,
+                },
+                tickPlacement: 'on'
               },
               yaxis: {
                 labels: {
@@ -143,7 +155,7 @@ class PeerInteractionQuality extends React.Component {
 render() {
   return (
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} />
+          <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} style={{marginLeft: "-0.8em", marginRight: "0em" }}/>
       </div>
   );
 }

@@ -16,8 +16,8 @@ class SymptomOccurence extends React.Component {
                           x: 'Headache',
                           y: [
                             //sunday morning
-                            new Date('2021-08-15, 09:00').getTime(),
-                            new Date('2021-08-15, 13:00').getTime(),
+                            new Date('Sun, 09:00').getTime(),
+                            new Date('Sun, 13:00').getTime(),
                           ]
                         },
                         //headache afternoon
@@ -2762,7 +2762,7 @@ class SymptomOccurence extends React.Component {
       render() {
         return (
             <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="rangeBar" height={200} width={870}/>
+                <Chart options={this.state.options} series={this.state.series} type="rangeBar" height={200} width={800} style={{marginRight: "2em" }}/>
             </div>
         );
       }

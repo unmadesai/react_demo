@@ -5,8 +5,10 @@ import Chart from "react-apexcharts";
 
 function generateData(time, count, yrange) {
     var i = 0;
-    var week = ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
+    var week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+
+    //data to be changed
     var intensityM = [56,61,25,37,58,48,36,0,27,0,88,0,78,20];
     var intensityA = [25,57,0,29,54,45,42,0,77,33,0,0,92,12];
     var intensityE = [58,20,77,88,10,18,55,27,49,52,18,36,66,98];
@@ -66,10 +68,16 @@ class SymptomIntensity extends React.Component {
               max: 100
             })
           },
+          // {
+          //   type: 'scatter',
+          //   name: 'Did the event happen',
+          //   data: [95,,95,95,95,95,95,95,95,95,95,95,95,95]
+          // }
           ],
           options: {
             plotOptions: {
                 heatmap: {
+                 // useFillColorAsStroke: false,
                   colorScale: {
                     ranges: [{
                         from: 0,
@@ -107,21 +115,64 @@ class SymptomIntensity extends React.Component {
               },
             chart: {
               height: 350,
-              type: 'heatmap',
+              //type: 'area',
+              //stacked:true,
               zoom: {
                 enabled: false
               },
               toolbar: {
                 show: false
-              }
+              },
+              // sparkline: {
+              //   enabled: true
+              // }
+              // margin: {
+              //   bottom: -2,
+              // }
+              // grid: {
+              //   padding: {
+              //     left: 0,
+              //     right: 0
+              //   }
+              // }
+            },
+            legend: {
+              horizontalAlign: 'center',
+              // margin: {
+              //   top: -10,
+              // }
+              
             },
             dataLabels: {
               enabled: false
             },
             //colors: ["#E70E02"],
             title: {
-              text: 'Intensity of symptoms'
+             text: 'Intensity of symptoms',
+              horizontalAlign: 'center',
+              // style: {
+              //   marginLeft: "1.8em",
+              //   marginBottom: "-2em" 
+              // } 
+              // margin: {
+              //   bottom: 0.2,
+              // }
             },
+            // markers: {
+            //   size: [0, 0, 0, 10],
+            //   strokeWidth: 0,
+            //   hover: {
+            //     sizeOffset: 0
+            //   }
+            // },
+            // fill: {
+            //   type: ['solid', 'solid', 'solid', 'image'],
+            //   image: {
+            //       src: ['images/worry_certainty/check.png'],
+            //       width: 15,
+            //       height: 15
+            //     }
+            // }
           },
         
         
@@ -133,7 +184,8 @@ class SymptomIntensity extends React.Component {
     return (
         <div>
           <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={200} />
+           
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={200} style={{marginLeft: "1em", marginRight: "-0.5em" }} />
           </div>
           <div id="html-dist"></div>
         </div>

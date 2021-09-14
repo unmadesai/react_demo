@@ -21,21 +21,28 @@ import PeerQuality from './PeerInteractionQuality.js';
 import WorryCategory from './WorryCategory.js';
 import WorryCategoryDefault from './WorryCategoryDefault.js';
 import SchoolAttendance from './SchoolAttendance.js';
+import SymptomOccNew from './SymptomOccurenceNew.js';
+import WCColumn from './WCColumn.js';
+import EmotionsBubbleNew from './EmotionBubbleNew.js';
+
 //import Sleep from './Sleep.js';
 
 ReactDOM.render(
   <div>
   {/* //<App />, */}
   <SymptomIntensity />
-  <SymptomOccurence />
+  <SymptomOccNew />
+  {/* <SymptomOccurence /> */}
   <WorryIntensity />
-  <WorryVsCertainty />
+  {/* <WorryVsCertainty /> */}
+  <WCColumn />
   <ExpectationReality />
   <WorryCategory />
   <SchoolAttendance />
   {/* <WorryCategoryDefault /> */}
   <PeerWorry />
   <PeerQuality />
+  {/* <EmotionsBubbleNew /> */}
   <Emotion />
   <EmotionFrustated />
   {/* <Sleep /> */}
