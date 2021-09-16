@@ -101,7 +101,7 @@ class WCColumn extends React.Component {
         return (
             <div>
               <div id="chart">               
-                <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "2em", marginRight: "0em" }} />
+                <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "2.8em", marginRight: "0em" }} />
               </div>
               <div id="html-dist"></div>
             </div>

@@ -40,10 +40,34 @@ body {
     margin-left: 2em;
 }
 
+#worry_category {
+    margin-left: 5.6em;
+    /* margin-bottom: -2.5em; */
+}
+
+#worry_category th {
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+} 
+
+#worryxaxisd td {
+    font-family:  Calibri,  sans-serif ;
+    font-size: 16px;
+    padding: 8.6px;
+}
+
+#worryxaxisd {
+    margin-left: 5.7em;
+    margin-top: -0.5em;
+}
+
+
+
 #avoidance {
     margin-left: 5.6em;
     margin-bottom: -2.5em;
 }
+
 
 #occurence {
     margin-left: 5.8em;
@@ -58,6 +82,19 @@ body {
 #avoidance th {
     padding: 8.5px;
 } 
+
+#expvsrel {
+    margin-left: 5.6em;
+    margin-top: -2em;
+}
+
+#expvsrel td {    
+    font-family:  Calibri,  sans-serif ;
+    font-size: 16px;
+    padding: 8.6px;
+    
+}
+
 /* 
 table {
     border-spacing: 21.5px 0;

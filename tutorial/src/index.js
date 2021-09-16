@@ -24,6 +24,7 @@ import SchoolAttendance from './SchoolAttendance.js';
 import SymptomOccNew from './SymptomOccurenceNew.js';
 import WCColumn from './WCColumn.js';
 import EmotionsBubbleNew from './EmotionBubbleNew.js';
+import ERNew from './ERNew.js';
 
 //import Sleep from './Sleep.js';
 import './index.css';
@@ -43,43 +44,59 @@ ReactDOM.render(
     </div> */}
     <div class="">
       {/* //<App />, */}
+        <br></br>
         <SymptomIntensity />
     </div>
     <div class="">
+        <br></br>
         <h4 class="charttitle"> Intensity of worries</h4>
         <SymptomOccNew />
     </div>
       {/* <SymptomOccurence /> */}
     <div class="">
+      <br></br>
       <h4 class="charttitle"> Intensity of worries</h4>
       <WorryIntensity />
     </div>
      {/* <WorryVsCertainty /> */}
     <div class="">
+       <br></br>
        <WCColumn />
     </div>
-    <div class="">
+    {/* <div class="">
       <ExpectationReality />
+    </div> */}
+    <div class="">
+      <br></br>
+      <ERNew />
     </div>
     <div class="">
+      <br></br>
+      <h4 class="charttitle"> Category of worries</h4>
       <WorryCategory />
     </div>
     <div class="">
+      <br></br>
+      <h4 class="charttitle"> School attendance</h4>
       <SchoolAttendance />
     </div>
       {/* <WorryCategoryDefault /> */}
     <div class="">
+      <br></br>
       <PeerWorry />
     </div>
    <div class="">
+       <br></br>
       <PeerQuality />
    </div>
   {/* <EmotionsBubbleNew /> */}
    <div class="">
-     <Emotion />
+      <br></br>
+      <Emotion />
     </div>
     <div class="">
-      <EmotionFrustated />
+        <br></br>
+        <EmotionFrustated />
      </div>
   {/* <Sleep /> */}
 </div>,

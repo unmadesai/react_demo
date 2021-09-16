@@ -277,7 +277,68 @@ class SchoolAttendance extends React.Component {
 render() {
   return (
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="scatter" height={200} style={{marginLeft: "4em", marginRight: "0.6em" }}/>
+        <div id="worry_category"> 
+              <table>
+                {/* Present/Absent */}
+                <tr>
+                  {/* <!-- comment out if not on that day --> */}
+                  <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>            
+                </tr>
+                {/* Reason for absence */}
+                <tr>
+                  {/* <!-- comment out if not on that day --> */}
+                  <th><img src='images/school_attendance/weekend.png' height='15px' width='15px'></img></th>
+                  <th><img src='imagesworry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/doctor_appt.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/online_learning.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/weekend.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/weekend.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/school_holiday.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/weekend.png' height='15px' width='15px'></img></th>            
+                </tr>
+              </table>
+            </div>
+            <div id="worryxaxisd">
+              <table>
+                <tr>
+                  <td>Sun</td>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>
+                  <td>Sun</td>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>                         
+                </tr>
+              </table>
+            </div>
+          {/* <Chart options={this.state.options} series={this.state.series} type="scatter" 
+                height={200} style={{marginLeft: "4em", marginRight: "0.6em" }}/> */}
       </div>
   );
 }
