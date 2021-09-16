@@ -6,10 +6,10 @@ import Chart from "react-apexcharts";
 function generateData(time, count, yrange) {
     var i = 0;
     var week = ['', 'Sun', '', '', 'Mon', '', '', 
-                'Tues', '', '', 'Wed', '', '', 'Thurs',
+                'Tue', '', '', 'Wed', '', '', 'Thu',
                  '', '', 'Fri', '', '', 'Sat', '', 
                  '', 'Sun', '', '', 'Mon', '', '',
-                 'Tues', '', '', 'Wed', '', '', 'Thurs', 
+                 'Tue', '', '', 'Wed', '', '', 'Thu', 
                  '', '', 'Fri', '', '', 'Sat', ''
               ];
     // var week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
