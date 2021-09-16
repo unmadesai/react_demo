@@ -411,6 +411,47 @@ render() {
               </table>
             </div>
 
+          <div>
+              <table style={{marginLeft: "6em", marginTop: "0.5em"}}>
+                  <tr>
+                      {/* <td style={{display: "inline-block", whiteSpace: "nowrap"}}> */}
+                      <td class="worrylabel">
+                      {/* <figure>
+                          <img  src='images/worry_categories/sports.png' height='15px' width='15px' />
+                          <figcaption>Your label goes here</figcaption>
+                      </figure> */}
+                         {/* <span style={{float: "left", marginLeft: "0em"}}>
+                            <img src='images/worry_categories/sports.png' height='15px' width='15px' />
+                          </span>
+                          <span style={{float: "right", marginLeft: "2em"}}> */}
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/family.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Family </p>
+                        </td>
+                        <td class="worrylabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/friends.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Friends </p>
+                        </td>
+                        <td class="worrylabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/health_safety.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Health </p>
+                        </td>
+                        <td class="worrylabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/school.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> School </p>
+                        </td>
+                        <td class="worrylabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/sports.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Sports </p>
+                        </td>
+                        <td class="worrylabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/stranger.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Stranger </p>                
+                          {/* </span>          */}
+                      </td>
+                  </tr>
+              </table>
+          </div>
+
           {/* <Chart options={this.state.options} series={this.state.series} type="scatter" 
               height={200} style={{marginLeft: "4em", marginRight: "0.6em" }}/> */}
       </div>

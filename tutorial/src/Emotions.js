@@ -36,37 +36,74 @@ class Emotion extends React.Component {
 
         this.state = {
         
-          series: [{
-            name: 'Worried/Scared',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0802').getTime(),50,60),
-          },
-          {
-            name: 'Happy',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0802').getTime(),38,50),
-          },
-          {
-            name: 'Miserable',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0808').getTime(),50,80),
-          },
-          {
-            name: 'Silly/Happier',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0806').getTime(),60,80),
-          },
-          {
-            name: 'Angry',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0803').getTime(),65,80),
-          },
-          {
-            name: 'Frustrated',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0805').getTime(),40,90),
-          }
-        ],
+        //   series: [{
+        //     name: 'Worried/Scared',
+        //     data: dataGeneration(new Date('2021-08-16, 09:00 +0802').getTime(),50,60),
+        //   },
+        //   {
+        //     name: 'Happy',
+        //     data: dataGeneration(new Date('2021-08-16, 09:00 +0802').getTime(),38,50),
+        //   },
+        //   {
+        //     name: 'Miserable',
+        //     data: dataGeneration(new Date('2021-08-16, 09:00 +0808').getTime(),50,80),
+        //   },
+        //   // {
+        //   //   name: 'Silly/Happier',
+        //   //   data: dataGeneration(new Date('2021-08-16, 09:00 +0806').getTime(),60,80),
+        //   // },
+        //   {
+        //     name: 'Angry',
+        //     data: dataGeneration(new Date('2021-08-16, 09:00 +0803').getTime(),65,80),
+        //   },
+        //   {
+        //     name: 'Frustrated',
+        //     data: dataGeneration(new Date('2021-08-16, 09:00 +0805').getTime(),40,90),
+        //   }
+        // ],
+
+
+        series: [{
+          name: 'Worried/Scared',
+          data: dataGeneration(15,70,60),
+        },
+        {
+          name: 'Happy',
+          data: dataGeneration(30,40,60),
+        },
+        {
+          name: 'Miserable',
+          data: dataGeneration(60,30,60),
+        },
+        // {
+        //   name: 'Silly/Happier',
+        //   data: dataGeneration(new Date('2021-08-16, 09:00 +0806').getTime(),60,80),
+        // },
+        {
+          name: 'Angry',
+          data: dataGeneration(50,70,80),
+        },
+        {
+          name: 'Frustrated',
+          data: dataGeneration(80,75,60),
+        }
+      ],
+
+
+
           options: {
             chart: {
                 //height: 350,
                 type: 'bubble',
+                background: '#ffffff',
+                zoom: {
+                  enabled: false
+                },
+                toolbar: {
+                  show: false
+                },
             },
-            colors: ['#FAC52B','#F5189A','#2B41E4','#0BB34F','#F5180D','#CD5213'],
+            colors: ['#FAC52B','#F5189A','#2B41E4','#F5180D','#CD5213'],
             dataLabels: {
                 enabled: false
             },
@@ -78,7 +115,7 @@ class Emotion extends React.Component {
                 //offsetX: 40
             },
             grid: {
-              show: false,
+              //show: true,
               xaxis: {
                 lines: {
                   show: false,
@@ -91,22 +128,24 @@ class Emotion extends React.Component {
               },
             },
             xaxis: {
+                min: 0,
+                max:100,
                 labels: {
                   show:false,
                 },
                 //tickAmount: 6,
-                type: 'datetime',
+                type: 'numeric',
                 // min: "2021-08-16, 09:00 +0810",
                 // max: "2021-08-16, 09:00 +0800",
-                show: false,
+                //show: false,
                 // lines: {
                 //   show: false
                 // }
             },
             yaxis: {
-                min:30,
-                max:70,
-                show: false,
+                min:10,
+                max:100,
+                //show: true,
                 labels: {
                   show:false,
                 },
@@ -131,7 +170,7 @@ class Emotion extends React.Component {
       render() {
         return (
             <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="bubble" height={500} width={350}/>
+                <Chart options={this.state.options} series={this.state.series} type="bubble" height={500} width={650}/>
             </div>
         );
       }

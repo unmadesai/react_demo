@@ -25,6 +25,7 @@ import SymptomOccNew from './SymptomOccurenceNew.js';
 import WCColumn from './WCColumn.js';
 import EmotionsBubbleNew from './EmotionBubbleNew.js';
 import ERNew from './ERNew.js';
+import PeerInteractionQualityNew from './PeerInteractionQualityNew.js';
 
 //import Sleep from './Sleep.js';
 import './index.css';
@@ -49,7 +50,7 @@ ReactDOM.render(
     </div>
     <div class="">
         <br></br>
-        <h4 class="charttitle"> Intensity of worries</h4>
+        <h4 class="charttitle"> Symptom Occurence</h4>
         <SymptomOccNew />
     </div>
       {/* <SymptomOccurence /> */}
@@ -87,7 +88,8 @@ ReactDOM.render(
     </div>
    <div class="">
        <br></br>
-      <PeerQuality />
+      {/* <PeerQuality /> */}
+      <PeerInteractionQualityNew />
    </div>
   {/* <EmotionsBubbleNew /> */}
    <div class="">

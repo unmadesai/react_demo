@@ -301,7 +301,7 @@ render() {
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
                   <th><img src='images/school_attendance/weekend.png' height='15px' width='15px'></img></th>
-                  <th><img src='imagesworry_intensity/blank-03.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
                   <th><img src='images/school_attendance/doctor_appt.png' height='15px' width='15px'></img></th>
                   <th><img src='images/school_attendance/online_learning.png' height='15px' width='15px'></img></th>
@@ -309,7 +309,7 @@ render() {
                   <th><img src='images/school_attendance/weekend.png' height='15px' width='15px'></img></th>
                   <th><img src='images/school_attendance/weekend.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_intensity/school_holiday.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/school_attendance/school_holiday.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_intensity/blank-03.png' height='15px' width='15px'></img></th>
@@ -337,6 +337,40 @@ render() {
                 </tr>
               </table>
             </div>
+            <div>
+              <table style={{marginLeft: "6em", marginTop: "0.5em"}}>
+                  <tr>
+                      <td class="attendancelabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/doctor_appt.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Doctor</p>
+                        </td>
+                        <td class="attendancelabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/home_schooled.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Home-schooled</p>
+                        </td>
+                        <td class="attendancelabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/home_sick.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Sick</p>
+                        </td>
+                        <td class="attendancelabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/online_learning.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Online</p>
+                        </td>
+                        <td class="attendancelabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/school_holiday.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Holiday</p>
+                        </td>
+                        <td class="attendancelabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/summer_vacation.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Vacation</p>                
+                      </td>
+                      <td class="attendancelabel">
+                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/weekend.png' height='15px' width='15px' 
+                                style={{verticalAlign: "middle"}}/> Weekend </p>                
+                      </td>
+                  </tr>
+              </table>
+          </div>
           {/* <Chart options={this.state.options} series={this.state.series} type="scatter" 
                 height={200} style={{marginLeft: "4em", marginRight: "0.6em" }}/> */}
       </div>

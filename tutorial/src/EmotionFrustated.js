@@ -95,7 +95,8 @@ class EmotionFrustated extends React.Component {
                 },
                 toolbar: {
                   show: false
-                }
+                },
+                background: '#ffffff',
               },
               yaxis: {
                 min: 0,
@@ -124,8 +125,10 @@ class EmotionFrustated extends React.Component {
               xaxis: {
                 // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
                 // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
-                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                // categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                // 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                categories: ['Su', 'M', 'T', 'W', 'Th', 'F', 'S', 
+                 'Su', 'M', 'T', 'W', 'Th', 'F', 'S'],
               }
             },
           
@@ -145,7 +148,8 @@ class EmotionFrustated extends React.Component {
                 },
                 toolbar: {
                   show: false
-                }
+                },
+                background: '#ffffff',
               },
               yaxis: {
                 min: 0,
@@ -174,8 +178,10 @@ class EmotionFrustated extends React.Component {
               xaxis: {
                 // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
                 // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
-                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                // categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                // 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                categories: ['Su', 'M', 'T', 'W', 'Th', 'F', 'S', 
+                 'Su', 'M', 'T', 'W', 'Th', 'F', 'S'],
               }
             },
             
@@ -195,7 +201,8 @@ class EmotionFrustated extends React.Component {
                 },
                 toolbar: {
                   show: false
-                }
+                },
+                background: '#ffffff',
               },
               yaxis: {
                 min: 0,
@@ -224,8 +231,10 @@ class EmotionFrustated extends React.Component {
               xaxis: {
                 // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
                 // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
-                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                // categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                // 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                categories: ['Su', 'M', 'T', 'W', 'Th', 'F', 'S', 
+                 'Su', 'M', 'T', 'W', 'Th', 'F', 'S'],
               }
             },
 
@@ -245,7 +254,8 @@ class EmotionFrustated extends React.Component {
                 },
                 toolbar: {
                   show: false
-                }
+                },
+                background: '#ffffff',
               },
               yaxis: {
                 min: 0,
@@ -274,60 +284,63 @@ class EmotionFrustated extends React.Component {
               xaxis: {
                 // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
                 // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
-                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                // categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                // 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                categories: ['Su', 'M', 'T', 'W', 'Th', 'F', 'S', 
+                 'Su', 'M', 'T', 'W', 'Th', 'F', 'S'],
               }
+
             },
 
             //Emotion 5 Silly/Happier (Green)
-            series5: [{
-                name: "Silly/Happier than usual",
-               // data: generateData(5)
-               //data: [18,44,0,25,0,0,21,0,0,2,1,3,3,3]
-               data: [0,5,4,64,0,0,26,50,0,50,50,0,0,50]
-            } ],
-            options5: {
-              chart: {
-                height: 350,
-                type: 'line',
-                zoom: {
-                  enabled: false
-                },
-                toolbar: {
-                  show: false
-                }
-              },
-              yaxis: {
-                min: 0,
-                max: 100,
-                tickAmount: 5,
-              },
-              dataLabels: {
-                enabled: false
-              },
-              colors: ['#0BB34F'],
-              stroke: {
-                curve: 'straight',
-                width: 3,
-                //colors: ['#CD5213', 'transparent'],
-              },
-              title: {
-                text: 'Emotion: Silly/Happier than usual',
-                align: 'left'
-              },
-            //   grid: {
-            //     row: {
-            //       //colors: ['#CD5213', 'transparent'], // takes an array which will be repeated on columns
-            //       opacity: 0.5
+            // series5: [{
+            //     name: "Silly/Happier than usual",
+            //    // data: generateData(5)
+            //    //data: [18,44,0,25,0,0,21,0,0,2,1,3,3,3]
+            //    data: [0,5,4,64,0,0,26,50,0,50,50,0,0,50]
+            // } ],
+            // options5: {
+            //   chart: {
+            //     height: 350,
+            //     type: 'line',
+            //     zoom: {
+            //       enabled: false
             //     },
+            //     toolbar: {
+            //       show: false
+            //     }
             //   },
-              xaxis: {
-                // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-                // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
-                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
-              }
-            },
+            //   yaxis: {
+            //     min: 0,
+            //     max: 100,
+            //     tickAmount: 5,
+            //   },
+            //   dataLabels: {
+            //     enabled: false
+            //   },
+            //   colors: ['#0BB34F'],
+            //   stroke: {
+            //     curve: 'straight',
+            //     width: 3,
+            //     //colors: ['#CD5213', 'transparent'],
+            //   },
+            //   title: {
+            //     text: 'Emotion: Silly/Happier than usual',
+            //     align: 'left'
+            //   },
+            // //   grid: {
+            // //     row: {
+            // //       //colors: ['#CD5213', 'transparent'], // takes an array which will be repeated on columns
+            // //       opacity: 0.5
+            // //     },
+            // //   },
+            //   xaxis: {
+            //     // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
+            //     // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
+            //     categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+            //     'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+            //   }
+            // },
 
 
             //Emotion 6 Angry (Red)
@@ -348,7 +361,8 @@ class EmotionFrustated extends React.Component {
                 },
                 toolbar: {
                   show: false
-                }
+                },
+                background: '#ffffff',
               },
               yaxis: {
                 min: 0,
@@ -377,8 +391,10 @@ class EmotionFrustated extends React.Component {
               xaxis: {
                 // categories: ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
                 // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'],
-                categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                // categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
+                // 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+                categories: ['Su', 'M', 'T', 'W', 'Th', 'F', 'S', 
+                 'Su', 'M', 'T', 'W', 'Th', 'F', 'S'],
               }
             },
 
@@ -396,7 +412,7 @@ class EmotionFrustated extends React.Component {
                 <Chart options={this.state.options2} series={this.state.series2} type="line" height={250} width={300} />
                 <Chart options={this.state.options3} series={this.state.series3} type="line" height={250} width={300} />
                 <Chart options={this.state.options4} series={this.state.series4} type="line" height={250} width={300}/>
-                <Chart options={this.state.options5} series={this.state.series5} type="line" height={250} width={300}/>
+                {/* <Chart options={this.state.options5} series={this.state.series5} type="line" height={250} width={300}/> */}
                 <Chart options={this.state.options6} series={this.state.series6} type="line" height={250} width={300}/>
             </div>
             
