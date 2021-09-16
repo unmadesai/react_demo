@@ -7,7 +7,7 @@ function generateData(count, yrange) {
     // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
     var week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
                 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
-    var intensity = [76,79,72,100,100,100,100,100,100,74,78,88,91,98];
+    var intensity = [0,5,8,74,0,0,64,69,0,64,69,0,0,65];
     var series = [];
     while (i < count) {
       var x= week[i];
@@ -97,7 +97,7 @@ class WorryIntensity extends React.Component {
             },
             //colors: ["#E70E02"],
             title: {
-              text: 'Intensity of worries'
+              //text: 'Intensity of worries'
             },
           },
         
@@ -110,7 +110,28 @@ class WorryIntensity extends React.Component {
     return (
         <div>
           <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={120} style={{marginLeft: "1em", marginRight: "-0.5em"}}/>
+            <div id="avoidance"> 
+              <table>
+                <tr>
+                  {/* <!-- comment out if not on that day --> */}
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>            
+                </tr>
+              </table>
+            </div>
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={100} style={{marginLeft: "1.5em", marginRight: "-0.5em"}}/>
           </div>
           <div id="html-dist"></div>
         </div>

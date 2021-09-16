@@ -38,7 +38,7 @@ class Emotion extends React.Component {
         
           series: [{
             name: 'Worried/Scared',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0802').getTime(),50,80),
+            data: dataGeneration(new Date('2021-08-16, 09:00 +0802').getTime(),50,60),
           },
           {
             name: 'Happy',
@@ -46,7 +46,7 @@ class Emotion extends React.Component {
           },
           {
             name: 'Miserable',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0808').getTime(),50,120),
+            data: dataGeneration(new Date('2021-08-16, 09:00 +0808').getTime(),50,80),
           },
           {
             name: 'Silly/Happier',
@@ -54,7 +54,7 @@ class Emotion extends React.Component {
           },
           {
             name: 'Angry',
-            data: dataGeneration(new Date('2021-08-16, 09:00 +0803').getTime(),65,120),
+            data: dataGeneration(new Date('2021-08-16, 09:00 +0803').getTime(),65,80),
           },
           {
             name: 'Frustrated',

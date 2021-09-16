@@ -40,7 +40,7 @@ class WorryCategory extends React.Component {
                 //        //[new Date('2021-08-27, 12:00 +0800').getTime(),180],
                 //        //[new Date('2021-08-28, 12:00 +0800').getTime(),180]
                 //       ],
-                data: ['','','','','','','','','','180','','','',''],
+                data: ['','','','','','','','','','','','','',''],
               },
               {
                 name: 'Friends or Peers',
@@ -101,7 +101,7 @@ class WorryCategory extends React.Component {
                 //        [new Date('2021-08-26, 12:00 +0800').getTime(),90],
                 //        [new Date('2021-08-27, 12:00 +0800').getTime(),90],
                 //        [new Date('2021-08-28, 12:00 +0800').getTime(),90]]
-               data: ['90','90','90','90','90','90','90','90','90','90','90','90','90','90'],
+               data: ['','','90','90','','','90','','','90','90','','','90'],
               },
               {
                 name: 'Health and safety',
@@ -122,7 +122,7 @@ class WorryCategory extends React.Component {
                 //       //  [new Date('2021-08-27, 12:00 +0800').getTime(),60],
                 //        [new Date('2021-08-28, 12:00 +0800').getTime(),60]
                 //       ]
-                data: ['','','','','','','','','','','','','',''],
+                data: ['','60','','','','','','','','','','','',''],
               },
               {
                 name: 'Sports or extracurriculars',

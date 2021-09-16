@@ -39,7 +39,7 @@ class ExpectationReality extends React.Component {
                 //        [new Date('2021-08-26, 09:00 +0800').getTime(),92],
                 //        [new Date('2021-08-27, 09:00 +0800').getTime(),92],
                 //        [new Date('2021-08-28, 09:00 +0800').getTime(),96]]
-                data: [65,81,78,100,100,100,77,100,100,70,64,92,92,96]
+                data: [0,7,7,76,0,0,64,73,0,67,71,0,0,72]
               },
               {
                 type: 'scatter',
@@ -59,7 +59,7 @@ class ExpectationReality extends React.Component {
                 //        [new Date('2021-08-26, 14:00 +0800').getTime(),72],
                 //        [new Date('2021-08-27, 14:00 +0800').getTime(),96],
                 //        [new Date('2021-08-28, 14:00 +0800').getTime(),84]]
-                data: [65,81,78,100,100,100,77,100,100,70,64,92,92,96]
+                data: [6,5,3,0,0,67,69,64,50,0,0,0,66,0]
               },
               {
                 type: 'scatter',
@@ -79,7 +79,7 @@ class ExpectationReality extends React.Component {
                 //        [new Date('2021-08-26, 19:00 +0800').getTime(),88],
                 //        [new Date('2021-08-27, 19:00 +0800').getTime(),96],
                 //        [new Date('2021-08-28, 19:00 +0800').getTime(),0]]
-                data: [65,81,100,77,100,100,70,64,92,78,100,100,92,96]
+                data: [4,6,71,0,73,41,36,0,0,0,0,0,0,69]
               },
             //   {
             //     name: 'TEAM 2',

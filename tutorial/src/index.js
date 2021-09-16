@@ -26,27 +26,63 @@ import WCColumn from './WCColumn.js';
 import EmotionsBubbleNew from './EmotionBubbleNew.js';
 
 //import Sleep from './Sleep.js';
+import './index.css';
 
 ReactDOM.render(
-  <div>
-  {/* //<App />, */}
-  <SymptomIntensity />
-  <SymptomOccNew />
-  {/* <SymptomOccurence /> */}
-  <WorryIntensity />
-  {/* <WorryVsCertainty /> */}
-  <WCColumn />
-  <ExpectationReality />
-  <WorryCategory />
-  <SchoolAttendance />
-  {/* <WorryCategoryDefault /> */}
-  <PeerWorry />
-  <PeerQuality />
+<div class="backgrounddiv">
+  {/* <div class="maindiv">
+    <div class = "backgrounddiv">
+      here is div      
+    </div>
+  </div> */}
+    {/* <div class = "backgrounddiv">
+      here is div      
+    </div>
+    <div class = "backgrounddiv">
+      here is div      
+    </div> */}
+    <div class="">
+      {/* //<App />, */}
+        <SymptomIntensity />
+    </div>
+    <div class="">
+        <h4 class="charttitle"> Intensity of worries</h4>
+        <SymptomOccNew />
+    </div>
+      {/* <SymptomOccurence /> */}
+    <div class="">
+      <h4 class="charttitle"> Intensity of worries</h4>
+      <WorryIntensity />
+    </div>
+     {/* <WorryVsCertainty /> */}
+    <div class="">
+       <WCColumn />
+    </div>
+    <div class="">
+      <ExpectationReality />
+    </div>
+    <div class="">
+      <WorryCategory />
+    </div>
+    <div class="">
+      <SchoolAttendance />
+    </div>
+      {/* <WorryCategoryDefault /> */}
+    <div class="">
+      <PeerWorry />
+    </div>
+   <div class="">
+      <PeerQuality />
+   </div>
   {/* <EmotionsBubbleNew /> */}
-  <Emotion />
-  <EmotionFrustated />
+   <div class="">
+     <Emotion />
+    </div>
+    <div class="">
+      <EmotionFrustated />
+     </div>
   {/* <Sleep /> */}
-  </div>,
+</div>,
   document.getElementById('root')
   //<ApexChart />
 );

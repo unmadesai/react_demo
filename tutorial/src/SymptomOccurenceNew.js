@@ -16,104 +16,104 @@ function generateData(time, count, yrange) {
     // 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
     //data to be changed
-    var headache = [100,0,0,
-      100,100,100,
+    var headache = [0,0,0,
+      0,0,0,
+      0,100,0,
+      0,0,0,
+      0,100,100,
+      0,100,0,
+      0,0,0,
+      0,0,0,
+      0,100,0,
+      100,100,0,
       0,0,100,
-      100,0,100,
-      0,100,0,
-      0,0,0,
-      0,100,100,
-      0,0,0,
-      100,0,100,
-      0,100,0,
       0,0,0,
       0,0,0,
-      0,100,100,
-      100,100,100];
+      0,0,100];
     var dizziness = [0,0,0,
-      0,100,100,
-      0,0,0,
-      0,0,0,
-      0,100,100,
-      0,0,0,
-      0,100,100,
-      0,0,0,
-      0,100,100,
       0,0,100,
-      100,0,100,
-      0,0,0,
-      0,100,0,
-      0,0,100];
-    var heartbeat = [0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,100,
-      0,0,0,
-      0,0,100,
-      0,0,0,
-      0,0,100,
-      0,100,100,
-      0,100,0,
-      100,0,100,
-      0,0,0,
-      100,100,0,
-      0,0,0];
-    var nausea = [0,0,100,
-      0,0,100,
-      0,0,100,
-      0,0,0,
-      0,0,100,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
       0,0,0,
       100,0,0,
-      0,100,100];
-    var stomachache = [0,0,100,
-      0,0,0,
-      0,0,0,
-      0,100,100,
-      0,0,0,
       0,0,0,
       0,0,0,
       0,0,100,
       0,0,0,
-      0,0,100,
-      0,0,100,
-      0,0,100,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
       0,0,0,
       0,0,0];
-    var backpain = [100,0,100,
+    var heartbeat = [0,0,100,
       0,0,0,
-      0,0,100,
       0,0,0,
-      100,100,0,
       0,0,0,
-      0,0,100,
-      0,0,100,
-      100,0,0,
-      0,100,100,
-      0,0,100,
       0,0,0,
-      0,0,100,
-      0,0,100];
-    var limbpain = [100,0,0,
-      0,0,100,
       0,0,0,
-      100,100,100,
-      100,0,0,
-      0,0,100,
       0,100,100,
       0,0,0,
-      100,100,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0];
+    var nausea = [0,100,0,
+      0,0,0,
       0,0,0,
       100,0,0,
+      0,0,0,
       0,0,100,
       100,0,0,
-      0,100,0];
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0];
+    var stomachache = [0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,100,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
+      0,0,0];
+    var backpain = [0,100,0,
+      0,0,0,
+      0,100,0,
+      100,0,0,
+      0,0,0,
+      0,0,100,
+      0,100,100,
+      100,100,0,
+      100,100,0,
+      0,100,0,
+      0,100,0,
+      0,0,100,
+      0,100,100,
+      100,0,100];
+    var limbpain = [0,100,0,
+      100,100,0,
+      100,0,100,
+      0,0,0,
+      0,100,100,
+      0,100,100,
+      100,0,0,
+      100,100,0,
+      0,100,0,
+      100,0,100,
+      100,0,100,
+      0,0,0,
+      0,100,100,
+      100,0,0];
 
 
 
@@ -224,7 +224,7 @@ class SymptomOccNew extends React.Component {
                     ranges: [{
                         from: 0,
                         to: 20,
-                        color: '#FFFFFF',
+                        color: '#888888',
                         name: 'very low',
                       },
                       {
@@ -258,6 +258,7 @@ class SymptomOccNew extends React.Component {
             chart: {
               //height: 350,
               //type: 'area',
+              background: '0',
               stacked:true,
               zoom: {
                 enabled: false
@@ -291,7 +292,7 @@ class SymptomOccNew extends React.Component {
             },
             //colors: ["#E70E02"],
             title: {
-              text: 'Occurence of symptoms',
+              //text: 'Occurence of symptoms',
               horizontalAlign: 'center',
               offsetX: 40
               // margin: {
@@ -309,8 +310,70 @@ class SymptomOccNew extends React.Component {
     return (
         <div>
           <div id="chart">
-           
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={220} style={{marginLeft: "-1.2em", marginRight: "-0.6em" }} />
+          <div id="occurence"> 
+              <table>
+                <tr>
+                  {/* <!-- comment out if not on that day --> */}
+                  {/* Sunday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Monday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Tuesday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Wednesday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Thursday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Friday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Saturday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Sunday  WEEK 2*/}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Monday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Tuesday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Wednesday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Thursday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Friday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  {/* Saturday */}
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>       
+                </tr>
+              </table>
+            </div>
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={220} style={{marginLeft: "-0.4em", marginRight: "-0.4em" }} />
           </div>
           <div id="html-dist"></div>
         </div>

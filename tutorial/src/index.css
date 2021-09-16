@@ -1,40 +1,64 @@
-* { 
- margin:0;
- padding:0;
- box-sizing: border-box;
+.maindiv
+{
+    /* display:flex; */
+    /* justify-content:space-evenly; */
+    /* position: relative; */
+    display:inline-block;
+}
+.backgrounddiv
+{
+    /* display: flex;
+    -webkit-column-count: 4;
+    column-count: 5;
+    -webkit-column-gap:.5em;
+    column-gap: 2em;
+     margin-top: 15px;
+    margin-bottom: 15px;
+     height: 100%;
+    width: 10%; 
+    position: absolute; 
+    background-color: grey;
+    z-index: -1;
+    opacity: 0.8; */
+    background-image: url('bg-01.jpg');
+    background-repeat: repeat-y;
+}
+
+.stacktop{
+    width: 100%;
+    z-index: 9;
+    margin: 20px; /* for demo purpose  */
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background: coral;
-    color: darkblue;
+    background-image: 'images/bg.jpg';
+    background-repeat: repeat-y;
+  }
+
+
+.charttitle {
+    margin-left: 2em;
 }
 
-.book h1 {
-    color: black;
-    margin-top: 0.5rem;
+#avoidance {
+    margin-left: 5.6em;
+    margin-bottom: -2.5em;
 }
 
-.booklist {
-    color: turquoise;
-    width: 90vw;
-    max-width: 1170px;
-    margin: 5rem auto;
-    display: grid;
-    gap: 2rem;
-    /*grid-template-columns: repeat(3, lfr);*/
+#occurence {
+    margin-left: 5.8em;
+    margin-bottom: -2em;
 }
 
-@media screen and (min-width:768px) {
-    .booklist {
-        grid-template-columns: repeat(3, 1fr);
-        color: teal;
-    }
-}
+#occurence th {
+    padding: 2.3px;
+} 
 
-.book {
-    background: white;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-}
 
+#avoidance th {
+    padding: 8.5px;
+} 
+/* 
+table {
+    border-spacing: 21.5px 0;
+  } */

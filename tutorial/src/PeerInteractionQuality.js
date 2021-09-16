@@ -24,7 +24,9 @@ class PeerInteractionQuality extends React.Component {
                 //        //[new Date('2021-08-26, 09:00 +0800').getTime(),-40], 
                 //        //[new Date('2021-08-27, 09:00 +0800').getTime(),0],
                 //        [new Date('2021-08-28, 09:00 +0800').getTime(),40]]
-                       data: [20,20,20,,,,,-20,20,,,,,40]
+                //data: [,20,-20,20,,,20,20,,-20,20,,,20]
+                //data: [,20,-20,20,,,20,20,,-20,20,,,20]
+                data: [20,20,20,,,,,-20,20,,,,,40]
               },
               {
                 name: 'Afternoon',
@@ -43,7 +45,8 @@ class PeerInteractionQuality extends React.Component {
                 // [new Date('2021-08-26, 14:00 +0800').getTime(),20], 
                 // [new Date('2021-08-27, 14:00 +0800').getTime(),20],
                 // [new Date('2021-08-28, 14:00 +0800').getTime(),20]]
-                data: [20,20,,,20,-40,40,,,,,20,20,20]
+                data: [-20,-20,-20,,-40,20,20,-20,-20,-20,-20,,20,]
+                //data: [20,20,,,20,-40,40,,,,,20,20,20]
               },
               {
                 name: 'Evening',
@@ -62,7 +65,8 @@ class PeerInteractionQuality extends React.Component {
                 // //[new Date('2021-08-26, 19:00 +0800').getTime(),40], 
                 // [new Date('2021-08-27, 19:00 +0800').getTime(),20],
                 // [new Date('2021-08-28, 19:00 +0800').getTime(),20]]
-                data: [20,20,,,-20,20,,20,,,20,20,,]
+                data: [-40,-20,-40,,-20,-20,20,,,-20,20,20,20,-20]
+                //data: [20,20,,,-20,20,,20,,,20,20,,]
               },
             //   {
             //     name: 'TEAM 2',
