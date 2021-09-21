@@ -5,7 +5,7 @@ function generateData(count, yrange) {
     var i = 0;
     var week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 
                 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var intensity = [0,5,8,74,0,0,64,69,0,64,69,0,0,65];
+    var intensity = [0,69,14,14,59,0,0,70,50,0,25,59,41,61];
     var series = [];
     while (i < count) {
       var x= week[i];
@@ -112,17 +112,17 @@ class WorryIntensity extends React.Component {
                   {/* <!-- AVOIDANCE ABOVE HEATMAP --> */}
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>            
                 </tr>
               </table>

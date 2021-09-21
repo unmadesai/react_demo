@@ -96,12 +96,10 @@ function worryCategory() {
                 {/* Category 4 - School */}
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
@@ -109,6 +107,8 @@ function worryCategory() {
                   <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/school.png' height='15px' width='15px'></img></th>            
                 </tr>
                 {/* Category 5 - Sports */}
@@ -134,16 +134,16 @@ function worryCategory() {
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
+                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/health_safety.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                  <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>            
