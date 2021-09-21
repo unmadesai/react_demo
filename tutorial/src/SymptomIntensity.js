@@ -3,8 +3,8 @@ import Chart from "react-apexcharts";
 
 function generateData(time, count, yrange) {
     var i = 0;
-    var week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-                'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+    var week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 
+                'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
     //data to be changed
     // var intensityM = [56,61,25,37,58,48,36,0,27,0,88,0,78,20];

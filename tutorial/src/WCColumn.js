@@ -55,8 +55,8 @@ class WCColumn extends React.Component {
             colors: ['#fff']
           },
           xaxis: {
-            categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-            'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 
+            'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
           },
           yaxis: {
             max: 100
