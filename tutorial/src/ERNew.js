@@ -1,20 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-
-// function generateDayWiseTimeSeries(baseval, count, yrange) {
-//     var i = 0;
-//     var series = [];
-//     while (i < count) {
-//       var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-  
-//       series.push([baseval, y]);
-//       baseval += 86400000;
-//       i++;
-//     }
-//     return series;
-//   }
-
 class ERNew extends React.Component {
     constructor(props) {
         super(props);
@@ -22,7 +8,7 @@ class ERNew extends React.Component {
         this.state = {
           
             series: [{
-                name: 'Morning',
+                name: 'Morning (Expectations)',
                 colors: '#81A2EF',
                 data: [[new Date('2021-08-15, 09:00 +0800').getTime(),65],
                        [new Date('2021-08-16, 09:00 +0800').getTime(),81], 
@@ -40,7 +26,7 @@ class ERNew extends React.Component {
                        [new Date('2021-08-28, 09:00 +0800').getTime(),96]]
               },
               {
-                name: 'Afternoon',
+                name: 'Afternoon (Reality)',
                 colors: '#2B61E4',
                 data: [[new Date('2021-08-15, 14:00 +0800').getTime(),69],
                        [new Date('2021-08-16, 14:00 +0800').getTime(),63], 
@@ -58,7 +44,7 @@ class ERNew extends React.Component {
                        [new Date('2021-08-28, 14:00 +0800').getTime(),84]]
               },
               {
-                name: 'Evening',
+                name: 'Evening (Reality)',
                 colors: '#2B61E4',
                 data: [[new Date('2021-08-15, 19:00 +0800').getTime(),75],
                        [new Date('2021-08-16, 19:00 +0800').getTime(),70], 
@@ -75,27 +61,8 @@ class ERNew extends React.Component {
                        [new Date('2021-08-27, 19:00 +0800').getTime(),96],
                        [new Date('2021-08-28, 19:00 +0800').getTime(),0]]
               },
-            //   {
-            //     name: 'TEAM 2',
-            //     data: [[new Date('2021-08-16, 09:00').getTime(),20]]
-            //   },
-            //   {
-            //     name: 'TEAM 3',
-            //     data: [[new Date('2021-08-16, 09:00').getTime(),60]]
-            //   },
-            //   {
-            //     name: 'TEAM 4',
-            //     data: [[new Date('2021-08-16, 09:00').getTime(),10]]
-            //   },
-            //   {
-            //     name: 'TEAM 5',
-            //     data: [[new Date('2021-08-16, 09:00').getTime(),40]]
-            //   },
             ],
             options: {
-              title: {
-                text: "Expectation vs Reality",
-              },
               chart: {
                 height: 350,
                 type: 'scatter',
@@ -106,16 +73,16 @@ class ERNew extends React.Component {
                   show: false
                 }
               },
+              legend: {
+                position: 'top',
+                fontSize: "14px",
+                horizontalAlign: 'right',
+              },
               colors: ['#81A2EF','#2B61E4','#2B61E4'],
               dataLabels: {
                 enabled: false
               },
               grid: {
-                // xaxis: {
-                //   lines: {
-                //     show: false
-                //   }
-                // },
                 yaxis: {
                   lines: {
                     show: true

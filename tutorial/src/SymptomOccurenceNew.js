@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-//var time = 0;
-
 function generateData(time, count, yrange) {
     var i = 0;
     var week = ['', 'Sun', '', '', 'Mon', '', '', 
@@ -12,107 +10,106 @@ function generateData(time, count, yrange) {
                  'Tue', '', '', 'Wed', '', '', 'Thu', 
                  '', '', 'Fri', '', '', 'Sat', ''
               ];
-    // var week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
-    // 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
     //data to be changed
-    var headache = [0,0,0,
+    //40=absence=grey, 0==absence=white, 100=red=presence of symptom
+    var headache = [40,40,40,
       0,0,0,
+      40,100,40,
+      0,0,0,
+      40,100,100,
       0,100,0,
+      40,40,40,
       0,0,0,
-      0,100,100,
-      0,100,0,
-      0,0,0,
-      0,0,0,
-      0,100,0,
+      40,100,40,
       100,100,0,
-      0,0,100,
+      40,40,100,
       0,0,0,
-      0,0,0,
+      40,40,40,
       0,0,100];
-    var dizziness = [0,0,0,
+    var dizziness = [40,40,40,
       0,0,100,
-      0,0,0,
+      40,40,40,
       100,0,0,
+      40,40,40,
       0,0,0,
+      40,40,100,
       0,0,0,
-      0,0,100,
+      40,40,40,
       0,0,0,
+      40,40,40,
       0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
+      40,40,40,
       0,0,0];
-    var heartbeat = [0,0,100,
+    var heartbeat = [40,40,100,
       0,0,0,
+      40,40,40,
       0,0,0,
+      40,40,40,
       0,0,0,
+      40,100,100,
       0,0,0,
+      40,40,40,
       0,0,0,
-      0,100,100,
+      40,40,40,
       0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
+      40,40,40,
       0,0,0];
-    var nausea = [0,100,0,
+    var nausea = [40,100,40,
       0,0,0,
-      0,0,0,
+      40,40,40,
       100,0,0,
-      0,0,0,
+      40,40,40,
       0,0,100,
-      100,0,0,
+      100,40,40,
       0,0,0,
+      40,40,40,
       0,0,0,
+      40,40,40,
       0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
+      40,40,40,
       0,0,0];
-    var stomachache = [0,0,0,
+    var stomachache = [40,40,40,
       0,0,0,
+      40,40,40,
       0,0,0,
+      40,40,100,
       0,0,0,
-      0,0,100,
+      40,40,40,
       0,0,0,
+      40,40,40,
       0,0,0,
+      40,40,40,
       0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
-      0,0,0,
+      40,40,40,
       0,0,0];
-    var backpain = [0,100,0,
+    var backpain = [40,100,40,
       0,0,0,
-      0,100,0,
+      40,100,40,
       100,0,0,
-      0,0,0,
+      40,40,40,
       0,0,100,
-      0,100,100,
+      40,100,100,
       100,100,0,
-      100,100,0,
+      100,100,40,
       0,100,0,
-      0,100,0,
+      40,100,40,
       0,0,100,
-      0,100,100,
+      40,100,100,
       100,0,100];
-    var limbpain = [0,100,0,
+    var limbpain = [40,100,40,
       100,100,0,
-      100,0,100,
+      100,40,100,
       0,0,0,
+      40,100,100,
       0,100,100,
-      0,100,100,
-      100,0,0,
+      100,40,40,
       100,100,0,
-      0,100,0,
+      40,100,40,
       100,0,100,
-      100,0,100,
+      100,40,100,
       0,0,0,
-      0,100,100,
+      40,100,100,
       100,0,0];
 
 
@@ -120,11 +117,6 @@ function generateData(time, count, yrange) {
     var series = [];
     while (i < count) {
       var x= week[i];
-      // if((i+1)%3==0) {
-      //   var x=week[(i+1)/3-1];
-      // }
-        //var x = 'w' + (i + 1).toString();
-      //var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
       var y=0;
       if(time == 0) {
         y = headache[i];
@@ -147,10 +139,7 @@ function generateData(time, count, yrange) {
       else if(time == 6) {
         y = limbpain[i];
       }
-      //   console.log(y);
-      //   if(y>=0 && y<=20) {
 
-    //   }
       series.push({
         x: x,
         y: y
@@ -224,13 +213,13 @@ class SymptomOccNew extends React.Component {
                     ranges: [{
                         from: 0,
                         to: 20,
-                        color: '#888888',
+                        color: '#f5f5f5',
                         name: 'very low',
                       },
                       {
                         from: 21,
                         to: 40,
-                        color: '#FD655D',
+                        color: '#888888',
                         name: 'low',
                       },
                       {
@@ -256,8 +245,6 @@ class SymptomOccNew extends React.Component {
                 }
               },
             chart: {
-              //height: 350,
-              //type: 'area',
               background: '0',
               stacked:true,
               zoom: {
@@ -266,42 +253,19 @@ class SymptomOccNew extends React.Component {
               toolbar: {
                 show: false
               },
-              // sparkline: {
-              //   enabled: true
-              // }
-              // margin: {
-              //   bottom: -2,
-              // }
-              // grid: {
-              //   padding: {
-              //     left: 0,
-              //     right: 0
-              //   }
-              // }
             },
             legend: {
               horizontalAlign: 'center',
-              // margin: {
-              //   top: -10,
-              // }
-              show: false,
-              
+              show: false,              
             },
             dataLabels: {
-              enabled: false
+              enabled: false,
             },
-            //colors: ["#E70E02"],
             title: {
-              //text: 'Occurence of symptoms',
               horizontalAlign: 'center',
-              offsetX: 40
-              // margin: {
-              //   bottom: 0.2,
-              // }
+              offsetX: 40,
             },
-          },
-        
-        
+          },        
         };
       }
 
@@ -310,10 +274,21 @@ class SymptomOccNew extends React.Component {
     return (
         <div>
           <div id="chart">
-          <div id="occurence"> 
+          <div>
+              <table style={{marginRight: "1em", position: "relative", float: "right", marginBottom: "-1em", marginTop: "0.2em"}}>
+                  <tr>
+                      <td class=" ">
+                          <p style={{marginRight: "1em", padding: "0.1em"}}><img src='images/symptom_occurence/medication.png' height='14px' width='14px' 
+                                style={{verticalAlign: "middle"}}/> Medication taken </p>
+                        </td>
+                  </tr>
+              </table>
+          </div>
+          <div id="occurence" style={{marginTop: "-3em"}}> 
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
+                  {/* <!-- MEDICATION SYMBOL ABOVE SYMBOL OCCURENCE --> */}
                   {/* Sunday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>

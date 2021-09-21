@@ -9,12 +9,12 @@ class WCColumn extends React.Component {
         series: [
         {
           type: 'bar',
-          name: 'How worried I was',
+          name: 'How worried',
           data: [0,5,8,74,0,0,64,69,0,64,69,0,0,65]
         }, 
         {
             type: 'bar',
-            name: 'How certain I was',
+            name: 'How certain',
           data: [0,5,5,74,0,0,70,73,0,68,69,0,0,81]
         },
         {
@@ -24,8 +24,6 @@ class WCColumn extends React.Component {
         }],
         options: {
           chart: {
-            //type: 'bar',
-            //height: 430
             zoom: {
                 enabled: false
               },
@@ -33,13 +31,14 @@ class WCColumn extends React.Component {
                 show: false
               },
           },
+          legend: {
+            fontSize: "14px",
+            position: 'top',
+            horizontalAlign: 'right',
+          },
           plotOptions: {
             bar: {
               horizontal: false,
-            //   dataLabels: {
-            //     enabled: false,
-            //   },
-
             }
           },
           dataLabels: {
@@ -55,11 +54,6 @@ class WCColumn extends React.Component {
             width: 1,
             colors: ['#fff']
           },
-          
-        //   tooltip: {
-        //     shared: true,
-        //     intersect: false
-        //   },
           xaxis: {
             categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
             'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
@@ -83,14 +77,6 @@ class WCColumn extends React.Component {
                 height: 15
               }
           },
-          title: {
-            text: 'How worried vs How certain',
-            horizontalAlign: 'center',
-            //offsetX: 40
-            // margin: {
-            //   bottom: 0.2,
-            // }
-          },
         },
       
       
@@ -100,7 +86,7 @@ class WCColumn extends React.Component {
     render() {
         return (
             <div>
-              <div id="chart">               
+              <div id="chart">                    
                 <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "2.8em", marginRight: "0em" }} />
               </div>
               <div id="html-dist"></div>

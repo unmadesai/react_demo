@@ -3,21 +3,14 @@ import Chart from "react-apexcharts";
 
 function generateData(count, yrange) {
     var i = 0;
-    // var week = ['15 Aug', '16 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', 
-    // '22 Aug', '23 Aug', '24 Aug', '25 Aug', '26 Aug', '27 Aug', '28 Aug'];
     var week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 
                 'Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
     var intensity = [0,5,8,74,0,0,64,69,0,64,69,0,0,65];
     var series = [];
     while (i < count) {
       var x= week[i];
-        //var x = 'w' + (i + 1).toString();
-      //var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
       var y = intensity[i];
-    //   console.log(y);
-    //   if(y>=0 && y<=20) {
 
-    //   }
       series.push({
         x: x,
         y: y
@@ -80,8 +73,6 @@ class WorryIntensity extends React.Component {
                 }
               },
             chart: {
-              //height: 350,
-              //type: 'heatmap',
               zoom: {
                 enabled: false
               },
@@ -95,13 +86,7 @@ class WorryIntensity extends React.Component {
             legend: {
               show: true,
             },
-            //colors: ["#E70E02"],
-            title: {
-              //text: 'Intensity of worries'
-            },
           },
-        
-        
         };
       }
 
@@ -109,11 +94,22 @@ class WorryIntensity extends React.Component {
   render() {
     return (
         <div>
-          <div id="chart">
-            <div id="avoidance"> 
+          <div id="chart">            
+            <div>
+              <table style={{marginRight: "1em", position: "relative", float: "right", marginBottom: "-1em", marginTop: "-1em"}}>
+                  <tr>
+                      <td class=" ">
+                          <p style={{marginRight: "1em", padding: "0.1em"}}><img src='images/worry_intensity/detour.png' height='25px' width='25px' 
+                                style={{verticalAlign: "middle"}}/> Avoidance </p>
+                        </td>
+                  </tr>
+              </table>
+          </div>
+          <div id="avoidance"> 
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
+                  {/* <!-- AVOIDANCE ABOVE HEATMAP --> */}
                   <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
