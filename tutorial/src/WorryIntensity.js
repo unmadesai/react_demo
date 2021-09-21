@@ -5,7 +5,7 @@ function generateData(count, yrange) {
     var i = 0;
     var week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 
                 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var intensity = [0,69,14,14,59,0,0,70,50,0,25,59,41,61];
+    var intensity = [58,66,69,24,66,61,19,64,24,80,77,50,58,63];
     var series = [];
     while (i < count) {
       var x= week[i];
@@ -110,17 +110,17 @@ class WorryIntensity extends React.Component {
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
                   {/* <!-- AVOIDANCE ABOVE HEATMAP --> */}
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>            

@@ -14,7 +14,7 @@ function generateData(time, count, yrange) {
     //data to be changed
     //40=absence=grey, 0==absence=white, 100=red=presence of symptom
     //alternate 0 and 40 vertically for grey-white pattern for absence of symptom
-    var headache = [100,40,40,
+    var headache = [40,40,40,
       0,0,0,
       40,40,40,
       0,0,0,
@@ -23,7 +23,7 @@ function generateData(time, count, yrange) {
       40,40,40,
       0,0,0,
       40,40,40,
-      0,0,0,
+      0,100,100,
       40,40,40,
       0,0,0,
       40,40,40,
@@ -48,10 +48,10 @@ function generateData(time, count, yrange) {
       0,0,0,
       40,40,40,
       0,0,0,
-      40,100,40,
-      0,0,0,
       40,40,40,
       0,0,0,
+      40,40,40,
+      0,100,0,
       40,40,40,
       0,0,0,
       40,40,40,
@@ -70,7 +70,7 @@ function generateData(time, count, yrange) {
       0,0,0,
       40,40,40,
       0,0,0];
-    var stomachache = [40,40,40,
+    var stomachache = [40,40,100,
       0,0,0,
       40,40,40,
       0,0,0,
@@ -78,8 +78,8 @@ function generateData(time, count, yrange) {
       0,0,0,
       40,40,40,
       0,0,0,
-      40,40,40,
-      0,0,0,
+      40,40,100,
+      0,100,100,
       40,40,40,
       0,0,0,
       40,40,40,
@@ -94,24 +94,24 @@ function generateData(time, count, yrange) {
       0,0,0,
       40,40,40,
       0,0,0,
-      40,100,40,
+      40,40,40,
       0,0,0,
       40,40,40,
       0,0,0];
     var limbpain = [40,40,40,
       0,0,0,
       40,40,40,
-      100,100,100,
-      100,40,100,
       0,0,0,
-      40,40,40,
-      100,100,100,
-      100,100,100,
-      0,100,100,
       40,40,40,
       0,0,0,
       40,40,40,
-      100,100,100];
+      0,0,0,
+      40,40,40,
+      0,0,0,
+      40,40,40,
+      0,0,0,
+      40,40,40,
+      0,0,0];
 
 
 
@@ -345,7 +345,7 @@ class SymptomOccNew extends React.Component {
                   {/* Saturday */}
                   <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>       
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>       
                 </tr>
               </table>
             </div>

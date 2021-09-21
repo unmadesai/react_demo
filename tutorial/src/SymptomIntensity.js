@@ -10,9 +10,9 @@ function generateData(time, count, yrange) {
     // var intensityM = [56,61,25,37,58,48,36,0,27,0,88,0,78,20];
     // var intensityA = [25,57,0,29,54,45,42,0,77,33,0,0,92,12];
     // var intensityE = [58,20,77,88,10,18,55,27,49,52,18,36,66,98];
-    var intensityM = [0,47,50,0,24,0,0,54,56,0,69,0,55,0];
-    var intensityA = [6,8,7,0,78,70,67,65,75,68,50,0,64,0];
-    var intensityE = [35,41,36,50,51,0,0,57,32,31,0,62,59,61];
+    var intensityM = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    var intensityA = [0,0,0,0,0,0,0,0,0,28,0,0,0,0];
+    var intensityE = [24,0,0,0,0,0,0,27,0,51,0,0,0,0];
 
     var series = [];
     while (i < count) {
