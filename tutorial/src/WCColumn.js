@@ -20,7 +20,7 @@ class WCColumn extends React.Component {
         {
             type: 'scatter',
             name: 'Did the event happen',
-          data: [105,105,105,,,105,105,105,105,,,,105,105]
+          data: [105,105,105,,,105,105,105,105,,,,105,]
         }],
         options: {
           chart: {

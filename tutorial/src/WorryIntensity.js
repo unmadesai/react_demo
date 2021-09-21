@@ -99,7 +99,7 @@ class WorryIntensity extends React.Component {
               <table style={{marginRight: "1em", position: "relative", float: "right", marginBottom: "-1em", marginTop: "-1em"}}>
                   <tr>
                       <td class=" ">
-                          <p style={{marginRight: "1em", padding: "0.1em"}}><img src='images/worry_intensity/detour.png' height='25px' width='25px' 
+                          <p style={{marginRight: "1em", padding: "0.1em"}}><img src='images/worry_intensity/avoidance.png' height='25px' width='25px' 
                                 style={{verticalAlign: "middle"}}/> Avoidance </p>
                         </td>
                   </tr>
@@ -110,20 +110,20 @@ class WorryIntensity extends React.Component {
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
                   {/* <!-- AVOIDANCE ABOVE HEATMAP --> */}
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/detour.png' height='25px' width='25px'></img></th>            
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>            
                 </tr>
               </table>
             </div>

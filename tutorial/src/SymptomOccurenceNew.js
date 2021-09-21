@@ -13,6 +13,7 @@ function generateData(time, count, yrange) {
 
     //data to be changed
     //40=absence=grey, 0==absence=white, 100=red=presence of symptom
+    //alternate 0 and 40 vertically for grey-white pattern for absence of symptom
     var headache = [40,40,40,
       0,0,0,
       40,100,40,
@@ -22,8 +23,8 @@ function generateData(time, count, yrange) {
       40,40,40,
       0,0,0,
       40,100,40,
-      100,100,0,
-      40,40,100,
+      0,100,0,
+      100,40,100,
       0,0,0,
       40,40,40,
       0,0,100];
@@ -89,9 +90,9 @@ function generateData(time, count, yrange) {
       100,0,0,
       40,40,40,
       0,0,100,
-      40,100,100,
+      100,100,100,
       100,100,0,
-      100,100,40,
+      40,100,40,
       0,100,0,
       40,100,40,
       0,0,100,
@@ -290,61 +291,61 @@ class SymptomOccNew extends React.Component {
                   {/* <!-- comment out if not on that day --> */}
                   {/* <!-- MEDICATION SYMBOL ABOVE SYMBOL OCCURENCE --> */}
                   {/* Sunday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/medication.png' height='8px' width='8px'></img></th>
                   {/* Monday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/medication.png' height='8px' width='8px'></img></th>
                   {/* Tuesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Wednesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Thursday */}
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Friday */}
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/medication.png' height='8px' width='8px'></img></th>
                   {/* Saturday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Sunday  WEEK 2*/}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Monday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Tuesday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Wednesday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Thursday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Friday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Saturday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/worry_intensity/blank-03.png' height='8px' width='8px'></img></th>       
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/worry_intensity/blank.png' height='8px' width='8px'></img></th>       
                 </tr>
               </table>
             </div>

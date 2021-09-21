@@ -78,7 +78,7 @@ class EmotionFrustated extends React.Component {
             series: [{
                 name: "Frustation",
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
-                data: [0,5,4,50,0,0,59,76,0,66,66,0,0,50]
+                data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
             },
             ],
             options: {
