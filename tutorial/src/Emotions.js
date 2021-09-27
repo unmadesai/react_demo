@@ -19,19 +19,19 @@ class Emotion extends React.Component {
         
         series: [{
           name: 'Worried/Scared',
-          data: dataGeneration(25,70,60),
+          data: dataGeneration(15,70,80),
         },
         {
           name: 'Happy',
-          data: dataGeneration(30,40,90),
+          data: dataGeneration(30,40,60),
         },
         {
           name: 'Miserable',
-          data: dataGeneration(60,50,50),
+          data: dataGeneration(60,30,60),
         },
         {
           name: 'Angry',
-          data: dataGeneration(50,70,70),
+          data: dataGeneration(50,70,50),
         },
         {
           name: 'Frustrated',
