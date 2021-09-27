@@ -78,7 +78,7 @@ class EmotionFrustated extends React.Component {
             series: [{
                 name: "Frustation",
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
-                data: [50,64,33,67,26,32,59,70,67,93,72,66,32,23]
+                data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
             },
             ],
             options: {
@@ -124,7 +124,7 @@ class EmotionFrustated extends React.Component {
             //Emotion 2 Miserable (Blue)
             series2: [{
                 name: "Miserable",
-               data: [50,64,30,66,28,23,26,31,60,94,63,62,67,21]
+               data: [0,5,6,34,0,0,53,50,0,50,50,0,0,50]
             } ],
             options2: {
               chart: {
@@ -164,7 +164,7 @@ class EmotionFrustated extends React.Component {
             //Emotion 3 Scared/Worried (Yellow)
             series3: [{
                 name: "Scared/Worried",
-                data: [50,24,31,30,22,27,24,12,64,82,57,55,35,25]
+                data: [0,5,4,71,0,0,55,68,0,66,72,0,0,66]
             } ],
             options3: {
               chart: {
@@ -204,7 +204,7 @@ class EmotionFrustated extends React.Component {
             //Emotion 4 Happy (Pink)
             series4: [{
                 name: "Happy",
-                data: [50,50,31,50,61,50,29,25,65,13,30,32,24,65]
+                data: [0,7,6,73,0,0,50,0,0,50,50,0,0,67]
             } ],
             options4: {
               chart: {
@@ -245,7 +245,7 @@ class EmotionFrustated extends React.Component {
             //Emotion 6 Angry (Red)
             series6: [{
                 name: "Angry",
-                data: [50,50,29,31,32,31,25,28,64,82,56,20,25,28]
+                data: [0,4,3,37,0,0,56,50,0,50,50,0,0,50]
                 
             } ],
             

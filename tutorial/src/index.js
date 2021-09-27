@@ -15,6 +15,7 @@ import PeerWorry from "./PeerInteractionWorry.js";
 import PeerInteractionQualityNew from "./PeerInteractionQualityNew.js";
 import Emotion from "./Emotions.js";
 import EmotionFrustated from "./EmotionFrustated.js";
+import SleepNew from './SleepNew.js';
 
 // import ApexChart from './App.js';
 // import WorryVsCertainty from './WorryVsCertainty.js';
@@ -24,7 +25,7 @@ import EmotionFrustated from "./EmotionFrustated.js";
 // import WorryCertainty from './WorryCertainty.js';
 // import WorryCategoryDefault from './WorryCategoryDefault.js';
 // import EmotionsBubbleNew from './EmotionBubbleNew.js';
-// import Sleep from './Sleep.js';
+//import Sleep from './Sleep.js';
 
 import "./index.css";
 
@@ -83,7 +84,14 @@ ReactDOM.render(
       <br></br>
       <EmotionFrustated />
     </div>
-    {/* <Sleep /> */}
+    {/* <div class="">
+      <h4 class="charttitle"> Sleep</h4>
+      <Sleep />
+    </div> */}
+    <div class="">
+      <h4 class="charttitle"> Sleep</h4>
+      <SleepNew />
+    </div>
   </div>,
   document.getElementById("root")
   //<ApexChart />
