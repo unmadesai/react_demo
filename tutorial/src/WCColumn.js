@@ -18,9 +18,14 @@ class WCColumn extends React.Component {
           data: [0,5,5,74,0,0,70,73,0,68,69,0,0,81]
         },
         {
+          type: 'scatter',
+          name: 'No data',
+        data: [10,,,,10,,,,,,,10,,]
+        },
+        {
             type: 'scatter',
-            name: 'Did the event happen',
-          data: [105,105,105,,,105,105,105,105,,,,105,]
+            name: 'Event happened',
+          data: [,105,105,,,105,105,105,105,,,,105,]
         }],
         options: {
           chart: {
@@ -61,24 +66,28 @@ class WCColumn extends React.Component {
           yaxis: {
             max: 100
           },
-          colors: ['#2B61E4','#80B6F2','#2B61E4'],
+          colors: ['#2B61E4','#80B6F2'],
           markers: {
-            size: [0, 0, 10],
+            size: [0, 0, 10, 10],
             strokeWidth: 0,
             hover: {
               sizeOffset: 0
             }
           },
           fill: {
-            type: ['solid', 'solid', 'image'],
+            type: ['solid', 'solid', 'image','image'],
+            image: {
+                src: ['images/worry_certainty/nodata.png'],
+                width: 15,
+                height: 15
+            },
             image: {
                 src: ['images/worry_certainty/check.png'],
                 width: 15,
                 height: 15
-              }
+            }
           },
-        },
-      
+        },    
       
       };
     }
