@@ -15,7 +15,10 @@ import PeerWorry from "./PeerInteractionWorry.js";
 import PeerInteractionQualityNew from "./PeerInteractionQualityNew.js";
 import Emotion from "./Emotions.js";
 import EmotionFrustated from "./EmotionFrustated.js";
+import EmotionDetailed from "./EmotionsDetailed.js";
 import SleepNew from './SleepNew.js';
+
+import Trial  from "./trial.js";
 
 // import ApexChart from './App.js';
 // import WorryVsCertainty from './WorryVsCertainty.js';
@@ -54,6 +57,8 @@ ReactDOM.render(
     <div class="">
       <h4 class="charttitle"> Expectation vs Reality</h4>
       <ERNew />
+      {/* line chart possible but without x-axis datetime */}
+      {/* <Trial /> */}
     </div>
     <div class="">
       <h4 class="charttitle"> Category of worries</h4>
@@ -82,7 +87,8 @@ ReactDOM.render(
       <h4 class="charttitle"> Individual emotions</h4>
       <br></br>
       <br></br>
-      <EmotionFrustated />
+      <EmotionDetailed />
+      {/* <EmotionFrustated /> */}
     </div>
     {/* <div class="">
       <h4 class="charttitle"> Sleep</h4>

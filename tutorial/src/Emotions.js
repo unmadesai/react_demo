@@ -44,7 +44,7 @@ class Emotion extends React.Component {
           options: {
             chart: {
                 type: 'bubble',
-                background: '#ffffff',
+                //background: '#ffffff',
                 zoom: {
                   enabled: false
                 },
@@ -57,7 +57,7 @@ class Emotion extends React.Component {
                 enabled: false
             },
             fill: {
-                opacity: 0.8
+                opacity: 1
             },
             legend: {
               position: 'top',
@@ -77,12 +77,14 @@ class Emotion extends React.Component {
               },
             },
             xaxis: {
+                show: false,
                 min: 0,
                 max:100,
                 labels: {
                   show:false,
                 },
                 type: 'numeric',
+                
             },
             yaxis: {
                 min:10,
@@ -99,7 +101,7 @@ class Emotion extends React.Component {
         return (
             <div id="chart" style={{marginTop: "0.5em"}}>
               <br></br>
-                <Chart options={this.state.options} series={this.state.series} type="bubble" height={500} width={700}/>
+                <Chart options={this.state.options} series={this.state.series} type="bubble" height={300} width={500}/>
             </div>
         );
       }

@@ -10,6 +10,7 @@ class ERNew extends React.Component {
             series: [{
                 name: 'Morning (Expectations)',
                 colors: '#81A2EF',
+                type: 'scatter',
                 data: [[new Date('2021-08-15, 09:00 +0800').getTime(),0],
                        [new Date('2021-08-16, 09:00 +0800').getTime(),7], 
                        [new Date('2021-08-17, 09:00 +0800').getTime(),7], 
@@ -28,6 +29,7 @@ class ERNew extends React.Component {
               {
                 name: 'Afternoon (Reality)',
                 colors: '#2B61E4',
+                type: 'scatter',
                 data: [[new Date('2021-08-15, 14:00 +0800').getTime(),6],
                        [new Date('2021-08-16, 14:00 +0800').getTime(),5], 
                        [new Date('2021-08-17, 14:00 +0800').getTime(),3], 
@@ -46,6 +48,7 @@ class ERNew extends React.Component {
               {
                 name: 'Evening (Reality)',
                 colors: '#2B61E4',
+                type: 'scatter',
                 data: [[new Date('2021-08-15, 19:00 +0800').getTime(),4],
                        [new Date('2021-08-16, 19:00 +0800').getTime(),6], 
                        [new Date('2021-08-17, 19:00 +0800').getTime(),71], 
@@ -60,18 +63,40 @@ class ERNew extends React.Component {
                        [new Date('2021-08-26, 19:00 +0800').getTime(),0],
                        [new Date('2021-08-27, 19:00 +0800').getTime(),0],
                        [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
-              },
+              }, 
+              //{
+              //   name: 'Line Sunday 1',
+              //   colors: '#000000',
+              //   type: 'line',
+              //   data: [{
+              //     x: new Date('2021-08-15, 09:00 +0800').getTime(),
+              //     y: 0
+              //   }, {
+              //     x: new Date('2021-08-15, 14:00 +0800').getTime(),
+              //     y: 6
+              //   }, {
+              //     x: new Date('2021-08-15, 19:00 +0800').getTime(),
+              //     y: 4
+              //   }]
+              // }
             ],
             options: {
               chart: {
                 height: 350,
-                type: 'scatter',
+                //type: 'scatter',
+                type: 'line',
                 zoom: {
                   enabled: false
                 },
                 toolbar: {
                   show: false
                 }
+              },
+              fill: {
+                type:'solid',
+              },
+              markers: {
+                size: [6, 6, 6, 0]
               },
               legend: {
                 position: 'top',
@@ -112,7 +137,7 @@ class ERNew extends React.Component {
 render() {
   return (
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} style={{marginLeft: "3.4em", marginRight: "1em" }}/>
+          <Chart options={this.state.options} series={this.state.series} type="line" height={250} style={{marginLeft: "3.4em", marginRight: "1em" }}/>
           <div id="expvsrel"> 
               <table>
                 <tr>

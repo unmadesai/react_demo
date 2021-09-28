@@ -34,7 +34,14 @@ class SleepNew extends React.Component {
                   y: [11, 18],
                   fillColor: '#34D54F',
 
-                }, {
+                }, 
+                //{
+                //     x: '16 Aug',
+                //     y: [14, 17],
+                //     fillColor: '#34D54F',
+  
+                //   }, 
+                {
                   x: '17 Aug',
                   y: [12, 21],
                   fillColor: '#1F9833',

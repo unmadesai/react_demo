@@ -40,41 +40,23 @@ function SchoolAttendance () {
             <br></br>
           <div id="attendance_category"> 
                 <table>
-                  {/* Present/Absent */}
+                  {/* Present/Reason for absence/No data - keep nodata size 15!*/}
                   <tr>
                     {/* <!-- comment out if not on that day --> */}
-                    <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/absent.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/present.png' height='15px' width='15px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='15px' width='15px'></img></th>            
-                  </tr>
-                  {/* Reason for absence */}
-                  <tr>
-                    {/* <!-- put correct image name for that day --> */}
-                    <th><img src='images/school_attendance/weekend.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/weekend.png' height='18px' width='18px'></img></th>
                     <th><img src='images/school_attendance/home_sick.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/school_holiday.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/doctor_appt.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/nodata.png' height='15px' width='15px'></img></th>
+                    <th><img src='images/school_attendance/present.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/present.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/present.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/present.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/present.png' height='18px' width='18px'></img></th>
                     <th><img src='images/school_attendance/weekend.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/weekend.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>
-                    <th><img src='images/school_attendance/blank.png' height='18px' width='18px'></img></th>            
+                    <th><img src='images/school_attendance/home_schooled.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/nodata.png' height='15px' width='15px'></img></th>
+                    <th><img src='images/school_attendance/present.png' height='18px' width='18px'></img></th>
+                    <th><img src='images/school_attendance/nodata.png' height='15px' width='15px'></img></th>            
                   </tr>
                 </table>
               </div>
