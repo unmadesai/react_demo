@@ -153,7 +153,7 @@ class SleepNew extends React.Component {
                 min: 0,
                 max: 24,
                 tickAmount: 12,
-                //reversed: true,
+                reversed: true,
                 axisTicks: {
                   show: true
                 },

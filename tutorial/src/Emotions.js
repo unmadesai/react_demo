@@ -52,7 +52,7 @@ class Emotion extends React.Component {
                   show: false
                 },
             },
-            colors: ['#FAC52B','#F5189A','#2B41E4','#F5180D','#CD5213'],
+            colors: ['#369DF7','#FFC107','#036B69','#5D3D82','#E03A1C'],
             dataLabels: {
                 enabled: false
             },

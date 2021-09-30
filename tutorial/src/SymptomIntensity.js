@@ -10,9 +10,9 @@ function generateData(time, count, yrange) {
     // var intensityM = [56,61,25,37,58,48,36,0,27,0,88,0,78,20];
     // var intensityA = [25,57,0,29,54,45,42,0,77,33,0,0,92,12];
     // var intensityE = [58,20,77,88,10,18,55,27,49,52,18,36,66,98];
-    var intensityM = [0,5,6,71,0,0,65,70,0,67,50,0,0,64];
-    var intensityA = [6,8,7,0,78,70,67,65,75,68,50,0,64,0];
-    var intensityE = [6,2,73,0,58,66,49,0,0,71,50,51,60,50];
+    var intensityM = [0,5,6,71,0,0,65,70,0,67,50,30,0,64];
+    var intensityA = [6,98,7,0,78,70,67,100,75,68,50,40,64,0];
+    var intensityE = [6,2,73,65,58,100,49,0,0,71,50,51,60,50];
 
     var series = [];
     while (i < count) {
@@ -109,6 +109,10 @@ class SymptomIntensity extends React.Component {
               toolbar: {
                 show: false
               },
+            },
+            fill: {
+              opacity: 1,
+              type: 'solid',
             },
             legend: {
               horizontalAlign: 'right',

@@ -285,15 +285,15 @@ class SymptomOccNew extends React.Component {
                   {/* Sunday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   {/* Monday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Tuesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   {/* Wednesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
@@ -304,7 +304,7 @@ class SymptomOccNew extends React.Component {
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Friday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Saturday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
@@ -325,19 +325,19 @@ class SymptomOccNew extends React.Component {
                   {/* Wednesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   {/* Thursday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Friday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Saturday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>       
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>       
                 </tr>
               </table>
             </div>
