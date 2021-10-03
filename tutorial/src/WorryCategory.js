@@ -4,7 +4,7 @@ function worryCategory() {
          <br></br>
          <br></br>
          <div>
-               <table style={{marginLeft: "8em", marginTop: "0.5em"}}>
+               <table style={{marginLeft: "6em", marginTop: "0.5em"}}>
                    <tr>
                        <td class="worrylabel">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/family.png' height='20px' width='20px' 
@@ -29,7 +29,11 @@ function worryCategory() {
                          <td class="worrylabel">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/health_safety.png' height='20px' width='20px' 
                                  style={{verticalAlign: "middle"}}/> Health </p>
-                         </td>                        
+                         </td>   
+                         <td class="worrylabel">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_categories/nodata.png' height='14px' width='14px' 
+                                 style={{verticalAlign: "-1px"}}/> No Data </p>
+                         </td>                      
                    </tr>
                </table>
            </div>

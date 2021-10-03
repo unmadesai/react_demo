@@ -35,9 +35,10 @@ class PeerInteractionWorry extends React.Component {
           }
         },
         legend: {
-          fontSize: "14px",
-          position: 'top',
-          horizontalAlign: 'right',
+          // fontSize: "14px",
+          // position: 'top',
+          // horizontalAlign: 'right',
+          show: false,
         },
         plotOptions: {
           bar: {
@@ -85,9 +86,34 @@ class PeerInteractionWorry extends React.Component {
   
 render() {
     return (
-        <div id="chart">
+      <div>
+        <div>
+               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0em"}}>
+                   <tr>
+                       <td class="">
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_worry/morning.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Morning </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_worry/afternoon.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Afternoon </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_worry/evening.png' height='20px' width='20px' 
+                                 style={{verticalAlign: "middle"}}/> Evening </p>                
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_worry/nodata.png' height='14px' width='14px' 
+                                 style={{verticalAlign: "middle"}}/> No data </p>                
+                         </td>                     
+                      </tr>
+                    </table>
+              </div>
+          <div id="chart">
             <Chart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "3em", marginRight: "0.3em" }}/>
         </div>
+      </div>
+        
     );
   }
 }

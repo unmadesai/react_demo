@@ -60,9 +60,10 @@ class Emotion extends React.Component {
                 opacity: 1
             },
             legend: {
-              position: 'top',
-              horizontalAlign: 'right',
-              fontSize: "14px",
+              // position: 'top',
+              // horizontalAlign: 'right',
+              // fontSize: "14px",
+              show: false,
             },
             grid: {
               xaxis: {
@@ -99,10 +100,38 @@ class Emotion extends React.Component {
 
       render() {
         return (
+          <div>
+            <div>
+              <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "-0.5em"}}>
+                <tr>
+                  <td class="">
+                      <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/worried.png' height='16px' width='16px' 
+                            style={{verticalAlign: "-3px"}}/> Worried/Scared </p>
+                    </td>
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/happy.png' height='16px' width='16px' 
+                            style={{verticalAlign: "-3px"}}/> Happy </p>
+                    </td>
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/miserable.png' height='16px' width='16px' 
+                            style={{verticalAlign: "-3px"}}/> Miserable </p>
+                    </td>
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/angry.png' height='14px' width='14px' 
+                            style={{verticalAlign: "-3px"}}/> Angry </p>                
+                    </td>  
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/frustrated.png' height='14px' width='14px' 
+                            style={{verticalAlign: "-3px"}}/> Frustrated </p>                
+                    </td>                     
+                 </tr>
+               </table>
+            </div>
             <div id="chart" style={{marginTop: "0.5em"}}>
               <br></br>
                 <Chart options={this.state.options} series={this.state.series} type="bubble" height={300} width={500}/>
             </div>
+          </div>
         );
       }
 }

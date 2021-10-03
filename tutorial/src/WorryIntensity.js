@@ -95,7 +95,7 @@ class WorryIntensity extends React.Component {
     return (
         <div>
           <div id="chart">            
-            <div>
+            {/* <div>
               <table style={{marginRight: "1em", position: "relative", float: "right", marginBottom: "-1em", marginTop: "-1em"}}>
                   <tr>
                       <td class=" ">
@@ -104,7 +104,37 @@ class WorryIntensity extends React.Component {
                         </td>
                   </tr>
               </table>
-          </div>
+          </div> */}
+          <div>
+               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0em"}}>
+                   <tr>
+                       <td class="">
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/verylow.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Very Low </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/low.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Low </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/medium.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Medium </p>                
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/high.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> High </p>                
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/veryhigh.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Very High </p>                
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/avoidance.png' height='20px' width='20px' 
+                                 style={{verticalAlign: "middle"}}/> Avoidance</p>
+                         </td>                      
+                   </tr>
+               </table>
+           </div>
           <div id="avoidance"> 
               <table>
                 <tr>

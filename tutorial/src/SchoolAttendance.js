@@ -4,7 +4,7 @@ function SchoolAttendance () {
           <br></br>
           <br></br>
           <div>
-                <table style={{marginLeft: "6em", marginTop: "0.5em"}}>
+                <table style={{marginLeft: "3em", marginTop: "0.5em"}}>
                     <tr>
                         <td class="attendancelabel">
                               <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/doctor_appt.png' height='18px' width='18px' 
@@ -33,6 +33,10 @@ function SchoolAttendance () {
                         <td class="attendancelabel">
                               <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/weekend.png' height='18px' width='18px' 
                                   style={{verticalAlign: "middle"}}/> Weekend </p>                
+                        </td>
+                        <td class="attendancelabel">
+                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/school_attendance/nodata.png' height='13px' width='13px' 
+                                  style={{verticalAlign: "-1px"}}/> No Data </p>                
                         </td>
                     </tr>
                 </table>

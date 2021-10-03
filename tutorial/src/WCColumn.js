@@ -37,9 +37,10 @@ class WCColumn extends React.Component {
               },
           },
           legend: {
-            fontSize: "14px",
-            position: 'top',
-            horizontalAlign: 'right',
+            // fontSize: "14px",
+            // position: 'top',
+            // horizontalAlign: 'right',
+            show:false,
           },
           plotOptions: {
             bar: {
@@ -95,6 +96,28 @@ class WCColumn extends React.Component {
     render() {
         return (
             <div>
+              <div>
+               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0em"}}>
+                   <tr>
+                       <td class="">
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/worry.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> How Worried </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/certainty.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> How Certain </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/check.png' height='20px' width='20px' 
+                                 style={{verticalAlign: "middle"}}/> Event happened </p>                
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/nodata.png' height='13px' width='13px' 
+                                 style={{verticalAlign: "-1px"}}/> No data </p>                
+                         </td>                     
+                      </tr>
+                    </table>
+              </div>
               <div id="chart">                    
                 <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "2.8em", marginRight: "0em" }} />
               </div>

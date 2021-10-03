@@ -268,6 +268,28 @@ class SymptomOccNew extends React.Component {
         <div>
           <div id="chart">
           <div>
+               <table style={{marginRight: "1em", position: "relative", float: "right", marginTop: "1.2em"}}>
+                   <tr>
+                       <td class="">
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/occurence.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Occured </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/no_occurence.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Did not occur </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/missing_data.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> No Data </p>                
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/medication.png' height='14px' width='14px' 
+                                 style={{verticalAlign: "-1px"}}/> Medication taken </p>
+                         </td>                      
+                   </tr>
+               </table>
+           </div>
+          {/* <div>
               <table style={{marginRight: "1em", position: "relative", float: "right", marginBottom: "-1em", marginTop: "0.2em"}}>
                   <tr>
                       <td class=" ">
@@ -276,7 +298,7 @@ class SymptomOccNew extends React.Component {
                         </td>
                   </tr>
               </table>
-          </div>
+          </div> */}
           <div id="occurence" style={{marginTop: "-3em"}}> 
               <table>
                 <tr>
@@ -285,15 +307,15 @@ class SymptomOccNew extends React.Component {
                   {/* Sunday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Monday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Tuesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Wednesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
@@ -304,7 +326,7 @@ class SymptomOccNew extends React.Component {
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Friday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Saturday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
@@ -325,19 +347,19 @@ class SymptomOccNew extends React.Component {
                   {/* Wednesday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Thursday */}
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Friday */}
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
                   {/* Saturday */}
                   <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/blank.png' height='8px' width='8px'></img></th>       
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>       
                 </tr>
               </table>
             </div>

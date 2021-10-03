@@ -136,11 +136,12 @@ class PeerInteractionQualityNew extends React.Component {
                 }
               },
               legend: {
-                position: 'top',
-                fontSize: "14px",
-                horizontalAlign: 'right',
+                // position: 'top',
+                // fontSize: "14px",
+                // horizontalAlign: 'right',
+                show: false,
               },
-              colors: ['#B192B5', '#89608E', '#68496E', '#000000', '#000000', '#000000'],
+              colors: ['#B192B5', '#89608E', '#68496E', '#1F1F1F', '#1F1F1F', '#1F1F1F'],
               dataLabels: {
                 enabled: false
               },
@@ -184,7 +185,7 @@ class PeerInteractionQualityNew extends React.Component {
                 max: 60
               },
               markers: {
-                size: [8, 8, 8, 10, 10 ,10],
+                size: [8, 8, 8, 8, 10 ,10],
                 shape: 'square',
                 strokeWidth: 0,
                 hover: {
@@ -192,12 +193,12 @@ class PeerInteractionQualityNew extends React.Component {
                 }
               },
               fill: {
-                type: ['solid', 'solid', 'solid', 'image',  'image',  'image'],
-                image: {
-                    src: ['images/peer_quality/noInteraction.png'],
-                    width: 7,
-                    height: 7,
-                  }
+                type: ['solid', 'solid', 'solid', 'solid',  'solid',  'solid'],
+                // image: {
+                //     src: ['images/peer_quality/noInteraction.png'],
+                //     width: 10,
+                //     height: 10,
+                //   }
               },
             },
           };
@@ -207,9 +208,32 @@ class PeerInteractionQualityNew extends React.Component {
 
 render() {
   return (
-      <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} style={{marginLeft: "0.2em", marginRight: "1em" }}/>
-          <div id="expvsrel"> 
+        <div>
+          <div>
+               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0em"}}>
+                   <tr>
+                       <td class="">
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/morning.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Morning </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/afternoon.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Afternoon </p>
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/evening.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "middle"}}/> Evening </p>                
+                         </td>
+                         <td class="">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/noInteractionLegend.png' height='14px' width='14px' 
+                                 style={{verticalAlign: "-1px"}}/> No interactions </p>                
+                         </td>                     
+                      </tr>
+                    </table>
+          </div>
+          <div id="chart">
+             <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} style={{marginLeft: "0.2em", marginRight: "1em" }}/>
+            <div id="expvsrel" style={{ marginTop: "0em"}}> 
               <table>
                 <tr>
                   <td>Sun</td>
@@ -229,7 +253,8 @@ render() {
                 </tr>
               </table>
             </div>
-      </div>
+          </div>
+      </div>  
   );
 }
 

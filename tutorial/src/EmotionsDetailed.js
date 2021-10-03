@@ -491,6 +491,11 @@ class EmotionDetailed extends React.Component {
                   show: false
                 },
               },
+              legend: {
+                position: 'top',
+                fontSize: "14px",
+                horizontalAlign: 'right',
+              },
               yaxis: {
                 min: 0,
                 max: 100,
@@ -528,17 +533,43 @@ class EmotionDetailed extends React.Component {
 
         render() {
           return (
-            
-            <div id="chart">
-                <Chart options={this.state.options} series={this.state.series} type="line" height={100} 
-                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
-                <Chart options={this.state.options2} series={this.state.series2} type="line" height={100} 
-                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
+          <div>
+            <div>
+              <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "-0.2em"}}>
+                <tr>
+                  <td class="">
+                      <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/worried.png' height='16px' width='16px' 
+                            style={{verticalAlign: "-3px"}}/> Worried/Scared </p>
+                    </td>
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/happy.png' height='16px' width='16px' 
+                            style={{verticalAlign: "-3px"}}/> Happy </p>
+                    </td>
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/miserable.png' height='16px' width='16px' 
+                            style={{verticalAlign: "-3px"}}/> Miserable </p>
+                    </td>
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/angry.png' height='14px' width='14px' 
+                            style={{verticalAlign: "-3px"}}/> Angry </p>                
+                    </td>  
+                    <td class="">
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/frustrated.png' height='14px' width='14px' 
+                            style={{verticalAlign: "-3px"}}/> Frustrated </p>                
+                    </td>                     
+                 </tr>
+               </table>
+            </div>
+            <div id="chart">                
                 <Chart options={this.state.options3} series={this.state.series3} type="line" height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
                 <Chart options={this.state.options4} series={this.state.series4} type="line" height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
+                <Chart options={this.state.options2} series={this.state.series2} type="line" height={100} 
+                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
                 <Chart options={this.state.options5} series={this.state.series5} type="line" height={100} 
+                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
+                <Chart options={this.state.options} series={this.state.series} type="line" height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
         
                 <div id="expvsrel"> 
@@ -566,7 +597,7 @@ class EmotionDetailed extends React.Component {
                 <Chart options={this.state.options4} series={this.state.series4} type="line" height={250} width={300}/>
                 <Chart options={this.state.options6} series={this.state.series6} type="line" height={250} width={300}/> */}
             </div>
-            
+            </div>  
           );
         }
 }
