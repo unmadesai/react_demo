@@ -8,7 +8,7 @@ class ERNew extends React.Component {
         this.state = {
           
             series: [{
-                name: 'Morning (Expectations)',
+                name: 'Morning (Expected)',
                 colors: '#81A2EF',
                 type: 'scatter',
                 data: [[new Date('2021-08-15, 09:00 +0800').getTime(),0],
@@ -99,9 +99,10 @@ class ERNew extends React.Component {
                 size: [6, 6, 6, 0]
               },
               legend: {
-                position: 'top',
-                fontSize: "14px",
-                horizontalAlign: 'right',
+                // position: 'top',
+                // fontSize: "14px",
+                // horizontalAlign: 'right',
+                show: false,
               },
               colors: ['#81A2EF','#2B61E4','#2B61E4'],
               dataLabels: {
@@ -136,9 +137,28 @@ class ERNew extends React.Component {
 
 render() {
   return (
+    <div>
+      <div>
+        <table style={{marginRight: "0.3em", position: "relative", float: "right", marginTop: "0.1em"}}>
+            <tr>
+                <td class="">
+                    <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/expectation_reality/morning.png' height='16px' width='16px' 
+                          style={{verticalAlign: "-2px"}}/> Morning (Expected) </p>
+                  </td>
+                  <td class="">
+                      <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/expectation_reality/afternoon.png' height='16px' width='16px' 
+                          style={{verticalAlign: "-2px"}}/> Afternoon (Reality) </p>
+                  </td>
+                  <td class="">
+                      <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/expectation_reality/afternoon.png' height='16px' width='16px' 
+                          style={{verticalAlign: "-2px"}}/> Evening (Reality) </p>                
+                  </td>             
+              </tr>
+            </table>
+      </div>
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="line" height={250} style={{marginLeft: "3.4em", marginRight: "1em" }}/>
-          <div id="expvsrel"> 
+          <Chart options={this.state.options} series={this.state.series} type="line" height={250} style={{marginLeft: "3.4em", marginRight: "1em"}}/>
+          <div id="expvsrel" style={{marginTop: "-1em"}}> 
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
@@ -160,6 +180,7 @@ render() {
               </table>
             </div>
       </div>
+    </div>
   );
 }
 

@@ -36,55 +36,55 @@ ReactDOM.render(
   <div class="backgrounddiv">
     <div class="">
       {/* //<App />, */}
-      <h4 class="charttitle"> Symptom Intensity</h4>
+      <h4 class="charttitle"> How intense my symptoms were </h4>
       <SymptomIntensity />
     </div>
     <div class="" style={{marginTop: "-1em"}}>
-      <h4 class="charttitle"> Symptom Occurence</h4>
+      <h4 class="charttitle"> When my symptoms occured </h4>
       <SymptomOccNew />
     </div>
     {/* <SymptomOccurence /> */}
     <div class="">
-      <h4 class="charttitle"> Intensity of worries</h4>
+      <h4 class="charttitle"> How worried I was</h4>
       <WorryIntensity />
     </div>
     {/* <WorryVsCertainty /> */}
     <div class="">
-      <h4 class="charttitle"> Worries vs Certainties</h4>
+      <h4 class="charttitle"> How certain I was </h4>
       <WCColumn />
     </div>
     {/* <ExpectationReality /> */}
     <div class="">
-      <h4 class="charttitle"> Expectation vs Reality</h4>
+      <h4 class="charttitle"> Expectations vs Reality</h4>
       <ERNew />
       {/* line chart possible but without x-axis datetime */}
       {/* <Trial /> */}
     </div>
     <div class="">
-      <h4 class="charttitle"> Category of worries</h4>
+      <h4 class="charttitle"> What I was worried about </h4>
       <WorryCategory />
     </div>
     <div class="">
-      <h4 class="charttitle"> School attendance</h4>
+      <h4 class="charttitle"> When I went to school</h4>
       <SchoolAttendance />
     </div>
     {/* <WorryCategoryDefault /> */}
     <div class="">
-      <h4 class="charttitle"> Peer Interaction Worry</h4>
+      <h4 class="charttitle"> My worry about interacting with friends </h4>
       <PeerWorry />
     </div>
     <div class="">
-      <h4 class="charttitle"> Peer Interaction Quality</h4>
+      <h4 class="charttitle"> Did I get along with friends</h4>
       {/* <PeerQuality /> */}
       <PeerInteractionQualityNew />
     </div>
     {/* <EmotionsBubbleNew /> */}
     <div class="">
-      <h4 class="charttitle"> Emotions Summarized</h4>
+      <h4 class="charttitle"> My emotions for 2 weeks</h4>
       <Emotion />
     </div>
     <div class="">
-      <h4 class="charttitle"> Individual emotions</h4>
+      <h4 class="charttitle"> Each emotion from 0 to 100 </h4>
       <br></br>
       <br></br>
       <EmotionDetailed />
@@ -95,7 +95,7 @@ ReactDOM.render(
       <Sleep />
     </div> */}
     <div class="">
-      <h4 class="charttitle"> Sleep</h4>
+      <h4 class="charttitle"> My sleep </h4>
       <SleepNew />
     </div>
   </div>,

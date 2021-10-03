@@ -538,23 +538,23 @@ class EmotionDetailed extends React.Component {
               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "-0.2em"}}>
                 <tr>
                   <td class="">
-                      <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/worried.png' height='16px' width='16px' 
+                      <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/emotions/worried.png' height='16px' width='16px' 
                             style={{verticalAlign: "-3px"}}/> Worried/Scared </p>
                     </td>
                     <td class="">
-                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/happy.png' height='16px' width='16px' 
+                        <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/emotions/happy.png' height='16px' width='16px' 
                             style={{verticalAlign: "-3px"}}/> Happy </p>
                     </td>
                     <td class="">
-                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/miserable.png' height='16px' width='16px' 
+                        <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/emotions/miserable.png' height='16px' width='16px' 
                             style={{verticalAlign: "-3px"}}/> Miserable </p>
                     </td>
                     <td class="">
-                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/angry.png' height='14px' width='14px' 
+                        <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/emotions/angry.png' height='14px' width='14px' 
                             style={{verticalAlign: "-3px"}}/> Angry </p>                
                     </td>  
                     <td class="">
-                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/frustrated.png' height='14px' width='14px' 
+                        <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/emotions/frustrated.png' height='14px' width='14px' 
                             style={{verticalAlign: "-3px"}}/> Frustrated </p>                
                     </td>                     
                  </tr>
@@ -566,11 +566,11 @@ class EmotionDetailed extends React.Component {
                 <Chart options={this.state.options4} series={this.state.series4} type="line" height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
                 <Chart options={this.state.options2} series={this.state.series2} type="line" height={100} 
-                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
+                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2.5em" }}/>
                 <Chart options={this.state.options5} series={this.state.series5} type="line" height={100} 
-                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
+                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2.5em" }}/>
                 <Chart options={this.state.options} series={this.state.series} type="line" height={100} 
-                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
+                        style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2.5em" }}/>
         
                 <div id="expvsrel"> 
                     <table>
