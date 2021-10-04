@@ -30,12 +30,12 @@ class SleepNew extends React.Component {
                   //   },
                   fillColor: '#99EBA6',
                 }, 
-                {
-                  x: '15 Aug',
-                  y: [0, 0],
-                  fillColor: '#34D54F',
+                // {
+                //   x: '15 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#34D54F',
 
-                },
+                // },
                 {
                   x: '15 Aug',
                   y: [0, 0],
@@ -49,12 +49,12 @@ class SleepNew extends React.Component {
                   fillColor: '#34D54F',
 
                 }, 
-                {
-                  x: '16 Aug',
-                  y: [0, 0],
-                  fillColor: '#34D54F',
+                // {
+                //   x: '16 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#34D54F',
 
-                }, 
+                // }, 
                 {
                   x: '16 Aug',
                   y: [0, 1],
@@ -74,12 +74,12 @@ class SleepNew extends React.Component {
                   fillColor: '#1F9833',
 
                 },
-                {
-                  x: '17 Aug',
-                  y: [0, 0],
-                  fillColor: '#1F9833',
+                // {
+                //   x: '17 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#1F9833',
 
-                },
+                // },
                 {
                   x: '17 Aug',
                   y: [0, 0],
@@ -93,12 +93,12 @@ class SleepNew extends React.Component {
                   fillColor: '#99EBA6',
 
                 }, 
-                {
-                  x: '18 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
+                // {
+                //   x: '18 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#99EBA6',
 
-                },
+                // },
                 {
                   x: '18 Aug',
                   y: [0, 0],
@@ -112,12 +112,12 @@ class SleepNew extends React.Component {
                   fillColor: '#34D54F',
 
                 },
-                {
-                  x: '19 Aug',
-                  y: [0, 0],
-                  fillColor: '#34D54F',
+                // {
+                //   x: '19 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#34D54F',
 
-                },
+                // },
                 {
                   x: '19 Aug',
                   y: [0, 0],
@@ -131,12 +131,12 @@ class SleepNew extends React.Component {
                   fillColor: '#99EBA6',
 
                 },
-                {
-                  x: '20 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
+                // {
+                //   x: '20 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#99EBA6',
 
-                },
+                // },
                 {
                   x: '20 Aug',
                   y: [0, 0],
@@ -150,12 +150,12 @@ class SleepNew extends React.Component {
                   fillColor: '#11551D',
 
                 },
-                {
-                  x: '21 Aug',
-                  y: [0, 0],
-                  fillColor: '#11551D',
+                // {
+                //   x: '21 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#11551D',
 
-                },
+                // },
                 {
                   x: '21 Aug',
                   y: [0, 0],
@@ -169,12 +169,12 @@ class SleepNew extends React.Component {
                   fillColor: '#34D54F',
 
                 },
-                {
-                  x: '22 Aug',
-                  y: [0, 0],
-                  fillColor: '#34D54F',
+                // {
+                //   x: '22 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#34D54F',
 
-                },
+                // },
                 {
                   x: '22 Aug',
                   y: [0, 0],
@@ -188,12 +188,12 @@ class SleepNew extends React.Component {
                   fillColor: '#11551D',
 
                 },
-                {
-                  x: '23 Aug',
-                  y: [0, 0],
-                  fillColor: '#11551D',
+                // {
+                //   x: '23 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#11551D',
 
-                }, 
+                // }, 
                 {
                   x: '23 Aug',
                   y: [0, 0],
@@ -207,12 +207,12 @@ class SleepNew extends React.Component {
                   fillColor: '#99EBA6',
 
                 }, 
-                {
-                  x: '24 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
+                // {
+                //   x: '24 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#99EBA6',
 
-                },
+                // },
                 {
                   x: '24 Aug',
                   y: [0, 0],
@@ -226,12 +226,12 @@ class SleepNew extends React.Component {
                   fillColor: '#99EBA6',
 
                 }, 
-                {
-                  x: '25 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
+                // {
+                //   x: '25 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#99EBA6',
 
-                },
+                // },
                 {
                   x: '25 Aug',
                   y: [0, 0],
@@ -245,12 +245,12 @@ class SleepNew extends React.Component {
                   fillColor: '#34D54F',
 
                 },
-                {
-                  x: '26 Aug',
-                  y: [0, 0],
-                  fillColor: '#34D54F',
+                // {
+                //   x: '26 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#34D54F',
 
-                },
+                // },
                 {
                   x: '26 Aug',
                   y: [0, 0],
@@ -264,12 +264,12 @@ class SleepNew extends React.Component {
                   fillColor: '#1F9833',
 
                 },
-                {
-                  x: '27 Aug',
-                  y: [0, 0],
-                  fillColor: '#1F9833',
+                // {
+                //   x: '27 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#1F9833',
 
-                },
+                // },
                 {
                   x: '27 Aug',
                   y: [0, 0],
@@ -283,12 +283,12 @@ class SleepNew extends React.Component {
                   fillColor: '#25BB3E',
 
                 },
-                {
-                  x: '28 Aug',
-                  y: [0, 0],
-                  fillColor: '#25BB3E',
+                // {
+                //   x: '28 Aug',
+                //   y: [0, 0],
+                //   fillColor: '#25BB3E',
 
-                },
+                // },
                 {
                   x: '28 Aug',
                   y: [0, 0],

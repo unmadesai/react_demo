@@ -117,11 +117,11 @@ class Emotion extends React.Component {
                             style={{verticalAlign: "-3px"}}/> Miserable </p>
                     </td>
                     <td class="">
-                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/angry.png' height='14px' width='14px' 
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/angry.png' height='16px' width='16px' 
                             style={{verticalAlign: "-3px"}}/> Angry </p>                
                     </td>  
                     <td class="">
-                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/frustrated.png' height='14px' width='14px' 
+                        <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/emotions/frustrated.png' height='16px' width='16px' 
                             style={{verticalAlign: "-3px"}}/> Frustrated </p>                
                     </td>                     
                  </tr>

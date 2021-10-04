@@ -214,19 +214,19 @@ render() {
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/morning.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Morning </p>
+                                 style={{verticalAlign: "-3px"}}/> Morning </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/afternoon.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Afternoon </p>
+                                 style={{verticalAlign: "-3px"}}/> Afternoon </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/evening.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Evening </p>                
+                                 style={{verticalAlign: "-3px"}}/> Evening </p>                
                          </td>
                          <td class="">
-                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/noInteractionLegend.png' height='14px' width='14px' 
-                                 style={{verticalAlign: "-1px"}}/> No interactions </p>                
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/noInteractionLegend.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "-3px"}}/> No interactions </p>                
                          </td>                     
                       </tr>
                     </table>

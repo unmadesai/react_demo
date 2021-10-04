@@ -101,19 +101,19 @@ class WCColumn extends React.Component {
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/worry.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> How Worried </p>
+                                 style={{verticalAlign: "-2px"}}/> How Worried </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/certainty.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> How Certain </p>
+                                 style={{verticalAlign: "-2px"}}/> How Certain </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/check.png' height='20px' width='20px' 
-                                 style={{verticalAlign: "middle"}}/> Event happened </p>                
+                                 style={{verticalAlign: "-3px"}}/> Event happened </p>                
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/nodata.png' height='13px' width='13px' 
-                                 style={{verticalAlign: "-1px"}}/> No data </p>                
+                                 style={{verticalAlign: "-2px"}}/> No data </p>                
                          </td>                     
                       </tr>
                     </table>

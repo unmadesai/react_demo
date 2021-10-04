@@ -92,19 +92,19 @@ render() {
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/peer_worry/morning.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Morning </p>
+                                 style={{verticalAlign: "-2px"}}/> Morning </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/peer_worry/afternoon.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Afternoon </p>
+                                 style={{verticalAlign: "-2px"}}/> Afternoon </p>
                          </td>
                          <td class="">
-                             <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/peer_worry/evening.png' height='20px' width='20px' 
-                                 style={{verticalAlign: "middle"}}/> Evening </p>                
+                             <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/peer_worry/evening.png' height='16px' width='16px' 
+                                 style={{verticalAlign: "-2px"}}/> Evening </p>                
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/peer_worry/nodata.png' height='14px' width='14px' 
-                                 style={{verticalAlign: "middle"}}/> No data </p>                
+                                 style={{verticalAlign: "-2px"}}/> No data </p>                
                          </td>                     
                       </tr>
                     </table>
