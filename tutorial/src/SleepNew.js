@@ -21,7 +21,7 @@ class SleepNew extends React.Component {
                   x: '15 Aug',
                   //reversed time - 1000=10pm, 2000=8am
                   //someone help T_T
-                  y: [10, 20],
+                  y: [17, 23],
                   //need a check here with the corresponding quality of sleep value
                   //currently series does not allow if within each data point, only color
                   //so coloring individually, but this is not optimal!
@@ -29,10 +29,36 @@ class SleepNew extends React.Component {
                   //     color: '#ffffff',
                   //   },
                   fillColor: '#99EBA6',
-                }, {
-                  x: '16 Aug',
-                  y: [11, 18],
+                }, 
+                {
+                  x: '15 Aug',
+                  y: [0, 0],
                   fillColor: '#34D54F',
+
+                },
+                {
+                  x: '15 Aug',
+                  y: [0, 0],
+                  fillColor: '#f2f2f2',
+
+                },
+                //16 Aug Monday
+                {
+                  x: '16 Aug',
+                  y: [16, 22],
+                  fillColor: '#34D54F',
+
+                }, 
+                {
+                  x: '16 Aug',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
+
+                }, 
+                {
+                  x: '16 Aug',
+                  y: [0, 1],
+                  fillColor: '#1F9833',
 
                 }, 
                 //{
@@ -41,64 +67,231 @@ class SleepNew extends React.Component {
                 //     fillColor: '#34D54F',
   
                 //   }, 
+                //17 Aug Tuesday
                 {
                   x: '17 Aug',
-                  y: [12, 21],
+                  y: [17, 24],
                   fillColor: '#1F9833',
 
-                }, {
+                },
+                {
+                  x: '17 Aug',
+                  y: [0, 0],
+                  fillColor: '#1F9833',
+
+                },
+                {
+                  x: '17 Aug',
+                  y: [0, 0],
+                  fillColor: '#1F9833',
+
+                }, 
+                //18 Aug Wednesday
+                {
                   x: '18 Aug',
-                  y: [10, 20],
-                  fillColor: '#99EBA6',
-
-                }, {
-                  x: '19 Aug',
-                  y: [14, 21],
-                  fillColor: '#34D54F',
-
-                }, {
-                  x: '20 Aug',
-                  y: [13, 19],
-                  fillColor: '#99EBA6',
-
-                }, {
-                  x: '21 Aug',
-                  y: [11, 19],
-                  fillColor: '#11551D',
-
-                }, {
-                  x: '22 Aug',
-                  y: [14, 21],
-                  fillColor: '#34D54F',
-
-                }, {
-                  x: '23 Aug',
                   y: [12, 20],
-                  fillColor: '#11551D',
-
-                }, {
-                  x: '24 Aug',
-                  y: [12, 21],
                   fillColor: '#99EBA6',
 
-                }, {
-                  x: '25 Aug',
-                  y: [11, 18],
+                }, 
+                {
+                  x: '18 Aug',
+                  y: [0, 0],
                   fillColor: '#99EBA6',
 
-                }, {
-                  x: '26 Aug',
-                  y: [14, 20],
+                },
+                {
+                  x: '18 Aug',
+                  y: [0, 0],
+                  fillColor: '#99EBA6',
+
+                },
+                //19 Aug Thursday
+                {
+                  x: '19 Aug',
+                  y: [15, 21],
                   fillColor: '#34D54F',
 
-                }, {
+                },
+                {
+                  x: '19 Aug',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
+
+                },
+                {
+                  x: '19 Aug',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
+
+                },
+                //20 Aug Friday
+                {
+                  x: '20 Aug',
+                  y: [15, 19],
+                  fillColor: '#99EBA6',
+
+                },
+                {
+                  x: '20 Aug',
+                  y: [0, 0],
+                  fillColor: '#99EBA6',
+
+                },
+                {
+                  x: '20 Aug',
+                  y: [0, 0],
+                  fillColor: '#99EBA6',
+
+                },
+                //21 Aug Saturday
+                {
+                  x: '21 Aug',
+                  y: [15, 23],
+                  fillColor: '#11551D',
+
+                },
+                {
+                  x: '21 Aug',
+                  y: [0, 0],
+                  fillColor: '#11551D',
+
+                },
+                {
+                  x: '21 Aug',
+                  y: [0, 0],
+                  fillColor: '#11551D',
+
+                },
+                //22 Aug Sunday
+                {
+                  x: '22 Aug',
+                  y: [15, 21],
+                  fillColor: '#34D54F',
+
+                },
+                {
+                  x: '22 Aug',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
+
+                },
+                {
+                  x: '22 Aug',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
+
+                },
+                //23 Aug Monday
+                {
+                  x: '23 Aug',
+                  y: [15, 18],
+                  fillColor: '#11551D',
+
+                },
+                {
+                  x: '23 Aug',
+                  y: [0, 0],
+                  fillColor: '#11551D',
+
+                }, 
+                {
+                  x: '23 Aug',
+                  y: [0, 0],
+                  fillColor: '#11551D',
+
+                }, 
+                //24 Aug Tuesday
+                {
+                  x: '24 Aug',
+                  y: [14, 21],
+                  fillColor: '#99EBA6',
+
+                }, 
+                {
+                  x: '24 Aug',
+                  y: [0, 0],
+                  fillColor: '#99EBA6',
+
+                },
+                {
+                  x: '24 Aug',
+                  y: [0, 0],
+                  fillColor: '#99EBA6',
+
+                },
+                //25 Aug Wednesday
+                {
+                  x: '25 Aug',
+                  y: [14, 20],
+                  fillColor: '#99EBA6',
+
+                }, 
+                {
+                  x: '25 Aug',
+                  y: [0, 0],
+                  fillColor: '#99EBA6',
+
+                },
+                {
+                  x: '25 Aug',
+                  y: [0, 0],
+                  fillColor: '#99EBA6',
+
+                },
+                //26 Aug Thursday
+                {
+                  x: '26 Aug',
+                  y: [14, 19],
+                  fillColor: '#34D54F',
+
+                },
+                {
+                  x: '26 Aug',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
+
+                },
+                {
+                  x: '26 Aug',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
+
+                },
+                //27 Aug Friday
+                {
                   x: '27 Aug',
-                  y: [11, 19],
+                  y: [14, 20],
                   fillColor: '#1F9833',
 
-                }, {
+                },
+                {
+                  x: '27 Aug',
+                  y: [0, 0],
+                  fillColor: '#1F9833',
+
+                },
+                {
+                  x: '27 Aug',
+                  y: [0, 0],
+                  fillColor: '#1F9833',
+
+                },
+                //28 Aug Saturday
+                {
                   x: '28 Aug',
-                  y: [12, 19],
+                  y: [16, 20],
+                  fillColor: '#25BB3E',
+
+                },
+                {
+                  x: '28 Aug',
+                  y: [0, 0],
+                  fillColor: '#25BB3E',
+
+                },
+                {
+                  x: '28 Aug',
+                  y: [0, 0],
                   fillColor: '#25BB3E',
 
                 }]
@@ -136,7 +329,7 @@ class SleepNew extends React.Component {
             //     }]
             //  },
               dataLabels: {
-                enabled: true
+                enabled: false,
               },
               fill: {
                   opacity: 1,
