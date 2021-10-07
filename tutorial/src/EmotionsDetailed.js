@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
+function dataGeneration(x,y,z) {
+  var series = [];
+  var x=x;
+  var y=y;
+  var z=z;
+  series.push([x,y,z]);
+  console.log("value here is "+series);
+  return series;
+  }
 
 class EmotionDetailed extends React.Component {
         constructor(props) {
@@ -9,8 +18,17 @@ class EmotionDetailed extends React.Component {
           this.state = {
           
             //Emotion 1 Frustrated (Orange)
-            series: [{
+            series1: [
+              
+              // {
+              //   name: 'Worried/Scared Bubble',
+              //   type: "bubble",
+              //   data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,10),
+              // },
+
+              {
                 name: "Frustation",
+                type: "line",
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
@@ -70,8 +88,17 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
                      
-            }],
-            options: {
+              },
+              {
+                name: 'Frustration Summarized',
+                type: "bubble",
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,20),
+              },
+
+              
+               
+          ],
+            options1: {
               chart: {
                 type: 'line',
                 zoom: {
@@ -80,6 +107,10 @@ class EmotionDetailed extends React.Component {
                 toolbar: {
                   show: false
                 },
+                //background: null,
+              },
+              legend: {
+                show: false,
               },
               yaxis: {
                 min: 0,
@@ -92,14 +123,14 @@ class EmotionDetailed extends React.Component {
               colors: ['#E03A1C'],
               stroke: {
                 curve: 'straight',
-                colors: ['#E03A1C', 'transparent'],
+                colors: ['#E03A1C'],
                 width: 2,
               },
-              grid: {
-                row: {
-                  opacity: 0.5
-                },
-              },
+              // grid: {
+              //   row: {
+              //     opacity: 0
+              //   },
+              // },
               xaxis: {
                 type: "datetime",
                 show: false,
@@ -114,6 +145,7 @@ class EmotionDetailed extends React.Component {
             //Emotion 2 Miserable (Blue)
             series2: [{
                 name: "Miserable",
+                type: "line",
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
@@ -173,7 +205,15 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
                      
-            }],
+              },
+
+              {
+                name: 'Miserable Summarized',
+                type: "bubble",
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,10),
+              },
+          
+            ],
             options2: {
               chart: {
                 type: 'line',
@@ -189,13 +229,16 @@ class EmotionDetailed extends React.Component {
                 max: 100,
                 tickAmount: 4,
               },
+              legend: {
+                show: false,
+              },
               dataLabels: {
                 enabled: false
               },
               colors: ['#036B69'],
               stroke: {
                 curve: 'straight',
-                colors: ['#036B69', 'transparent'],
+                colors: ['#036B69'],
                 width: 2,
               },
               grid: {
@@ -217,6 +260,7 @@ class EmotionDetailed extends React.Component {
              //Emotion 3 Scared/Worried (Yellow)
             series3: [{
                 name: "Scared/Worried",
+                type: "line",
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
@@ -276,7 +320,14 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
                      
-            }],
+              },
+              {
+                name: 'Scared Summarized',
+                type: "bubble",
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,5),
+              },
+
+          ],
             options3: {
               chart: {
                 type: 'line',
@@ -294,6 +345,9 @@ class EmotionDetailed extends React.Component {
               },
               dataLabels: {
                 enabled: false
+              },
+              legend: {
+                show: false,
               },
               colors: ['#369DF7'],
               stroke: {
@@ -319,6 +373,7 @@ class EmotionDetailed extends React.Component {
             //Emotion 4 Happy (Pink)
             series4: [{
                 name: "Happy",
+                type: "line",
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
@@ -378,7 +433,14 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-28, 14:00 +0800').getTime(),57],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),11]]
                      
-            }],
+              },
+
+              {
+                name: 'Frustration Summarized',
+                type: "bubble",
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,30),
+              },
+          ],
             options4: {
               chart: {
                 type: 'line',
@@ -393,6 +455,9 @@ class EmotionDetailed extends React.Component {
                 min: 0,
                 max: 100,
                 tickAmount: 4,
+              },
+              legend: {
+                show: false,
               },
               dataLabels: {
                 enabled: false
@@ -421,6 +486,7 @@ class EmotionDetailed extends React.Component {
             //Emotion 5 Angry (Red)
             series5: [{
                 name: "Angry",
+                type: "line",
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
@@ -480,7 +546,13 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),10]]
                      
-            }],
+              },
+              {
+                name: 'Angry Summarized',
+                type: "bubble",
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,20),
+              },
+          ],
             options5: {
               chart: {
                 type: 'line',
@@ -495,6 +567,9 @@ class EmotionDetailed extends React.Component {
                 position: 'top',
                 fontSize: "14px",
                 horizontalAlign: 'right',
+              },
+              legend: {
+                show: false,
               },
               yaxis: {
                 min: 0,
@@ -565,11 +640,11 @@ class EmotionDetailed extends React.Component {
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
                 <Chart options={this.state.options4} series={this.state.series4} type="line" height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2em" }}/>
-                <Chart options={this.state.options2} series={this.state.series2} type="line" height={100} 
+                <Chart options={this.state.options2} series={this.state.series2} height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2.5em" }}/>
                 <Chart options={this.state.options5} series={this.state.series5} type="line" height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2.5em" }}/>
-                <Chart options={this.state.options} series={this.state.series} type="line" height={100} 
+                <Chart options={this.state.options1} series={this.state.series1} height={100} 
                         style={{marginLeft: "3em", marginRight: "1em", marginTop: "-2.5em" }}/>
         
                 <div id="expvsrel"> 

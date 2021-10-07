@@ -151,6 +151,11 @@ class PeerInteractionQualityNew extends React.Component {
                     show: false
                   }
                 },
+                xaxis: {
+                  lines: {
+                    show: false,
+                  }
+                },
               },
               xaxis: {
                 show: false,
@@ -165,13 +170,13 @@ class PeerInteractionQualityNew extends React.Component {
                 labels: {
                   formatter: function (y) {
                     if(y==20)
-                      return "Positive";
-                    else if(y==40)
-                      return "Very Positive";
-                    else if(y==-20)
                       return "Negative";
-                    else if(y==-40)
+                    else if(y==40)
                       return "Very Negative";
+                    else if(y==-20)
+                      return "Positive";
+                    else if(y==-40)
+                      return "Very Positive";
                     else if(y==0)
                       return "Neutral";
                     else if (y==60)

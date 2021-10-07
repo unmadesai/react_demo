@@ -17,6 +17,8 @@ import Emotion from "./Emotions.js";
 import EmotionFrustated from "./EmotionFrustated.js";
 import EmotionDetailed from "./EmotionsDetailed.js";
 import SleepNew from './SleepNew.js';
+import ERBar from "./ERBar.js";
+import SleepNew1 from "./SleepNew1.js";
 
 import Trial  from "./trial.js";
 
@@ -31,6 +33,7 @@ import Trial  from "./trial.js";
 //import Sleep from './Sleep.js';
 
 import "./index.css";
+//import SleepNew2 from "./SleepNew2.js";
 
 ReactDOM.render(
   <div class="backgrounddiv">
@@ -55,8 +58,14 @@ ReactDOM.render(
     </div>
     {/* <ExpectationReality /> */}
     <div class="">
-      <h4 class="charttitle"> Expectations vs Reality</h4>
+      <h4 class="charttitle"> Expected Problems vs Reality</h4>
       <ERNew />
+      {/* line chart possible but without x-axis datetime */}
+      {/* <Trial /> */}
+    </div>
+    <div class="">
+      <h4 class="charttitle"> Expectations vs Reality Bar</h4>
+      <ERBar />
       {/* line chart possible but without x-axis datetime */}
       {/* <Trial /> */}
     </div>
@@ -95,9 +104,17 @@ ReactDOM.render(
       <Sleep />
     </div> */}
     <div class="">
-      <h4 class="charttitle"> My sleep </h4>
+      <h4 class="charttitle"> My sleep (color scheme 1)</h4>
       <SleepNew />
     </div>
+    <div class="">
+      <h4 class="charttitle"> My sleep (color scheme 2)</h4>
+      <SleepNew1 />
+    </div>
+    {/* <div class="">
+      <h4 class="charttitle"> My sleep KM</h4>
+      <SleepNew2 />
+    </div> */}
   </div>,
   document.getElementById("root")
   //<ApexChart />

@@ -50,11 +50,11 @@ function worryCategory() {
                    <th><img src='images/worry_categories/family.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/family.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/family.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/family1.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/family1.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/family.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/family.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/family1.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/family1.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/family.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>            
@@ -67,16 +67,16 @@ function worryCategory() {
                    <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/friends1.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/friends2.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/friends3.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/friends4.png' height='15px' width='15px'></img></th>
                    <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/friends.png' height='15px' width='15px'></img></th>
-                   <th><img src='images/worry_categories/blank.png' height='15px' width='15px'></img></th>            
+                   <th><img src='images/worry_proxy/friends1.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/friends2.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/friends3.png' height='15px' width='15px'></img></th>
+                   <th><img src='images/worry_proxy/friends4.png' height='15px' width='15px'></img></th>            
                  </tr>
                  {/* Category 3 - Someone I don't know */}
                  <tr>

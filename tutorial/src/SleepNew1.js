@@ -5,12 +5,12 @@ var qual_sleep = ['good', 'great', 'good', 'poor', 'average', 'poor', 'good',
                 'poor', 'great', 'good', 'poor', 'average', 'good', 'great'];
 
 //color scheme:
-//99EBA6=light=poor sleep
-//34D54F=medium=average sleep
-//1F9833=medium2=good sleep
-//11551D=dark=great sleep
+//00AD22=light=poor sleep
+//047900=medium=average sleep
+//047900=medium2=good sleep
+//59F15F=dark=great sleep
 
-class SleepNew extends React.Component {
+class SleepNew1 extends React.Component {
     constructor(props) {
         super(props);
 
@@ -28,191 +28,129 @@ class SleepNew extends React.Component {
                   //   if(qual_sleep[0] == "great") {
                   //     color: '#ffffff',
                   //   },
-                  fillColor: '#99EBA6',
+                  fillColor: '#A1FFB1',
+                  
                 }, 
-                // {
-                //   x: '15 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#34D54F',
-
-                // },
                 {
                   x: '15 Aug',
                   y: [0, 0],
-                  fillColor: '#f2f2f2',
+                  fillColor: '#A1FFB1',
+                //   dataLabels: {
+                //       enabled: false,
+                //   }
 
                 },
                 //16 Aug Monday
                 {
                   x: '16 Aug',
                   y: [16, 22],
-                  fillColor: '#34D54F',
+                  fillColor: '#047900',
 
                 }, 
-                // {
-                //   x: '16 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#34D54F',
-
-                // }, 
                 {
                   x: '16 Aug',
                   y: [0, 1],
-                  fillColor: '#1F9833',
+                  fillColor: '#A1FFB1',
 
                 }, 
-                //{
-                //     x: '16 Aug',
-                //     y: [14, 17],
-                //     fillColor: '#34D54F',
-  
-                //   }, 
                 //17 Aug Tuesday
                 {
                   x: '17 Aug',
                   y: [17, 24],
-                  fillColor: '#1F9833',
+                  fillColor: '#A1FFB1',
 
                 },
-                // {
-                //   x: '17 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#1F9833',
-
-                // },
                 {
                   x: '17 Aug',
                   y: [0, 0],
-                  fillColor: '#1F9833',
+                  fillColor: '#A1FFB1',
 
                 }, 
                 //18 Aug Wednesday
                 {
                   x: '18 Aug',
                   y: [12, 20],
-                  fillColor: '#99EBA6',
+                  fillColor: '#00AD22',
 
                 }, 
-                // {
-                //   x: '18 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#99EBA6',
-
-                // },
                 {
                   x: '18 Aug',
                   y: [0, 0],
-                  fillColor: '#99EBA6',
+                  fillColor: '#A1FFB1',
 
                 },
                 //19 Aug Thursday
                 {
                   x: '19 Aug',
                   y: [15, 21],
-                  fillColor: '#34D54F',
+                  fillColor: '#047900',
 
                 },
-                // {
-                //   x: '19 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#34D54F',
-
-                // },
                 {
                   x: '19 Aug',
                   y: [0, 0],
-                  fillColor: '#34D54F',
+                  fillColor: '#A1FFB1',
 
                 },
                 //20 Aug Friday
                 {
                   x: '20 Aug',
                   y: [15, 19],
-                  fillColor: '#99EBA6',
+                  fillColor: '#00AD22',
 
                 },
-                // {
-                //   x: '20 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#99EBA6',
-
-                // },
                 {
                   x: '20 Aug',
                   y: [0, 0],
-                  fillColor: '#99EBA6',
+                  fillColor: '#00AD22',
 
                 },
                 //21 Aug Saturday
                 {
                   x: '21 Aug',
                   y: [15, 23],
-                  fillColor: '#11551D',
+                  fillColor: '#59F15F',
 
                 },
-                // {
-                //   x: '21 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#11551D',
-
-                // },
                 {
                   x: '21 Aug',
                   y: [0, 0],
-                  fillColor: '#11551D',
+                  fillColor: '#59F15F',
 
                 },
                 //22 Aug Sunday
                 {
                   x: '22 Aug',
                   y: [15, 21],
-                  fillColor: '#34D54F',
+                  fillColor: '#047900',
 
                 },
-                // {
-                //   x: '22 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#34D54F',
-
-                // },
                 {
                   x: '22 Aug',
                   y: [0, 0],
-                  fillColor: '#34D54F',
+                  fillColor: '#047900',
 
                 },
                 //23 Aug Monday
                 {
                   x: '23 Aug',
                   y: [15, 18],
-                  fillColor: '#11551D',
+                  fillColor: '#59F15F',
 
                 },
-                // {
-                //   x: '23 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#11551D',
-
-                // }, 
                 {
                   x: '23 Aug',
                   y: [0, 0],
-                  fillColor: '#11551D',
+                  fillColor: '#59F15F',
 
                 }, 
                 //24 Aug Tuesday
                 {
                   x: '24 Aug',
                   y: [14, 21],
-                  fillColor: '#99EBA6',
+                  fillColor: '#00AD22',
 
                 }, 
-                // {
-                //   x: '24 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#99EBA6',
-
-                // },
                 {
                   x: '24 Aug',
                   y: [0, 0],
@@ -223,57 +161,39 @@ class SleepNew extends React.Component {
                 {
                   x: '25 Aug',
                   y: [14, 20],
-                  fillColor: '#99EBA6',
+                  fillColor: '#00AD22',
 
                 }, 
-                // {
-                //   x: '25 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#99EBA6',
-
-                // },
                 {
                   x: '25 Aug',
                   y: [0, 0],
-                  fillColor: '#99EBA6',
+                  fillColor: '#00AD22',
 
                 },
                 //26 Aug Thursday
                 {
                   x: '26 Aug',
                   y: [14, 19],
-                  fillColor: '#34D54F',
+                  fillColor: '#047900',
 
                 },
-                // {
-                //   x: '26 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#34D54F',
-
-                // },
                 {
                   x: '26 Aug',
                   y: [0, 0],
-                  fillColor: '#34D54F',
+                  fillColor: '#047900',
 
                 },
                 //27 Aug Friday
                 {
                   x: '27 Aug',
                   y: [14, 20],
-                  fillColor: '#1F9833',
+                  fillColor: '#047900',
 
                 },
-                // {
-                //   x: '27 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#1F9833',
-
-                // },
                 {
                   x: '27 Aug',
                   y: [0, 0],
-                  fillColor: '#1F9833',
+                  fillColor: '#047900',
 
                 },
                 //28 Aug Saturday
@@ -283,16 +203,10 @@ class SleepNew extends React.Component {
                   fillColor: '#25BB3E',
 
                 },
-                // {
-                //   x: '28 Aug',
-                //   y: [0, 0],
-                //   fillColor: '#25BB3E',
-
-                // },
                 {
                   x: '28 Aug',
                   y: [0, 0],
-                  fillColor: '#25BB3E',
+                  fillColor: '#A1FFB1',
 
                 }]
             }],
@@ -329,7 +243,10 @@ class SleepNew extends React.Component {
             //     }]
             //  },
               dataLabels: {
-                enabled: false,
+                enabled: true,
+                textAnchor: 'middle',
+                //offsetY:-20,
+
               },
               fill: {
                   opacity: 1,
@@ -376,16 +293,16 @@ class SleepNew extends React.Component {
                 <table style={{marginLeft: "32em", marginTop: "-0.5em"}}>
                    <tr>
                         <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#99EBA6"}}>Poor </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#A1FFB1"}}>Poor </p>
                          </td>
                          <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#34D54F"}}>Average </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#59F15F"}}>Average </p>
                          </td>
                          <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#1F9833"}}>Good </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#00AD22"}}>Good </p>
                          </td>
                          <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#11551D", color: "#ffffff"}}>Great </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#047900"}}>Great </p>
                          </td>                     
                    </tr>
                </table>
@@ -399,5 +316,5 @@ class SleepNew extends React.Component {
           }
       }
       
-export default SleepNew;
+export default SleepNew1;
     
