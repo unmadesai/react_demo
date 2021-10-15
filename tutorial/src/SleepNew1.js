@@ -5,10 +5,10 @@ var qual_sleep = ['good', 'great', 'good', 'poor', 'average', 'poor', 'good',
                 'poor', 'great', 'good', 'poor', 'average', 'good', 'great'];
 
 //color scheme:
-//00AD22=light=poor sleep
-//047900=medium=average sleep
-//047900=medium2=good sleep
-//59F15F=dark=great sleep
+//99EBA6=light=poor sleep
+//34D54F=medium=okay sleep
+//1F9833=medium2=good sleep
+//11551D=dark=great sleep
 
 class SleepNew1 extends React.Component {
     constructor(props) {
@@ -21,20 +21,20 @@ class SleepNew1 extends React.Component {
                   x: '15 Aug',
                   //reversed time - 1000=10pm, 2000=8am
                   //someone help T_T
-                  y: [17, 23],
+                  y: [0, 0],
                   //need a check here with the corresponding quality of sleep value
                   //currently series does not allow if within each data point, only color
                   //so coloring individually, but this is not optimal!
                   //   if(qual_sleep[0] == "great") {
                   //     color: '#ffffff',
                   //   },
-                  fillColor: '#A1FFB1',
+                  fillColor: '#99EBA6',
                   
                 }, 
                 {
                   x: '15 Aug',
-                  y: [0, 0],
-                  fillColor: '#A1FFB1',
+                  y: [0, 2],
+                  fillColor: '#34D54F',
                 //   dataLabels: {
                 //       enabled: false,
                 //   }
@@ -43,170 +43,170 @@ class SleepNew1 extends React.Component {
                 //16 Aug Monday
                 {
                   x: '16 Aug',
-                  y: [16, 22],
-                  fillColor: '#047900',
+                  y: [18, 24],
+                  fillColor: '#34D54F',
 
                 }, 
                 {
                   x: '16 Aug',
                   y: [0, 1],
-                  fillColor: '#A1FFB1',
+                  fillColor: '#11551D',
 
                 }, 
                 //17 Aug Tuesday
                 {
                   x: '17 Aug',
                   y: [17, 24],
-                  fillColor: '#A1FFB1',
+                  fillColor: '#11551D',
 
                 },
                 {
                   x: '17 Aug',
-                  y: [0, 0],
-                  fillColor: '#A1FFB1',
+                  y: [0, 2],
+                  fillColor: '#99EBA6',
 
                 }, 
                 //18 Aug Wednesday
                 {
                   x: '18 Aug',
-                  y: [12, 20],
-                  fillColor: '#00AD22',
+                  y: [19, 24],
+                  fillColor: '#99EBA6',
 
                 }, 
                 {
                   x: '18 Aug',
                   y: [0, 0],
-                  fillColor: '#A1FFB1',
+                  fillColor: '#99EBA6',
 
                 },
                 //19 Aug Thursday
                 {
                   x: '19 Aug',
-                  y: [15, 21],
-                  fillColor: '#047900',
+                  y: [0, 0],
+                  fillColor: '#11551D',
 
                 },
                 {
                   x: '19 Aug',
                   y: [0, 0],
-                  fillColor: '#A1FFB1',
+                  fillColor: '#99EBA6',
 
                 },
                 //20 Aug Friday
                 {
                   x: '20 Aug',
-                  y: [15, 19],
-                  fillColor: '#00AD22',
+                  y: [0, 0],
+                  fillColor: '#1F9833',
 
                 },
                 {
                   x: '20 Aug',
-                  y: [0, 0],
-                  fillColor: '#00AD22',
+                  y: [0,1],
+                  fillColor: '#99EBA6',
 
                 },
                 //21 Aug Saturday
                 {
                   x: '21 Aug',
-                  y: [15, 23],
-                  fillColor: '#59F15F',
+                  y: [20, 24],
+                  fillColor: '#99EBA6',
 
                 },
                 {
                   x: '21 Aug',
-                  y: [0, 0],
-                  fillColor: '#59F15F',
+                  y: [0, 1],
+                  fillColor: '#1F9833',
 
                 },
                 //22 Aug Sunday
                 {
                   x: '22 Aug',
-                  y: [15, 21],
-                  fillColor: '#047900',
+                  y: [17, 24],
+                  fillColor: '#1F9833',
 
                 },
                 {
                   x: '22 Aug',
                   y: [0, 0],
-                  fillColor: '#047900',
+                  fillColor: '#11551D',
 
                 },
                 //23 Aug Monday
                 {
                   x: '23 Aug',
-                  y: [15, 18],
-                  fillColor: '#59F15F',
+                  y: [0, 0],
+                  fillColor: '#34D54F',
 
                 },
                 {
                   x: '23 Aug',
-                  y: [0, 0],
-                  fillColor: '#59F15F',
+                  y: [0, 1],
+                  fillColor: '#1F9833',
 
                 }, 
                 //24 Aug Tuesday
                 {
                   x: '24 Aug',
-                  y: [14, 21],
-                  fillColor: '#00AD22',
+                  y: [17, 24],
+                  fillColor: '#1F9833',
 
                 }, 
                 {
                   x: '24 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
+                  y: [0, 1],
+                  fillColor: '#1F9833',
 
                 },
                 //25 Aug Wednesday
                 {
                   x: '25 Aug',
-                  y: [14, 20],
-                  fillColor: '#00AD22',
+                  y: [17, 24],
+                  fillColor: '#1F9833',
 
                 }, 
                 {
                   x: '25 Aug',
                   y: [0, 0],
-                  fillColor: '#00AD22',
+                  fillColor: '#1F9833',
 
                 },
                 //26 Aug Thursday
                 {
                   x: '26 Aug',
-                  y: [14, 19],
-                  fillColor: '#047900',
+                  y: [0, 0],
+                  fillColor: '#11551D',
 
                 },
                 {
                   x: '26 Aug',
                   y: [0, 0],
-                  fillColor: '#047900',
+                  fillColor: '#11551D',
 
                 },
                 //27 Aug Friday
                 {
                   x: '27 Aug',
-                  y: [14, 20],
-                  fillColor: '#047900',
+                  y: [0, 0],
+                  fillColor: '#11551D',
 
                 },
                 {
                   x: '27 Aug',
-                  y: [0, 0],
-                  fillColor: '#047900',
+                  y: [0, 1],
+                  fillColor: '#1F9833',
 
                 },
                 //28 Aug Saturday
                 {
                   x: '28 Aug',
-                  y: [16, 20],
-                  fillColor: '#25BB3E',
+                  y: [18, 24],
+                  fillColor: '#1F9833',
 
                 },
                 {
                   x: '28 Aug',
                   y: [0, 0],
-                  fillColor: '#A1FFB1',
+                  fillColor: '#99EBA6',
 
                 }]
             }],
@@ -243,7 +243,7 @@ class SleepNew1 extends React.Component {
             //     }]
             //  },
               dataLabels: {
-                enabled: true,
+                //enabled: true,
                 textAnchor: 'middle',
                 //offsetY:-20,
 
@@ -269,8 +269,19 @@ class SleepNew1 extends React.Component {
                 },
                 labels: {
                   formatter: function (y) {
-                    return y.toFixed(0) + "00";
+                    if(y<12 && y!=0) {
+                      return y.toFixed(0) + " am";
                     }
+                    else if(y>12 && y!=24) {
+                      return (y-12).toFixed(0) + " pm";
+                    }
+                    if(y==0 || y==24) {
+                      return "Midnight";
+                    }
+                    if(y==12) {
+                      return "Noon";
+                    }
+                  }
                 }
               },
               grid: {
@@ -293,23 +304,44 @@ class SleepNew1 extends React.Component {
                 <table style={{marginLeft: "32em", marginTop: "-0.5em"}}>
                    <tr>
                         <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#A1FFB1"}}>Poor </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#99EBA6"}}>Poor </p>
                          </td>
                          <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#59F15F"}}>Average </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#34D54F"}}>Average </p>
                          </td>
                          <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#00AD22"}}>Good </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#1F9833"}}>Good </p>
                          </td>
                          <td class="sleeplabel">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#047900"}}>Great </p>
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#11551D", color: "#ffffff"}}>Great </p>
                          </td>                     
                    </tr>
                </table>
            </div>
+          <div id="sleephours" style={{marginTop: "0em"}}> 
+              <table>
+                <tr>
+                  {/* <!-- comment out if not on that day --> */}
+                  <td>-</td>
+                  <td>8</td>
+                  <td>8</td>
+                  <td>7</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>5</td>
+                  <td>8</td>
+                  <td>-</td>
+                  <td>8</td>
+                  <td>8</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>7</td>                         
+                </tr>
+              </table>
+            </div>
            <div id="chart">
                     <Chart options={this.state.options} series={this.state.series} type="rangeBar" height={300} 
-                           style={{marginLeft: "2.5em", marginRight: "0.3em"}}/>
+                           style={{marginLeft: "1.5em", marginRight: "0.3em", marginTop: "-2em"}}/>
                 </div>
            </div>
             );

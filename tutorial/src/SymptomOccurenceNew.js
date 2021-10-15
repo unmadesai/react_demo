@@ -222,8 +222,8 @@ class SymptomOccNew extends React.Component {
                       {
                         from: 10,
                         to: 99,
-                         //grey=no data
-                        color: '#E0E0E0',
+                         //white=no data
+                        color: '#ffffff',
                         name: 'missing data',
                       },
                       {
@@ -258,6 +258,11 @@ class SymptomOccNew extends React.Component {
               horizontalAlign: 'center',
               offsetX: 40,
             },
+            xaxis: {
+              labels: {
+                show: false,
+              }
+            },
           },        
         };
       }
@@ -268,104 +273,50 @@ class SymptomOccNew extends React.Component {
         <div>
           <div id="chart">
           <div>
-               <table style={{marginRight: "1em", position: "relative", float: "right", marginTop: "1.2em"}}>
+               <table style={{marginRight: "1em", position: "relative", float: "right", marginTop: "0.2em", marginBottom: "-1.2em"}}>
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/occurence.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Occured </p>
+                                 style={{verticalAlign: "-2px"}}/> Occured </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/no_occurence.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Did not occur </p>
+                                 style={{verticalAlign: "-2px"}}/> Did not occur </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/missing_data.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> No Data </p>                
+                                 style={{verticalAlign: "-2px"}}/> No Data </p>                
                          </td>
-                         <td class="">
+                         {/* <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/medication.png' height='14px' width='14px' 
                                  style={{verticalAlign: "-1px"}}/> Medication taken </p>
-                         </td>                      
+                         </td>                       */}
                    </tr>
                </table>
            </div>
-          {/* <div>
-              <table style={{marginRight: "1em", position: "relative", float: "right", marginBottom: "-1em", marginTop: "0.2em"}}>
-                  <tr>
-                      <td class=" ">
-                          <p style={{marginRight: "1em", padding: "0.1em"}}><img src='images/symptom_occurence/medication.png' height='14px' width='14px' 
-                                style={{verticalAlign: "middle"}}/> Medication taken </p>
-                        </td>
-                  </tr>
-              </table>
-          </div> */}
-          <div id="occurence" style={{marginTop: "-3em"}}> 
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={220} style={{marginLeft: "-0.4em", marginRight: "-0.4em"}} />
+          </div>
+          <div id="expvsrel" style={{marginTop: "-1em"}}> 
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
-                  {/* <!-- MEDICATION SYMBOL ABOVE SYMBOL OCCURENCE --> */}
-                  {/* Sunday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Monday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Tuesday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Wednesday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Thursday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Friday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Saturday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Sunday  WEEK 2*/}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Monday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Tuesday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Wednesday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Thursday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Friday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  {/* Saturday */}
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_occurence/medication.png' height='8px' width='8px'></img></th>       
+                  <td>Sun</td>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>
+                  <td>Sun</td>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>                         
                 </tr>
               </table>
-            </div>
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={220} style={{marginLeft: "-0.4em", marginRight: "-0.4em" }} />
           </div>
-          <div id="html-dist"></div>
         </div>
       );
     }

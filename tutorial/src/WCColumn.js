@@ -20,7 +20,7 @@ class WCColumn extends React.Component {
         {
           type: 'scatter',
           name: 'No data',
-        data: [10,,,,10,,,,,,,10,,]
+        data: [10,,,,10,10,,,10,,,10,10,]
         },
         {
             type: 'scatter',

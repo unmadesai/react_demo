@@ -21,7 +21,7 @@ body {
 
 
 .charttitle {
-    margin-left: 1em;
+    margin-left: 0.5em;
     margin-bottom: -1.5em;
 }
 
@@ -57,7 +57,9 @@ h4.charttitle {
 #worryxaxisd td {
     font-family:  Calibri,  sans-serif ;
     font-size: 16px;
-    padding: 8.6px;
+    width: 40.3px;
+    text-align: center;
+    padding-top: 8px;
 }
 
 #worryxaxisd {
@@ -95,7 +97,9 @@ h4.charttitle {
 #expvsrel td {    
     font-family:  Calibri,  sans-serif ;
     font-size: 16px;
-    padding: 8.6px;
+    width: 40.3px;
+    text-align: center;
+    padding-top: 5px;
     
 }
 
@@ -141,4 +145,21 @@ h4.charttitle {
     /* margin-left: 1em;
     margin-right: 1em;   
     border-spacing: 1em; */
+}
+
+
+#sleephours {
+    margin-left: 5.8em;
+    margin-top: -2em;
+}
+
+#sleephours td {    
+    font-family:  Calibri,  sans-serif ;
+    font-size: 14px;
+    /* padding: 8.6px; */
+    padding-right: 31.3px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+
+    
 }

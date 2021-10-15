@@ -12,9 +12,9 @@ class PeerInteractionQualityNew extends React.Component {
                        //80 = absent data, wont show up on graph
                        //comment out for no interaction and uncomment in below no interaction equivalent
                        [new Date('2021-08-15, 09:00 +0800').getTime(),80],
-                       [new Date('2021-08-16, 09:00 +0800').getTime(),20], 
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),-20], 
-                       [new Date('2021-08-18, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-16, 09:00 +0800').getTime(),-20], 
+                       [new Date('2021-08-17, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-18, 09:00 +0800').getTime(),-20], 
                        [new Date('2021-08-19, 09:00 +0800').getTime(),80], 
                        [new Date('2021-08-20, 09:00 +0800').getTime(),80], 
                       //  [new Date('2021-08-21, 09:00 +0800').getTime(),20],
@@ -71,7 +71,7 @@ class PeerInteractionQualityNew extends React.Component {
                       //  [new Date('2021-08-18, 09:00 +0800').getTime(),60], 
                       //  [new Date('2021-08-19, 09:00 +0800').getTime(),60], 
                       //  [new Date('2021-08-20, 09:00 +0800').getTime(),60], 
-                       [new Date('2021-08-21, 09:00 +0800').getTime(),60],
+                       [new Date('2021-08-21, 09:00 +0800').getTime(),-60],
                       //  [new Date('2021-08-22, 09:00 +0800').getTime(),60],
                       //  [new Date('2021-08-23, 09:00 +0800').getTime(),60],
                       //  [new Date('2021-08-24, 09:00 +0800').getTime(),60],
@@ -97,7 +97,7 @@ class PeerInteractionQualityNew extends React.Component {
                       //  [new Date('2021-08-23, 14:00 +0800').getTime(),60],
                       //  [new Date('2021-08-24, 14:00 +0800').getTime(),60],
                       //  [new Date('2021-08-25, 14:00 +0800').getTime(),60],
-                      //  [new Date('2021-08-26, 14:00 +0800').getTime(),60],
+                        [new Date('2021-08-26, 14:00 +0800').getTime(),-60],
                       //  [new Date('2021-08-27, 14:00 +0800').getTime(),60],
                       //  [new Date('2021-08-28, 14:00 +0800').getTime(),60]
                       ]
@@ -110,7 +110,7 @@ class PeerInteractionQualityNew extends React.Component {
                         // [new Date('2021-08-15, 19:00 +0800').getTime(),60],
                         // [new Date('2021-08-16, 19:00 +0800').getTime(),60], 
                         // [new Date('2021-08-17, 19:00 +0800').getTime(),60], 
-                        // [new Date('2021-08-18, 19:00 +0800').getTime(),60], 
+                         [new Date('2021-08-18, 19:00 +0800').getTime(),-60], 
                         // [new Date('2021-08-19, 19:00 +0800').getTime(),60], 
                         // [new Date('2021-08-20, 19:00 +0800').getTime(),60], 
                         // [new Date('2021-08-21, 19:00 +0800').getTime(),60],
@@ -118,7 +118,7 @@ class PeerInteractionQualityNew extends React.Component {
                         // [new Date('2021-08-23, 19:00 +0800').getTime(),60],
                         // [new Date('2021-08-24, 19:00 +0800').getTime(),60],
                         // [new Date('2021-08-25, 19:00 +0800').getTime(),60],
-                        // [new Date('2021-08-26, 19:00 +0800').getTime(),60],
+                         [new Date('2021-08-26, 19:00 +0800').getTime(),-60],
                         // [new Date('2021-08-27, 19:00 +0800').getTime(),60],
                         // [new Date('2021-08-28, 19:00 +0800').getTime(),60]
                       ]
@@ -141,7 +141,7 @@ class PeerInteractionQualityNew extends React.Component {
                 // horizontalAlign: 'right',
                 show: false,
               },
-              colors: ['#B192B5', '#89608E', '#68496E', '#1F1F1F', '#1F1F1F', '#1F1F1F'],
+              colors: ['#B192B5', '#89608E', '#68496E', '#393939', '#393939', '#393939'],
               dataLabels: {
                 enabled: false
               },
@@ -179,15 +179,15 @@ class PeerInteractionQualityNew extends React.Component {
                       return "Very Positive";
                     else if(y==0)
                       return "Neutral";
-                    else if (y==60)
+                    else if (y==-60)
                       return "No interactions";
                   }
                 },
                 //categories: [-40,-20,0,20,40],
                 //categories: ['Very Positive','Positive','Neutral','Negative','Very Negative'],
                 tickAmount: 20,
-                min: -40,
-                max: 60
+                min: -60,
+                max: 40
               },
               markers: {
                 size: [8, 8, 8, 8, 10 ,10],

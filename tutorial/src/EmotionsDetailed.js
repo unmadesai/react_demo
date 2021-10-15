@@ -7,7 +7,6 @@ function dataGeneration(x,y,z) {
   var y=y;
   var z=z;
   series.push([x,y,z]);
-  console.log("value here is "+series);
   return series;
   }
 
@@ -32,35 +31,35 @@ class EmotionDetailed extends React.Component {
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
-                [new Date('2021-08-15, 09:00 +0800').getTime(),5],
+                [new Date('2021-08-15, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-15, 14:00 +0800').getTime(),58],
                 [new Date('2021-08-15, 19:00 +0800').getTime(),45],
 
-                [new Date('2021-08-16, 09:00 +0800').getTime(),27], 
+                [new Date('2021-08-16, 09:00 +0800').getTime(),5], 
                 [new Date('2021-08-16, 14:00 +0800').getTime(),50],
                 [new Date('2021-08-16, 19:00 +0800').getTime(),36], 
 
-                [new Date('2021-08-17, 09:00 +0800').getTime(),37], 
+                [new Date('2021-08-17, 09:00 +0800').getTime(),4], 
                 [new Date('2021-08-17, 14:00 +0800').getTime(),53], 
                 [new Date('2021-08-17, 19:00 +0800').getTime(),15], 
 
-                [new Date('2021-08-18, 09:00 +0800').getTime(),76], 
+                [new Date('2021-08-18, 09:00 +0800').getTime(),50], 
                 [new Date('2021-08-18, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-18, 19:00 +0800').getTime(),50], 
 
-                [new Date('2021-08-19, 09:00 +0800').getTime(),20], 
+                [new Date('2021-08-19, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-19, 14:00 +0800').getTime(),10], 
                 [new Date('2021-08-19, 19:00 +0800').getTime(),73], 
 
-                [new Date('2021-08-20, 09:00 +0800').getTime(),54], 
+                [new Date('2021-08-20, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-20, 14:00 +0800').getTime(),67], 
                 [new Date('2021-08-20, 19:00 +0800').getTime(),41], 
 
-                [new Date('2021-08-21, 09:00 +0800').getTime(),64],
+                [new Date('2021-08-21, 09:00 +0800').getTime(),59],
                 [new Date('2021-08-21, 14:00 +0800').getTime(),29],
                 [new Date('2021-08-21, 19:00 +0800').getTime(),36],
 
-                [new Date('2021-08-22, 09:00 +0800').getTime(),15],
+                [new Date('2021-08-22, 09:00 +0800').getTime(),76],
                 [new Date('2021-08-22, 14:00 +0800').getTime(),24],
                 [new Date('2021-08-22, 19:00 +0800').getTime(),50],
 
@@ -68,15 +67,15 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-23, 14:00 +0800').getTime(),50],
                 [new Date('2021-08-23, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-24, 09:00 +0800').getTime(),67],
+                [new Date('2021-08-24, 09:00 +0800').getTime(),66],
                 [new Date('2021-08-24, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-24, 19:00 +0800').getTime(),20],
 
-                [new Date('2021-08-25, 09:00 +0800').getTime(),14],
+                [new Date('2021-08-25, 09:00 +0800').getTime(),66],
                 [new Date('2021-08-25, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-25, 19:00 +0800').getTime(),50],
 
-                [new Date('2021-08-26, 09:00 +0800').getTime(),40],
+                [new Date('2021-08-26, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-26, 14:00 +0800').getTime(),15],
                 [new Date('2021-08-26, 19:00 +0800').getTime(),60],
 
@@ -84,7 +83,7 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-27, 14:00 +0800').getTime(),22],
                 [new Date('2021-08-27, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-28, 09:00 +0800').getTime(),72],
+                [new Date('2021-08-28, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
                      
@@ -153,31 +152,31 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-15, 14:00 +0800').getTime(),15],
                 [new Date('2021-08-15, 19:00 +0800').getTime(),12],
 
-                [new Date('2021-08-16, 09:00 +0800').getTime(),27], 
+                [new Date('2021-08-16, 09:00 +0800').getTime(),5], 
                 [new Date('2021-08-16, 14:00 +0800').getTime(),50],
                 [new Date('2021-08-16, 19:00 +0800').getTime(),16], 
 
-                [new Date('2021-08-17, 09:00 +0800').getTime(),37], 
+                [new Date('2021-08-17, 09:00 +0800').getTime(),6], 
                 [new Date('2021-08-17, 14:00 +0800').getTime(),53], 
                 [new Date('2021-08-17, 19:00 +0800').getTime(),21], 
 
-                [new Date('2021-08-18, 09:00 +0800').getTime(),76], 
+                [new Date('2021-08-18, 09:00 +0800').getTime(),34], 
                 [new Date('2021-08-18, 14:00 +0800').getTime(),42],
                 [new Date('2021-08-18, 19:00 +0800').getTime(),50], 
 
-                [new Date('2021-08-19, 09:00 +0800').getTime(),20], 
+                [new Date('2021-08-19, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-19, 14:00 +0800').getTime(),65], 
                 [new Date('2021-08-19, 19:00 +0800').getTime(),73], 
 
-                [new Date('2021-08-20, 09:00 +0800').getTime(),15], 
+                [new Date('2021-08-20, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-20, 14:00 +0800').getTime(),10], 
                 [new Date('2021-08-20, 19:00 +0800').getTime(),41], 
 
-                [new Date('2021-08-21, 09:00 +0800').getTime(),64],
+                [new Date('2021-08-21, 09:00 +0800').getTime(),53],
                 [new Date('2021-08-21, 14:00 +0800').getTime(),29],
                 [new Date('2021-08-21, 19:00 +0800').getTime(),36],
 
-                [new Date('2021-08-22, 09:00 +0800').getTime(),73],
+                [new Date('2021-08-22, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-22, 14:00 +0800').getTime(),24],
                 [new Date('2021-08-22, 19:00 +0800').getTime(),50],
 
@@ -185,15 +184,15 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-23, 14:00 +0800').getTime(),41],
                 [new Date('2021-08-23, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-24, 09:00 +0800').getTime(),67],
+                [new Date('2021-08-24, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-24, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-24, 19:00 +0800').getTime(),20],
 
-                [new Date('2021-08-25, 09:00 +0800').getTime(),71],
+                [new Date('2021-08-25, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-25, 14:00 +0800').getTime(),55],
                 [new Date('2021-08-25, 19:00 +0800').getTime(),50],
 
-                [new Date('2021-08-26, 09:00 +0800').getTime(),40],
+                [new Date('2021-08-26, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-26, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-26, 19:00 +0800').getTime(),60],
 
@@ -201,7 +200,7 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-27, 14:00 +0800').getTime(),66],
                 [new Date('2021-08-27, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-28, 09:00 +0800').getTime(),72],
+                [new Date('2021-08-28, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
                      
@@ -264,51 +263,51 @@ class EmotionDetailed extends React.Component {
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
-                [new Date('2021-08-15, 09:00 +0800').getTime(),25],
+                [new Date('2021-08-15, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-15, 14:00 +0800').getTime(),26],
                 [new Date('2021-08-15, 19:00 +0800').getTime(),45],
 
-                [new Date('2021-08-16, 09:00 +0800').getTime(),42], 
+                [new Date('2021-08-16, 09:00 +0800').getTime(),5], 
                 [new Date('2021-08-16, 14:00 +0800').getTime(),50],
                 [new Date('2021-08-16, 19:00 +0800').getTime(),15], 
 
-                [new Date('2021-08-17, 09:00 +0800').getTime(),37], 
+                [new Date('2021-08-17, 09:00 +0800').getTime(),4], 
                 [new Date('2021-08-17, 14:00 +0800').getTime(),53], 
                 [new Date('2021-08-17, 19:00 +0800').getTime(),21], 
 
-                [new Date('2021-08-18, 09:00 +0800').getTime(),76], 
+                [new Date('2021-08-18, 09:00 +0800').getTime(),71], 
                 [new Date('2021-08-18, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-18, 19:00 +0800').getTime(),50], 
 
-                [new Date('2021-08-19, 09:00 +0800').getTime(),77], 
+                [new Date('2021-08-19, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-19, 14:00 +0800').getTime(),10], 
                 [new Date('2021-08-19, 19:00 +0800').getTime(),54], 
 
-                [new Date('2021-08-20, 09:00 +0800').getTime(),30], 
+                [new Date('2021-08-20, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-20, 14:00 +0800').getTime(),11], 
                 [new Date('2021-08-20, 19:00 +0800').getTime(),41], 
 
-                [new Date('2021-08-21, 09:00 +0800').getTime(),24],
+                [new Date('2021-08-21, 09:00 +0800').getTime(),55],
                 [new Date('2021-08-21, 14:00 +0800').getTime(),41],
                 [new Date('2021-08-21, 19:00 +0800').getTime(),36],
 
-                [new Date('2021-08-22, 09:00 +0800').getTime(),4],
+                [new Date('2021-08-22, 09:00 +0800').getTime(),68],
                 [new Date('2021-08-22, 14:00 +0800').getTime(),88],
                 [new Date('2021-08-22, 19:00 +0800').getTime(),85],
 
-                [new Date('2021-08-23, 09:00 +0800').getTime(),11],
+                [new Date('2021-08-23, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-23, 14:00 +0800').getTime(),51],
                 [new Date('2021-08-23, 19:00 +0800').getTime(),45],
 
-                [new Date('2021-08-24, 09:00 +0800').getTime(),25],
+                [new Date('2021-08-24, 09:00 +0800').getTime(),66],
                 [new Date('2021-08-24, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-24, 19:00 +0800').getTime(),20],
 
-                [new Date('2021-08-25, 09:00 +0800').getTime(),71],
+                [new Date('2021-08-25, 09:00 +0800').getTime(),72],
                 [new Date('2021-08-25, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-25, 19:00 +0800').getTime(),41],
 
-                [new Date('2021-08-26, 09:00 +0800').getTime(),33],
+                [new Date('2021-08-26, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-26, 14:00 +0800').getTime(),1],
                 [new Date('2021-08-26, 19:00 +0800').getTime(),66],
 
@@ -316,7 +315,7 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-27, 14:00 +0800').getTime(),22],
                 [new Date('2021-08-27, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-28, 09:00 +0800').getTime(),52],
+                [new Date('2021-08-28, 09:00 +0800').getTime(),66],
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
                      
@@ -377,35 +376,35 @@ class EmotionDetailed extends React.Component {
                 //data: [62,61,19,29,69,75,82,88,29,3,2,23,24,5]
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
-                [new Date('2021-08-15, 09:00 +0800').getTime(),25],
+                [new Date('2021-08-15, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-15, 14:00 +0800').getTime(),22],
                 [new Date('2021-08-15, 19:00 +0800').getTime(),4],
 
-                [new Date('2021-08-16, 09:00 +0800').getTime(),27], 
+                [new Date('2021-08-16, 09:00 +0800').getTime(),7], 
                 [new Date('2021-08-16, 14:00 +0800').getTime(),55],
                 [new Date('2021-08-16, 19:00 +0800').getTime(),14], 
 
-                [new Date('2021-08-17, 09:00 +0800').getTime(),37], 
+                [new Date('2021-08-17, 09:00 +0800').getTime(),6], 
                 [new Date('2021-08-17, 14:00 +0800').getTime(),15], 
                 [new Date('2021-08-17, 19:00 +0800').getTime(),21], 
 
-                [new Date('2021-08-18, 09:00 +0800').getTime(),76], 
+                [new Date('2021-08-18, 09:00 +0800').getTime(),73], 
                 [new Date('2021-08-18, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-18, 19:00 +0800').getTime(),22], 
 
-                [new Date('2021-08-19, 09:00 +0800').getTime(),20], 
+                [new Date('2021-08-19, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-19, 14:00 +0800').getTime(),40], 
                 [new Date('2021-08-19, 19:00 +0800').getTime(),73], 
 
-                [new Date('2021-08-20, 09:00 +0800').getTime(),30], 
+                [new Date('2021-08-20, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-20, 14:00 +0800').getTime(),67], 
                 [new Date('2021-08-20, 19:00 +0800').getTime(),41], 
 
-                [new Date('2021-08-21, 09:00 +0800').getTime(),64],
+                [new Date('2021-08-21, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-21, 14:00 +0800').getTime(),1],
                 [new Date('2021-08-21, 19:00 +0800').getTime(),65],
 
-                [new Date('2021-08-22, 09:00 +0800').getTime(),73],
+                [new Date('2021-08-22, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-22, 14:00 +0800').getTime(),15],
                 [new Date('2021-08-22, 19:00 +0800').getTime(),40],
 
@@ -417,11 +416,11 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-24, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-24, 19:00 +0800').getTime(),10],
 
-                [new Date('2021-08-25, 09:00 +0800').getTime(),71],
+                [new Date('2021-08-25, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-25, 14:00 +0800').getTime(),85],
                 [new Date('2021-08-25, 19:00 +0800').getTime(),50],
 
-                [new Date('2021-08-26, 09:00 +0800').getTime(),40],
+                [new Date('2021-08-26, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-26, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-26, 19:00 +0800').getTime(),25],
 
@@ -429,7 +428,7 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-27, 14:00 +0800').getTime(),66],
                 [new Date('2021-08-27, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-28, 09:00 +0800').getTime(),88],
+                [new Date('2021-08-28, 09:00 +0800').getTime(),67],
                 [new Date('2021-08-28, 14:00 +0800').getTime(),57],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),11]]
                      
@@ -494,47 +493,47 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-15, 14:00 +0800').getTime(),26],
                 [new Date('2021-08-15, 19:00 +0800').getTime(),4],
 
-                [new Date('2021-08-16, 09:00 +0800').getTime(),27], 
+                [new Date('2021-08-16, 09:00 +0800').getTime(),4], 
                 [new Date('2021-08-16, 14:00 +0800').getTime(),88],
                 [new Date('2021-08-16, 19:00 +0800').getTime(),16], 
 
-                [new Date('2021-08-17, 09:00 +0800').getTime(),45], 
+                [new Date('2021-08-17, 09:00 +0800').getTime(),3], 
                 [new Date('2021-08-17, 14:00 +0800').getTime(),0], 
                 [new Date('2021-08-17, 19:00 +0800').getTime(),21], 
 
-                [new Date('2021-08-18, 09:00 +0800').getTime(),48], 
+                [new Date('2021-08-18, 09:00 +0800').getTime(),37], 
                 [new Date('2021-08-18, 14:00 +0800').getTime(),74],
                 [new Date('2021-08-18, 19:00 +0800').getTime(),1], 
 
-                [new Date('2021-08-19, 09:00 +0800').getTime(),58], 
+                [new Date('2021-08-19, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-19, 14:00 +0800').getTime(),41], 
                 [new Date('2021-08-19, 19:00 +0800').getTime(),22], 
 
-                [new Date('2021-08-20, 09:00 +0800').getTime(),1], 
+                [new Date('2021-08-20, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-20, 14:00 +0800').getTime(),54], 
                 [new Date('2021-08-20, 19:00 +0800').getTime(),44], 
 
-                [new Date('2021-08-21, 09:00 +0800').getTime(),64],
+                [new Date('2021-08-21, 09:00 +0800').getTime(),56],
                 [new Date('2021-08-21, 14:00 +0800').getTime(),29],
                 [new Date('2021-08-21, 19:00 +0800').getTime(),36],
 
-                [new Date('2021-08-22, 09:00 +0800').getTime(),14],
+                [new Date('2021-08-22, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-22, 14:00 +0800').getTime(),24],
                 [new Date('2021-08-22, 19:00 +0800').getTime(),25],
 
-                [new Date('2021-08-23, 09:00 +0800').getTime(),10],
+                [new Date('2021-08-23, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-23, 14:00 +0800').getTime(),25],
                 [new Date('2021-08-23, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-24, 09:00 +0800').getTime(),77],
+                [new Date('2021-08-24, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-24, 14:00 +0800').getTime(),4],
                 [new Date('2021-08-24, 19:00 +0800').getTime(),20],
 
-                [new Date('2021-08-25, 09:00 +0800').getTime(),71],
+                [new Date('2021-08-25, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-25, 14:00 +0800').getTime(),78],
                 [new Date('2021-08-25, 19:00 +0800').getTime(),52],
 
-                [new Date('2021-08-26, 09:00 +0800').getTime(),20],
+                [new Date('2021-08-26, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-26, 14:00 +0800').getTime(),44],
                 [new Date('2021-08-26, 19:00 +0800').getTime(),60],
 
@@ -542,7 +541,7 @@ class EmotionDetailed extends React.Component {
                 [new Date('2021-08-27, 14:00 +0800').getTime(),45],
                 [new Date('2021-08-27, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-28, 09:00 +0800').getTime(),24],
+                [new Date('2021-08-28, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-28, 19:00 +0800').getTime(),10]]
                      
@@ -610,7 +609,7 @@ class EmotionDetailed extends React.Component {
           return (
           <div>
             <div>
-              <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "-0.2em"}}>
+              <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "-1.2em"}}>
                 <tr>
                   <td class="">
                       <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/emotions/worried.png' height='16px' width='16px' 
