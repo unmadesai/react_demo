@@ -9,22 +9,22 @@ class WCColumn extends React.Component {
         series: [
         {
           type: 'bar',
-          name: 'How worried',
+          name: 'How Worried',
           data: [0,5,8,74,0,0,64,69,0,64,69,0,0,65]
         }, 
         {
             type: 'bar',
-            name: 'How certain',
+            name: 'How Certain',
           data: [0,5,5,74,0,0,70,73,0,68,69,0,0,81]
         },
         {
           type: 'scatter',
-          name: 'No data',
+          name: 'No Data',
         data: [10,,,,10,10,,,10,,,10,10,]
         },
         {
             type: 'scatter',
-            name: 'Event happened',
+            name: 'Event Happened',
           data: [,105,105,,,105,105,105,105,,,,105,]
         }],
         options: {
@@ -65,7 +65,20 @@ class WCColumn extends React.Component {
             'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
           },
           yaxis: {
-            max: 100
+            max: 100,
+            labels: {
+              formatter: function (y) {
+                if(y<100 && y>0) {
+                  return "";
+                }
+                else if(y==0) {
+                  return "Not At All";
+                }
+                else if(y==100) {
+                  return "Extremely";
+                }
+              }
+            },
           },
           colors: ['#2B61E4','#80B6F2'],
           markers: {
@@ -109,17 +122,17 @@ class WCColumn extends React.Component {
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/check.png' height='20px' width='20px' 
-                                 style={{verticalAlign: "-3px"}}/> Event happened </p>                
+                                 style={{verticalAlign: "-3px"}}/> Event Happened </p>                
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/nodata.png' height='13px' width='13px' 
-                                 style={{verticalAlign: "-2px"}}/> No data </p>                
+                                 style={{verticalAlign: "-2px"}}/> No Data </p>                
                          </td>                     
                       </tr>
                     </table>
               </div>
               <div id="chart">                    
-                <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "2.8em", marginRight: "0em" }} />
+                <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "1em", marginRight: "0em" }} />
               </div>
               <div id="html-dist"></div>
             </div>

@@ -78,10 +78,11 @@ h4.charttitle {
 #occurence {
     margin-left: 5.8em;
     margin-bottom: -2em;
+    margin-right: 2em;
 }
 
 #occurence th {
-    padding: 2.5px;
+    padding: 2.3px;
 } 
 
 
@@ -149,7 +150,7 @@ h4.charttitle {
 
 
 #sleephours {
-    margin-left: 5.8em;
+    margin-left: 6em;
     margin-top: -2em;
 }
 
@@ -157,8 +158,8 @@ h4.charttitle {
     font-family:  Calibri,  sans-serif ;
     font-size: 14px;
     /* padding: 8.6px; */
-    padding-right: 31.3px;
-    padding-left: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-bottom: 3px;
 
     

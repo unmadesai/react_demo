@@ -180,7 +180,7 @@ class PeerInteractionQualityNew extends React.Component {
                     else if(y==0)
                       return "Neutral";
                     else if (y==-60)
-                      return "No interactions";
+                      return "No Interactions";
                   }
                 },
                 //categories: [-40,-20,0,20,40],
@@ -231,7 +231,7 @@ render() {
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/noInteractionLegend.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "-3px"}}/> No interactions </p>                
+                                 style={{verticalAlign: "-3px"}}/> No Interactions </p>                
                          </td>                     
                       </tr>
                     </table>

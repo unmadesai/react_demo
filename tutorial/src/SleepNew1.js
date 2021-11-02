@@ -19,194 +19,107 @@ class SleepNew1 extends React.Component {
             series: [{
                 data: [{
                   x: '15 Aug',
-                  //reversed time - 1000=10pm, 2000=8am
-                  //someone help T_T
-                  y: [0, 0],
+                  //12-(wakeup time), 24-(going to sleep time)
+                  //eg 12-6,24-8 = slept from 8pm to 6am
+                  y: [12-(6), 24-(10)],
                   //need a check here with the corresponding quality of sleep value
                   //currently series does not allow if within each data point, only color
                   //so coloring individually, but this is not optimal!
                   //   if(qual_sleep[0] == "great") {
                   //     color: '#ffffff',
                   //   },
-                  fillColor: '#99EBA6',
+                  fillColor: '#34D54F',
                   
                 }, 
-                {
-                  x: '15 Aug',
-                  y: [0, 2],
-                  fillColor: '#34D54F',
-                //   dataLabels: {
-                //       enabled: false,
-                //   }
-
-                },
                 //16 Aug Monday
                 {
                   x: '16 Aug',
-                  y: [18, 24],
-                  fillColor: '#34D54F',
-
-                }, 
-                {
-                  x: '16 Aug',
-                  y: [0, 1],
+                  y: [12-(7), 24-(11)],
                   fillColor: '#11551D',
 
                 }, 
                 //17 Aug Tuesday
                 {
                   x: '17 Aug',
-                  y: [17, 24],
-                  fillColor: '#11551D',
-
-                },
-                {
-                  x: '17 Aug',
-                  y: [0, 2],
+                  y: [12-(5), 24-(10)],
                   fillColor: '#99EBA6',
 
-                }, 
+                },
                 //18 Aug Wednesday
                 {
                   x: '18 Aug',
-                  y: [19, 24],
+                  y: [12-(12), 24-(24)],
                   fillColor: '#99EBA6',
 
                 }, 
-                {
-                  x: '18 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
-
-                },
                 //19 Aug Thursday
                 {
                   x: '19 Aug',
-                  y: [0, 0],
+                  y: [12-(12), 24-(24)],
                   fillColor: '#11551D',
-
-                },
-                {
-                  x: '19 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
 
                 },
                 //20 Aug Friday
                 {
                   x: '20 Aug',
-                  y: [0, 0],
-                  fillColor: '#1F9833',
-
-                },
-                {
-                  x: '20 Aug',
-                  y: [0,1],
+                  y: [12-(4), 24-(11)],
                   fillColor: '#99EBA6',
 
                 },
                 //21 Aug Saturday
                 {
                   x: '21 Aug',
-                  y: [20, 24],
-                  fillColor: '#99EBA6',
-
-                },
-                {
-                  x: '21 Aug',
-                  y: [0, 1],
+                  y: [12-(7), 24-(11)],
                   fillColor: '#1F9833',
 
                 },
                 //22 Aug Sunday
                 {
                   x: '22 Aug',
-                  y: [17, 24],
+                  y: [12-(12), 24-(24)],
                   fillColor: '#1F9833',
-
-                },
-                {
-                  x: '22 Aug',
-                  y: [0, 0],
-                  fillColor: '#11551D',
 
                 },
                 //23 Aug Monday
                 {
                   x: '23 Aug',
-                  y: [0, 0],
-                  fillColor: '#34D54F',
-
-                },
-                {
-                  x: '23 Aug',
-                  y: [0, 1],
+                  y: [12-(7), 24-(11)],
                   fillColor: '#1F9833',
 
-                }, 
+                },
                 //24 Aug Tuesday
                 {
                   x: '24 Aug',
-                  y: [17, 24],
+                  y: [12-(7), 24-(11)],
                   fillColor: '#1F9833',
 
                 }, 
-                {
-                  x: '24 Aug',
-                  y: [0, 1],
-                  fillColor: '#1F9833',
-
-                },
                 //25 Aug Wednesday
                 {
                   x: '25 Aug',
-                  y: [17, 24],
+                  y: [12-(12), 24-(24)],
                   fillColor: '#1F9833',
 
                 }, 
-                {
-                  x: '25 Aug',
-                  y: [0, 0],
-                  fillColor: '#1F9833',
-
-                },
                 //26 Aug Thursday
                 {
                   x: '26 Aug',
-                  y: [0, 0],
-                  fillColor: '#11551D',
-
-                },
-                {
-                  x: '26 Aug',
-                  y: [0, 0],
+                  y: [12-(12), 24-(24)],
                   fillColor: '#11551D',
 
                 },
                 //27 Aug Friday
                 {
                   x: '27 Aug',
-                  y: [0, 0],
+                  y: [12-(12), 24-(24)],
                   fillColor: '#11551D',
-
-                },
-                {
-                  x: '27 Aug',
-                  y: [0, 1],
-                  fillColor: '#1F9833',
 
                 },
                 //28 Aug Saturday
                 {
                   x: '28 Aug',
-                  y: [18, 24],
+                  y: [12-(6), 24-(11)],
                   fillColor: '#1F9833',
-
-                },
-                {
-                  x: '28 Aug',
-                  y: [0, 0],
-                  fillColor: '#99EBA6',
 
                 }]
             }],
@@ -268,18 +181,19 @@ class SleepNew1 extends React.Component {
                   show: true
                 },
                 labels: {
+                  //using noon-noon model
                   formatter: function (y) {
                     if(y<12 && y!=0) {
-                      return y.toFixed(0) + " am";
+                      return y.toFixed(0) + " pm";
                     }
                     else if(y>12 && y!=24) {
-                      return (y-12).toFixed(0) + " pm";
+                      return (y-12).toFixed(0) + " am";
                     }
                     if(y==0 || y==24) {
-                      return "Midnight";
+                      return "Noon";
                     }
                     if(y==12) {
-                      return "Noon";
+                      return "Midnight";
                     }
                   }
                 }
@@ -322,6 +236,7 @@ class SleepNew1 extends React.Component {
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
+                  {/* <td>Hours</td> */}
                   <td>-</td>
                   <td>8</td>
                   <td>8</td>
@@ -341,7 +256,7 @@ class SleepNew1 extends React.Component {
             </div>
            <div id="chart">
                     <Chart options={this.state.options} series={this.state.series} type="rangeBar" height={300} 
-                           style={{marginLeft: "1.5em", marginRight: "0.3em", marginTop: "-2em"}}/>
+                           style={{marginLeft: "2.5em", marginRight: "0.3em", marginTop: "-2em"}}/>
                 </div>
            </div>
             );

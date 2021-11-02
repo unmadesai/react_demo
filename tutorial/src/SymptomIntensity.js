@@ -184,7 +184,7 @@ class SymptomIntensity extends React.Component {
     return (
         <div>
           <div>
-               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0.4em"}}>
+               <table style={{marginRight: "0em", position: "relative", float: "right", marginTop: "0.4em", marginBottom: "-1.5em"}}>
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_intensity/verylow.png' height='14px' width='14px' 
@@ -205,82 +205,15 @@ class SymptomIntensity extends React.Component {
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_intensity/veryhigh.png' height='14px' width='14px' 
                                  style={{verticalAlign: "-1.5px"}}/> Very High </p>                
-                         </td>
-                         <td class="">
-                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_intensity/medication.png' height='12px' width='12px' 
-                                 style={{verticalAlign: "-1.5px"}}/> Medication Taken</p>
-                         </td>                      
+                         </td>                    
                    </tr>
                </table>
            </div>
-           <div id="occurence" style={{marginTop: "-2em"}}> 
-              <table>
-                <tr>
-                  {/* <!-- comment out if not on that day --> */}
-                  {/* <!-- MEDICATION SYMBOL ABOVE SYMBOL INTENSITY --> */}
-                  {/* Sunday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Monday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  {/* Tuesday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Wednesday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Thursday */}
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Friday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Saturday */}
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Sunday  WEEK 2*/}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  {/* Monday */}
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  {/* Tuesday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Wednesday */}
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Thursday */}
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  {/* Friday */}
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  {/* Saturday */}
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>       
-                </tr>
-              </table>
-            </div>
-          <div id="chart" style={{marginTop: "0em"}}>           
+          
+          <div id="chart" style={{marginTop: "-2em"}}>           
             <Chart options={this.state.options} series={this.state.series} type="heatmap" height={100} style={{marginLeft: "4.5em", marginRight: "-0.5em" }} />
           </div>
-          <div id="expvsrel" style={{marginTop: "-2em"}}> 
+          <div id="expvsrel" style={{marginTop: "-1.5em"}}> 
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}

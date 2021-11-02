@@ -27,23 +27,23 @@ import "./index.css";
 ReactDOM.render(
   <div class="backgrounddiv">
     <div class="">
-      <h4 class="charttitle"> Intensity of symptoms </h4>
+      <h4 class="charttitle"> Intensity of My Symptoms </h4>
       <SymptomIntensity />
     </div>
     <div class="" >
-      <h4 class="charttitle"> When my symptoms occured </h4>
+      <h4 class="charttitle"> When My Symptoms Occured </h4>
       <SymptomOccNew />
     </div>
     <div class="">
-      <h4 class="charttitle"> How worried I was</h4>
+      <h4 class="charttitle"> How Worried I Was</h4>
       <WorryIntensity />
     </div>
     <div class="" style= {{marginTop: "-1.5em"}}>
-      <h4 class="charttitle"> What I was worried about </h4>
+      <h4 class="charttitle"> What I Was Worried About </h4>
       <WorryCategory />
     </div>
     <div class="" >
-      <h4 class="charttitle"> How certain I was </h4>
+      <h4 class="charttitle"> How Certain I Was </h4>
       <WCColumn />
     </div>
     <div class="">
@@ -51,15 +51,15 @@ ReactDOM.render(
       <ERNew />
     </div>
     <div class="">
-      <h4 class="charttitle"> When I went to school</h4>
+      <h4 class="charttitle"> When I Went to School</h4>
       <SchoolAttendance />
     </div>
     <div class="">
-      <h4 class="charttitle"> My worry about interacting with friends </h4>
+      <h4 class="charttitle"> My Worry About Interacting With Friends </h4>
       <PeerWorry />
     </div>
     <div class="">
-      <h4 class="charttitle"> Did I get along with friends</h4>
+      <h4 class="charttitle"> Did I Get Along With My Friends</h4>
       <PeerInteractionQualityNew />
     </div>
     {/* <div class="">
@@ -68,7 +68,7 @@ ReactDOM.render(
     </div> */}
     <div class="">
       <h4 class="charttitle"> My Emotions </h4>
-      <h5 class="charttitle" style={{marginLeft: "1em"}}>Lines: Detailed, Bubbles: Overall Summary</h5>
+      <h5 class="charttitle" style={{marginLeft: "1em"}}>Lines: Details, Bubbles: Overall Summary</h5>
       <br></br>
       <br></br>
       <EmotionDetailed />

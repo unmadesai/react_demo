@@ -132,7 +132,20 @@ class ERNew extends React.Component {
                 
               },
               yaxis: {
-                max: 100
+                max: 100,
+                labels: {
+                  formatter: function (y) {
+                    if(y<100 && y>0) {
+                      return "";
+                    }
+                    else if(y==0) {
+                      return "Not At All";
+                    }
+                    else if(y==100) {
+                      return "Extremely";
+                    }
+                  }
+                },
               }
             },
           
@@ -164,7 +177,7 @@ render() {
             </table>
       </div>
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="bar" height={250} style={{marginLeft: "3em", marginRight: "1em"}}/>
+          <Chart options={this.state.options} series={this.state.series} type="bar" height={250} style={{marginLeft: "1em", marginRight: "1em"}}/>
           <div id="expvsrel" style={{marginTop: "-1em"}}> 
               <table>
                 <tr>

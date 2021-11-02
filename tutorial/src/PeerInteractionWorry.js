@@ -21,7 +21,7 @@ class PeerInteractionWorry extends React.Component {
         data: [6,5,35,0,0,66,70,0,0,66,50,50,49,65]
       }, {
         type: 'scatter',
-        name: 'No data',
+        name: 'No Data',
       data: [,,,,10,,,,,,,,,]
     }],
       options: {
@@ -60,7 +60,20 @@ class PeerInteractionWorry extends React.Component {
             'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
         },
         yaxis: {
-          max: 100
+          max: 100,
+          labels: {
+            formatter: function (y) {
+              if(y<100 && y>0) {
+                return "";
+              }
+              else if(y==0) {
+                return "Not At All";
+              }
+              else if(y==100) {
+                return "Extremely";
+              }
+            }
+          },
         },
         colors: ['#B192B5', '#89608E', '#68496E'],
         markers: {
@@ -104,13 +117,13 @@ render() {
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/peer_worry/nodata.png' height='14px' width='14px' 
-                                 style={{verticalAlign: "-2px"}}/> No data </p>                
+                                 style={{verticalAlign: "-2px"}}/> No Data </p>                
                          </td>                     
                       </tr>
                     </table>
               </div>
           <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "3em", marginRight: "0.3em" }}/>
+            <Chart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "1em", marginRight: "0.3em" }}/>
         </div>
       </div>
         
