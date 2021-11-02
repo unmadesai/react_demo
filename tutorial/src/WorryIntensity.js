@@ -5,7 +5,7 @@ function generateData(count, yrange) {
     var i = 0;
     var week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 
                 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var intensity = [0,5,8,74,0,40,64,49,0,64,69,90,90,65];
+    var intensity = [0,5,8,74,0,0,64,69,0,64,69,0,0,65];
     var series = [];
     while (i < count) {
       var x= week[i];

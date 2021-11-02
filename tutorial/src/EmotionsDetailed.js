@@ -91,7 +91,7 @@ class EmotionDetailed extends React.Component {
               {
                 name: 'Frustration Summarized',
                 type: "bubble",
-                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,20),
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,40/2),
               },
 
               
@@ -222,7 +222,7 @@ class EmotionDetailed extends React.Component {
               {
                 name: 'Miserable Summarized',
                 type: "bubble",
-                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,10),
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,34/2),
               },
           
             ],
@@ -349,7 +349,7 @@ class EmotionDetailed extends React.Component {
               {
                 name: 'Scared Summarized',
                 type: "bubble",
-                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,5),
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,43/2),
               },
 
           ],
@@ -474,9 +474,9 @@ class EmotionDetailed extends React.Component {
               },
 
               {
-                name: 'Frustration Summarized',
+                name: 'Happy Summarized',
                 type: "bubble",
-                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,30),
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,34/2),
               },
           ],
             options4: {
@@ -601,7 +601,7 @@ class EmotionDetailed extends React.Component {
               {
                 name: 'Angry Summarized',
                 type: "bubble",
-                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,20),
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,33/2),
               },
           ],
             options5: {

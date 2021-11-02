@@ -25,7 +25,7 @@ class WCColumn extends React.Component {
         {
             type: 'scatter',
             name: 'Event Happened',
-          data: [,105,105,,,105,105,105,105,,,,105,]
+          data: [105,105,105,,,105,105,105,105,,,,105,]
         }],
         options: {
           chart: {

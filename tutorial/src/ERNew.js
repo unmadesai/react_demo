@@ -11,20 +11,22 @@ class ERNew extends React.Component {
                 name: 'Morning (Expected)',
                 colors: '#81A2EF',
                 type: 'scatter',
-                data: [[new Date('2021-08-15, 01:00 +0800').getTime(),0],
+                data: [
+                      //  [new Date('2021-08-15, 01:00 +0800').getTime(),0],
                        [new Date('2021-08-16, 01:00 +0800').getTime(),7], 
                        [new Date('2021-08-17, 01:00 +0800').getTime(),7], 
                        [new Date('2021-08-18, 01:00 +0800').getTime(),76], 
-                       [new Date('2021-08-19, 01:00 +0800').getTime(),0], 
-                       [new Date('2021-08-20, 01:00 +0800').getTime(),0], 
+                      //  [new Date('2021-08-19, 01:00 +0800').getTime(),0], 
+                      //  [new Date('2021-08-20, 01:00 +0800').getTime(),0], 
                        [new Date('2021-08-21, 01:00 +0800').getTime(),64],
                        [new Date('2021-08-22, 01:00 +0800').getTime(),73],
-                       [new Date('2021-08-23, 01:00 +0800').getTime(),0],
+                      //  [new Date('2021-08-23, 01:00 +0800').getTime(),0],
                        [new Date('2021-08-24, 01:00 +0800').getTime(),67],
                        [new Date('2021-08-25, 01:00 +0800').getTime(),71],
-                       [new Date('2021-08-26, 01:00 +0800').getTime(),0],
-                       [new Date('2021-08-27, 01:00 +0800').getTime(),0],
-                       [new Date('2021-08-28, 01:00 +0800').getTime(),72]]
+                      //  [new Date('2021-08-26, 01:00 +0800').getTime(),0],
+                      //  [new Date('2021-08-27, 01:00 +0800').getTime(),0],
+                       [new Date('2021-08-28, 01:00 +0800').getTime(),72]
+                      ]
               },
               {
                 name: 'Afternoon (Reality)',
@@ -47,7 +49,7 @@ class ERNew extends React.Component {
               },
               {
                 name: 'Evening (Reality)',
-                colors: '#2B61E4',
+                colors: '#000B85',
                 type: 'bar',
                 data: [[new Date('2021-08-15, 10:00 +0800').getTime(),4],
                        [new Date('2021-08-16, 10:00 +0800').getTime(),6], 
@@ -111,7 +113,7 @@ class ERNew extends React.Component {
                 // horizontalAlign: 'right',
                 show: false,
               },
-              colors: ['#81A2EF','#2B61E4','#2B61E4'],
+              colors: ['#81A2EF','#2B61E4','#000B85'],
               dataLabels: {
                 enabled: false
               },
@@ -170,7 +172,7 @@ render() {
                           style={{verticalAlign: "-2px"}}/> Afternoon (Reality) </p>
                   </td>
                   <td class="">
-                      <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/expectation_reality/afternoon.png' height='16px' width='16px' 
+                      <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/worry_intensity/high.png' height='16px' width='16px' 
                           style={{verticalAlign: "-2px"}}/> Evening (Reality) </p>                
                   </td>             
               </tr>
