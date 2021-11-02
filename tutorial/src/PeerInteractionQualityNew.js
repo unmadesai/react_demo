@@ -5,15 +5,21 @@ class PeerInteractionQualityNew extends React.Component {
     constructor(props) {
         super(props);
 
+        //40=very negative
+        //20=negative
+        //0=neutral
+        //-20=positive
+        //-40=very positive
+        //-60=no interactions
         this.state = {          
             series: [{
                 name: 'Morning',
                 data: [
                        //80 = absent data, wont show up on graph
                        //comment out for no interaction and uncomment in below no interaction equivalent
-                       [new Date('2021-08-15, 09:00 +0800').getTime(),80],
+                       [new Date('2021-08-15, 09:00 +0800').getTime(),-20],
                        [new Date('2021-08-16, 09:00 +0800').getTime(),-20], 
-                       [new Date('2021-08-17, 09:00 +0800').getTime(),20], 
+                       [new Date('2021-08-17, 09:00 +0800').getTime(),-20], 
                        [new Date('2021-08-18, 09:00 +0800').getTime(),-20], 
                        [new Date('2021-08-19, 09:00 +0800').getTime(),80], 
                        [new Date('2021-08-20, 09:00 +0800').getTime(),80], 

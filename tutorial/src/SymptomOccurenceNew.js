@@ -12,21 +12,23 @@ function generateData(time, count, yrange) {
               ];
 
     //10=no data=white, 0=no symptom=pale pink, 100=yes symptom
-    var headache = [0,10,10,
-      0,0,0,
+    var headache = 
+    [100,10,10,
+      100,0,0,
       0,100,0,
-      0,0,0,
+      100,0,0,
       0,100,100,
       0,100,0,
       0,10,0,
       0,0,0,
+      100,100,0,
       0,100,0,
-      0,100,0,
-      100,0,100,
+      0,0,100,
       0,10,0,
       0,0,0,
-      0,0,100];
-    var dizziness = [0,0,0,
+      100,0,100];
+    var dizziness = 
+    [0,0,0,
       0,0,100,
       0,0,0,
       100,0,0,
@@ -37,11 +39,12 @@ function generateData(time, count, yrange) {
       0,0,0,
       0,10,0,
       0,0,0,
-      10,10,10,
+      100,10,10,
       0,0,0,
       0,0,0];
-    var heartbeat = [0,0,100,
-      10,0,0,
+    var heartbeat = 
+    [0,0,100,
+      0,0,0,
       0,10,0,
       0,0,0,
       0,0,10,
@@ -50,66 +53,70 @@ function generateData(time, count, yrange) {
       0,10,0,
       10,0,0,
       10,0,0,
+      100,10,0,
       0,10,0,
-      0,10,0,
-      0,0,0,
-      0,0,0];
-    var nausea = [0,100,0,
-      0,0,0,
-      0,0,0,
       100,0,0,
+      0,0,0];
+    var nausea = 
+    [0,100,0,
+      0,0,0,
+      0,0,0,
+      0,0,0,
       0,0,0,
       0,0,100,
-      100,0,0,
+      0,0,0,
       0,0,0,
       0,0,0,
       0,10,0,
       0,10,0,
       0,0,10,
-      0,0,10,
+      100,0,10,
       0,0,0];
-    var stomachache = [0,0,0,
+    var stomachache = 
+    [0,0,0,
       0,0,0,
       0,10,0,
-      10,0,0,
-      10,0,100,
+      0,0,0,
+      0,0,100,
       0,0,0,
       0,0,0,
       0,10,0,
       0,0,10,
       0,0,10,
       0,10,0,
-      10,0,0,
+      0,0,0,
       0,0,0,
       0,0,0];
-    var backpain = [0,100,0,
+    var backpain = 
+    [100,100,0,
       0,0,0,
       0,100,0,
-      100,0,0,
       0,0,0,
+      100,0,0,
       0,0,100,
+      0,100,100,
+      0,100,0,
+      100,100,0,
+      0,100,0,
+      0,100,0,
+      0,0,100,
+      0,100,100,
+      0,0,100];
+    var limbpain = 
+    [100,100,0,
+      0,100,0,
+      0,0,100,
+      100,0,0,
       100,100,100,
-      100,100,0,
-      0,100,0,
-      0,100,0,
-      0,100,0,
-      0,0,100,
       0,100,100,
-      100,0,100];
-    var limbpain = [0,100,0,
-      100,100,0,
-      100,0,100,
       0,0,0,
-      10,100,100,
-      0,100,100,
-      100,0,0,
-      100,100,0,
-      0,100,10,
-      100,10,100,
+      0,100,0,
+      100,100,10,
+      0,10,100,
       100,0,100,
       0,10,0,
-      0,100,100,
-      100,0,0];
+      100,100,100,
+      0,0,0];
 
 
 
@@ -309,7 +316,7 @@ class SymptomOccNew extends React.Component {
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Wednesday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Thursday */}
@@ -337,7 +344,7 @@ class SymptomOccNew extends React.Component {
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Wednesday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
                   {/* Thursday */}
@@ -349,7 +356,7 @@ class SymptomOccNew extends React.Component {
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   {/* Saturday */}
-                  <th><img src='images/symptom_intensity/medication.png' height='8px' width='8px'></img></th>
+                  <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>
                   <th><img src='images/symptom_intensity/blank.png' height='8px' width='8px'></img></th>       
                 </tr>

@@ -21,105 +21,106 @@ class SleepNew1 extends React.Component {
                   x: '15 Aug',
                   //12-(wakeup time), 24-(going to sleep time)
                   //eg 12-6,24-8 = slept from 8pm to 6am
-                  y: [12-(6), 24-(10)],
+                  //if sleep time post 12am, add 12, eg 1am=13
+                  y: [12-(7), 24-(13)],
                   //need a check here with the corresponding quality of sleep value
                   //currently series does not allow if within each data point, only color
                   //so coloring individually, but this is not optimal!
                   //   if(qual_sleep[0] == "great") {
                   //     color: '#ffffff',
                   //   },
-                  fillColor: '#34D54F',
+                  fillColor: '#1F9833',
                   
                 }, 
                 //16 Aug Monday
                 {
                   x: '16 Aug',
-                  y: [12-(7), 24-(11)],
-                  fillColor: '#11551D',
+                  y: [12-(8), 24-(14)],
+                  fillColor: '#1F9833',
 
                 }, 
                 //17 Aug Tuesday
                 {
                   x: '17 Aug',
-                  y: [12-(5), 24-(10)],
-                  fillColor: '#99EBA6',
+                  y: [12-(7), 24-(11)],
+                  fillColor: '#11551D',
 
                 },
                 //18 Aug Wednesday
                 {
                   x: '18 Aug',
-                  y: [12-(12), 24-(24)],
+                  y: [12-(10), 24-(16)],
                   fillColor: '#99EBA6',
 
                 }, 
                 //19 Aug Thursday
                 {
                   x: '19 Aug',
-                  y: [12-(12), 24-(24)],
-                  fillColor: '#11551D',
+                  y: [12-(9), 24-(15)],
+                  fillColor: '#34D54F',
 
                 },
                 //20 Aug Friday
                 {
                   x: '20 Aug',
-                  y: [12-(4), 24-(11)],
+                  y: [12-(9), 24-(17)],
                   fillColor: '#99EBA6',
 
                 },
                 //21 Aug Saturday
                 {
                   x: '21 Aug',
-                  y: [12-(7), 24-(11)],
+                  y: [12-(9), 24-(13)],
                   fillColor: '#1F9833',
 
                 },
                 //22 Aug Sunday
                 {
                   x: '22 Aug',
-                  y: [12-(12), 24-(24)],
+                  y: [12-(9), 24-(15)],
                   fillColor: '#1F9833',
 
                 },
                 //23 Aug Monday
                 {
                   x: '23 Aug',
-                  y: [12-(7), 24-(11)],
-                  fillColor: '#1F9833',
+                  y: [12-(9), 24-(18)],
+                  fillColor: '#99EBA6',
 
                 },
                 //24 Aug Tuesday
                 {
                   x: '24 Aug',
-                  y: [12-(7), 24-(11)],
+                  y: [12-(10), 24-(15)],
                   fillColor: '#1F9833',
 
                 }, 
                 //25 Aug Wednesday
                 {
                   x: '25 Aug',
-                  y: [12-(12), 24-(24)],
-                  fillColor: '#1F9833',
+                  y: [12-(10), 24-(16)],
+                  fillColor: '#34D54F',
 
                 }, 
                 //26 Aug Thursday
                 {
                   x: '26 Aug',
-                  y: [12-(12), 24-(24)],
-                  fillColor: '#11551D',
+                  y: [12-(10), 24-(17)],
+                  fillColor: '#34D54F',
 
                 },
                 //27 Aug Friday
                 {
                   x: '27 Aug',
-                  y: [12-(12), 24-(24)],
-                  fillColor: '#11551D',
+                  y: [12-(10), 24-(16)],
+                  fillColor: '#1F9833',
 
                 },
                 //28 Aug Saturday
                 {
                   x: '28 Aug',
-                  y: [12-(6), 24-(11)],
-                  fillColor: '#1F9833',
+                  y: [12-(8), 24-(16)],
+                  fillColor: '#99EBA6',
 
                 }]
             }],

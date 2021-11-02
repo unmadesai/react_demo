@@ -10,19 +10,19 @@ class PeerInteractionWorry extends React.Component {
       series: [{
         name: 'Morning',
         type: 'bar',
-        data: [0,4,5,61,0,0,65,62,0,58,66,0,0,50]
+        data: [73,72,79,4,68,74,98,100,100,12,62,5,9,0]
       }, {
         name: 'Afternoon',
         type: 'bar',
-        data: [6,6,7,0,0,68,66,63,65,67,50,0,50,0]
+        data: [63,82,0,66,69,100,0,100,63,3,2,2,1,10]
       }, {
         name: 'Evening',
         type: 'bar',
-        data: [6,5,35,0,0,66,70,0,0,66,50,50,49,65]
+        data: [71,63,72,1,100,100,79,100,79,3,64,3,0,11]
       }, {
         type: 'scatter',
         name: 'No Data',
-      data: [,,,,10,,,,,,,,,]
+      data: [,,,,,,,,,,,,,]
     }],
       options: {
         chart: {
