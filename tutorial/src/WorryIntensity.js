@@ -143,7 +143,7 @@ class WorryIntensity extends React.Component {
                                  style={{verticalAlign: "middle"}}/> Avoided</p>
                          </td>                       */}
                          <td class="">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_occurence/missing_data.png' height='14px' width='14px' 
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/worry_intensity/missing_data.png' height='16px' width='16px' 
                                  style={{verticalAlign: "-1.5px"}}/> No Data </p>
                          </td>  
                    </tr>

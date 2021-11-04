@@ -214,7 +214,7 @@ class SymptomIntensity extends React.Component {
                                  style={{verticalAlign: "-1.5px"}}/> Very High </p>                
                          </td>      
                          <td class="">
-                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_occurence/missing_data.png' height='14px' width='14px' 
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_intensity/nodata.png' height='14px' width='14px' 
                                  style={{verticalAlign: "-1.5px"}}/> No Data </p>
                          </td>              
                    </tr>
