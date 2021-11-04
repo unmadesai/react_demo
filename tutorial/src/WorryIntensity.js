@@ -5,7 +5,7 @@ function generateData(count, yrange) {
     var i = 0;
     var week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 
                 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var intensity = [76,79,72,100,100,100,100,100,100,74,78,88,91,98];
+    var intensity = [86,79,42,100,100,20,0,40,15,34,0,60,91,98];
     var series = [];
     while (i < count) {
       var x= week[i];
@@ -38,8 +38,15 @@ class WorryIntensity extends React.Component {
             plotOptions: {
                 heatmap: {
                   colorScale: {
-                    ranges: [{
+                    ranges: [
+                      {
                         from: 0,
+                        to: 0,
+                        color: '#ffffff',
+                        name: 'no data',
+                      },
+                      {
+                        from: 1,
                         to: 20,
                         color: '#BFD7F2',
                         name: 'very low',
@@ -65,7 +72,7 @@ class WorryIntensity extends React.Component {
                       {
                         from: 81,
                         to: 100,
-                        color: '#000538',
+                        color: '#00001c',
                         name: 'very high',
                       }
                     ]
@@ -79,6 +86,9 @@ class WorryIntensity extends React.Component {
               toolbar: {
                 show: false
               }
+            },
+            yaxis: {
+              show: false,            
             },
             dataLabels: {
               enabled: false
@@ -110,28 +120,32 @@ class WorryIntensity extends React.Component {
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/verylow.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Very Low </p>
+                                 style={{verticalAlign: "-3px"}}/> Very Low </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/low.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Low </p>
+                                 style={{verticalAlign: "-3px"}}/> Low </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/medium.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Medium </p>                
+                                 style={{verticalAlign: "-3px"}}/> Medium </p>                
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/high.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> High </p>                
+                                 style={{verticalAlign: "-3px"}}/> High </p>                
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/veryhigh.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "middle"}}/> Very High </p>                
+                                 style={{verticalAlign: "-3px"}}/> Very High </p>                
                          </td>
-                         <td class="">
+                         {/* <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_intensity/avoidance.png' height='20px' width='20px' 
                                  style={{verticalAlign: "middle"}}/> Avoided</p>
-                         </td>                      
+                         </td>                       */}
+                         <td class="">
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_occurence/missing_data.png' height='14px' width='14px' 
+                                 style={{verticalAlign: "-1.5px"}}/> No Data </p>
+                         </td>  
                    </tr>
                </table>
            </div>
@@ -139,6 +153,7 @@ class WorryIntensity extends React.Component {
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
+                  <th>Avoidance</th>
                   {/* <!-- AVOIDANCE ABOVE HEATMAP --> */}
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
@@ -151,13 +166,13 @@ class WorryIntensity extends React.Component {
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
                   <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>
-                  <th><img src='images/worry_intensity/blank.png' height='25px' width='25px'></img></th>            
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>
+                  <th><img src='images/worry_intensity/avoidance.png' height='25px' width='25px'></img></th>            
                 </tr>
               </table>
             </div>
-            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={100} style={{marginLeft: "1.5em", marginRight: "-0.5em"}}/>
+            <Chart options={this.state.options} series={this.state.series} type="heatmap" height={100} style={{marginLeft: "5em", marginRight: "-0.5em"}}/>
           </div>
           <div id="html-dist"></div>
         </div>

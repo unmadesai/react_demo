@@ -47,11 +47,11 @@ ReactDOM.render(
       <WCColumn />
     </div>
     <div class="">
-      <h4 class="charttitle"> Expected Problems vs Reality</h4>
+      <h4 class="charttitle"> Problems expected vs Reality</h4>
       <ERNew />
     </div>
     <div class="">
-      <h4 class="charttitle"> When I Went to School</h4>
+      <h4 class="charttitle"> My Going to School</h4>
       <SchoolAttendance />
     </div>
     <div class="">

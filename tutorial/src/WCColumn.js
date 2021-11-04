@@ -10,12 +10,12 @@ class WCColumn extends React.Component {
         {
           type: 'bar',
           name: 'How Worried',
-          data: [76,79,72,100,100,100,100,100,100,74,78,88,91,98]
+          data: [86,79,82,45,24,0,0,100,24,74,38,58,80,68]
         }, 
         {
             type: 'bar',
             name: 'How Certain',
-          data: [63,81,100,100,100,100,74,100,100,88,78,91,89,98]
+          data: [90,81,100,100,0,0,20,20,18,16,24,91,89,98]
         },
         {
           type: 'scatter',
@@ -132,7 +132,7 @@ class WCColumn extends React.Component {
                     </table>
               </div>
               <div id="chart">                    
-                <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "1em", marginRight: "0em" }} />
+                <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={180} style={{marginLeft: "1em", marginRight: "0em" }} />
               </div>
               <div id="html-dist"></div>
             </div>

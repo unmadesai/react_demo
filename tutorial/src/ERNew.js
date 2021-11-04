@@ -14,13 +14,13 @@ class ERNew extends React.Component {
                 data: [
                        [new Date('2021-08-15, 01:00 +0800').getTime(),65],
                        [new Date('2021-08-16, 01:00 +0800').getTime(),81], 
-                       [new Date('2021-08-17, 01:00 +0800').getTime(),78], 
-                       [new Date('2021-08-18, 01:00 +0800').getTime(),100], 
-                       [new Date('2021-08-19, 01:00 +0800').getTime(),100], 
-                       [new Date('2021-08-20, 01:00 +0800').getTime(),100], 
+                       [new Date('2021-08-17, 01:00 +0800').getTime(),28], 
+                       [new Date('2021-08-18, 01:00 +0800').getTime(),12], 
+                      //  [new Date('2021-08-19, 01:00 +0800').getTime(),100], 
+                      //  [new Date('2021-08-20, 01:00 +0800').getTime(),100], 
                        [new Date('2021-08-21, 01:00 +0800').getTime(),77],
                        [new Date('2021-08-22, 01:00 +0800').getTime(),100],
-                       [new Date('2021-08-23, 01:00 +0800').getTime(),100],
+                       [new Date('2021-08-23, 01:00 +0800').getTime(),85],
                        [new Date('2021-08-24, 01:00 +0800').getTime(),70],
                        [new Date('2021-08-25, 01:00 +0800').getTime(),64],
                        [new Date('2021-08-26, 01:00 +0800').getTime(),92],
@@ -179,7 +179,7 @@ render() {
             </table>
       </div>
       <div id="chart">
-          <Chart options={this.state.options} series={this.state.series} type="bar" height={250} style={{marginLeft: "1em", marginRight: "1em"}}/>
+          <Chart options={this.state.options} series={this.state.series} type="bar" height={180} style={{marginLeft: "1em", marginRight: "1em"}}/>
           <div id="expvsrel" style={{marginTop: "-1em"}}> 
               <table>
                 <tr>

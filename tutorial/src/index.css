@@ -33,10 +33,18 @@ h4.charttitle {
 }
 
 #worry_category {
-    margin-left: 5.6em;
+    margin-left: 1em;
+    font-family:  Calibri,  sans-serif ;
+    font-size: 14px;
     /* margin-bottom: -2.5em; */
     
 }
+
+#worry_category td {
+    padding-left: 1px;
+    padding-right: 1px;
+    border-bottom: 1px solid #e0e0e0;
+} 
 
 #worry_category th {
     padding-left: 13.5px;
@@ -70,15 +78,25 @@ h4.charttitle {
 
 
 #avoidance {
-    margin-left: 5.6em;
-    margin-bottom: -2.5em;
+    margin-left: 0.8em;
+    padding-top: 1.8em;
+    margin-bottom: -3em;
+    margin-right: 2em;
+    font-size: 14px;
+    font-family:  Calibri,  sans-serif ;
+    font-weight: 100;
 }
 
 
 #occurence {
-    margin-left: 5.8em;
-    margin-bottom: -2em;
+    margin-left: 1.4em;
+    padding-top: 2.2em;
+    margin-bottom: -3em;
     margin-right: 2em;
+    font-size: 14px;
+    font-family:  Calibri,  sans-serif ;
+    font-weight: 100;
+
 }
 
 #occurence th {
@@ -134,7 +152,7 @@ h4.charttitle {
 
 .attendancelabel {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     border-style: solid;
     border-color: #89608E;
     color: #89608E;
@@ -150,17 +168,26 @@ h4.charttitle {
 
 
 #sleephours {
-    margin-left: 5.6em;
+    margin-left: 3em;
     margin-top: -2em;
+    margin-bottom: 0.5em;
 }
-
-#sleephours td {    
+#sleephours th {    
     font-family:  Calibri,  sans-serif ;
     font-size: 14px;
     /* padding: 8.6px; */
-    padding-right: 18px;
-    padding-left: 18px;
-    padding-bottom: 3px;
+    padding-bottom: 3px;  
+    padding-right: 8px;
 
-    
 }
+
+
+#sleephours td {    
+    font-family:  Calibri,  sans-serif ;
+    font-size: 12px;
+    /* padding: 8.6px; */
+    padding-right: 17.3px;
+    padding-left: 17.3px;
+    padding-bottom: 3px;  
+}
+

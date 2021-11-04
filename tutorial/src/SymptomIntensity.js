@@ -19,9 +19,9 @@ function generateData(time, count, yrange) {
     var xA = ['SunA1', 'MonA1', 'TueA1', 'WedA1', 'ThuA1', 'FriA1', 'SatA1','SunA2', 'MonA2', 'TueA2', 'WedA2', 'ThuA2', 'FriA2', 'SatA2'];
     var xE = ['SunE1', 'MonE1', 'TueE1', 'WedE1', 'ThuE1', 'FriE1', 'SatE1','SunE2', 'MonE2', 'TueE2', 'WedE2', 'ThuE2', 'FriE2', 'SatE2'];
 
-    var intensityM = [56,61,25,37,58,48,36,0,27,0,88,0,78,20];
-    var intensityA = [25,57,0,29,54,45,42,0,77,33,0,0,92,12];
-    var intensityE = [58,20,77,88,10,18,55,27,49,52,18,36,66,98];
+    var intensityM = [56,61,18,37,58,18,36,0,27,0,88,0,78,80];
+    var intensityA = [75,57,0,69,54,15,42,0,77,33,0,0,92,82];
+    var intensityE = [88,20,17,88,10,18,55,27,49,52,18,36,66,98];
 
     var series=[];
     var j = 0;
@@ -112,7 +112,13 @@ class SymptomIntensity extends React.Component {
                 heatmap: {
                   colorScale: {
                     ranges: [{
-                        from: 0,
+                      from: 0,
+                      to: 0,
+                      color: '#FFFFFF',
+                      name: 'no data',
+                    },
+                      {
+                        from: 1,
                         to: 20,
                         color: '#FEB2AE',
                         name: 'very low',
@@ -186,7 +192,8 @@ class SymptomIntensity extends React.Component {
           <div>
                <table style={{marginRight: "0em", position: "relative", float: "right", marginTop: "0.4em", marginBottom: "-1.5em"}}>
                    <tr>
-                       <td class="">
+
+                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_intensity/verylow.png' height='14px' width='14px' 
                                  style={{verticalAlign: "-1.5px"}}/> Very Low </p>
                          </td>
@@ -205,7 +212,11 @@ class SymptomIntensity extends React.Component {
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_intensity/veryhigh.png' height='14px' width='14px' 
                                  style={{verticalAlign: "-1.5px"}}/> Very High </p>                
-                         </td>                    
+                         </td>      
+                         <td class="">
+                           <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em", fontSize: "15px"}}><img src='images/symptom_occurence/missing_data.png' height='14px' width='14px' 
+                                 style={{verticalAlign: "-1.5px"}}/> No Data </p>
+                         </td>              
                    </tr>
                </table>
            </div>

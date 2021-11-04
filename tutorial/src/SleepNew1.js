@@ -29,14 +29,14 @@ class SleepNew1 extends React.Component {
                   //   if(qual_sleep[0] == "great") {
                   //     color: '#ffffff',
                   //   },
-                  fillColor: '#1F9833',
+                  fillColor: '#99EBA6',
                   
                 }, 
                 //16 Aug Monday
                 {
                   x: '16 Aug',
                   y: [12-(8), 24-(14)],
-                  fillColor: '#1F9833',
+                  fillColor: '#99EBA6',
 
                 }, 
                 //17 Aug Tuesday
@@ -49,77 +49,77 @@ class SleepNew1 extends React.Component {
                 //18 Aug Wednesday
                 {
                   x: '18 Aug',
-                  y: [12-(10), 24-(16)],
-                  fillColor: '#99EBA6',
+                  y: [12-(12), 24-(24)],
+                  fillColor: '#1F9833',
 
                 }, 
                 //19 Aug Thursday
                 {
                   x: '19 Aug',
-                  y: [12-(9), 24-(15)],
-                  fillColor: '#34D54F',
+                  y: [12-(8), 24-(12)],
+                  fillColor: '#99EBA6',
 
                 },
                 //20 Aug Friday
                 {
                   x: '20 Aug',
-                  y: [12-(9), 24-(17)],
+                  y: [12-(7), 24-(13)],
                   fillColor: '#99EBA6',
 
                 },
                 //21 Aug Saturday
                 {
                   x: '21 Aug',
-                  y: [12-(9), 24-(13)],
-                  fillColor: '#1F9833',
+                  y: [12-(9), 24-(11)],
+                  fillColor: '#99EBA6',
 
                 },
                 //22 Aug Sunday
                 {
                   x: '22 Aug',
-                  y: [12-(9), 24-(15)],
+                  y: [12-(7), 24-(10)],
                   fillColor: '#1F9833',
 
                 },
                 //23 Aug Monday
                 {
                   x: '23 Aug',
-                  y: [12-(9), 24-(18)],
-                  fillColor: '#99EBA6',
+                  y: [12-(8), 24-(10)],
+                  fillColor: '#34D54F',
 
                 },
                 //24 Aug Tuesday
                 {
                   x: '24 Aug',
-                  y: [12-(10), 24-(15)],
+                  y: [12-(8), 24-(11)],
                   fillColor: '#1F9833',
 
                 }, 
                 //25 Aug Wednesday
                 {
                   x: '25 Aug',
-                  y: [12-(10), 24-(16)],
+                  y: [12-(7), 24-(11)],
                   fillColor: '#34D54F',
 
                 }, 
                 //26 Aug Thursday
                 {
                   x: '26 Aug',
-                  y: [12-(10), 24-(17)],
+                  y: [12-(8), 24-(12)],
                   fillColor: '#34D54F',
 
                 },
                 //27 Aug Friday
                 {
                   x: '27 Aug',
-                  y: [12-(10), 24-(16)],
+                  y: [12-(6), 24-(12)],
                   fillColor: '#1F9833',
 
                 },
                 //28 Aug Saturday
                 {
                   x: '28 Aug',
-                  y: [12-(8), 24-(16)],
+                  y: [12-(8), 24-(13)],
                   fillColor: '#99EBA6',
 
                 }]
@@ -237,20 +237,20 @@ class SleepNew1 extends React.Component {
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}
-                  {/* <td>Hours</td> */}
-                  <td>8</td>
-                  <td>8</td>
-                  <td>7</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>5</td>
+                  <th>Hours</th>
+                  <td>6</td>
+                  <td>6</td>
                   <td>8</td>
                   <td>-</td>
                   <td>8</td>
+                  <td>6</td>
+                  <td>10</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>9</td>
                   <td>8</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td>8</td>
+                  <td>6</td>
                   <td>7</td>                         
                 </tr>
               </table>

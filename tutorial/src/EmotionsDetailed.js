@@ -32,52 +32,52 @@ class EmotionDetailed extends React.Component {
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
                 [new Date('2021-08-15, 09:00 +0800').getTime(),0],
-                [new Date('2021-08-15, 14:00 +0800').getTime(),58],
-                [new Date('2021-08-15, 19:00 +0800').getTime(),45],
+                [new Date('2021-08-15, 14:00 +0800').getTime(),28],
+                [new Date('2021-08-15, 19:00 +0800').getTime(),15],
 
                 [new Date('2021-08-16, 09:00 +0800').getTime(),5], 
-                [new Date('2021-08-16, 14:00 +0800').getTime(),50],
-                [new Date('2021-08-16, 19:00 +0800').getTime(),36], 
+                [new Date('2021-08-16, 14:00 +0800').getTime(),40],
+                [new Date('2021-08-16, 19:00 +0800').getTime(),26], 
 
                 [new Date('2021-08-17, 09:00 +0800').getTime(),4], 
-                [new Date('2021-08-17, 14:00 +0800').getTime(),53], 
+                [new Date('2021-08-17, 14:00 +0800').getTime(),13], 
                 [new Date('2021-08-17, 19:00 +0800').getTime(),15], 
 
                 [new Date('2021-08-18, 09:00 +0800').getTime(),50], 
                 [new Date('2021-08-18, 14:00 +0800').getTime(),20],
-                [new Date('2021-08-18, 19:00 +0800').getTime(),50], 
+                [new Date('2021-08-18, 19:00 +0800').getTime(),40], 
 
                 [new Date('2021-08-19, 09:00 +0800').getTime(),0], 
                 [new Date('2021-08-19, 14:00 +0800').getTime(),10], 
-                [new Date('2021-08-19, 19:00 +0800').getTime(),73], 
+                [new Date('2021-08-19, 19:00 +0800').getTime(),63], 
 
                 [new Date('2021-08-20, 09:00 +0800').getTime(),0], 
-                [new Date('2021-08-20, 14:00 +0800').getTime(),67], 
-                [new Date('2021-08-20, 19:00 +0800').getTime(),41], 
+                [new Date('2021-08-20, 14:00 +0800').getTime(),27], 
+                [new Date('2021-08-20, 19:00 +0800').getTime(),21], 
 
-                [new Date('2021-08-21, 09:00 +0800').getTime(),59],
+                [new Date('2021-08-21, 09:00 +0800').getTime(),19],
                 [new Date('2021-08-21, 14:00 +0800').getTime(),29],
                 [new Date('2021-08-21, 19:00 +0800').getTime(),36],
 
-                [new Date('2021-08-22, 09:00 +0800').getTime(),76],
+                [new Date('2021-08-22, 09:00 +0800').getTime(),46],
                 [new Date('2021-08-22, 14:00 +0800').getTime(),24],
                 [new Date('2021-08-22, 19:00 +0800').getTime(),50],
 
                 [new Date('2021-08-23, 09:00 +0800').getTime(),0],
-                [new Date('2021-08-23, 14:00 +0800').getTime(),50],
+                [new Date('2021-08-23, 14:00 +0800').getTime(),20],
                 [new Date('2021-08-23, 19:00 +0800').getTime(),0],
 
-                [new Date('2021-08-24, 09:00 +0800').getTime(),66],
+                [new Date('2021-08-24, 09:00 +0800').getTime(),46],
                 [new Date('2021-08-24, 14:00 +0800').getTime(),0],
                 [new Date('2021-08-24, 19:00 +0800').getTime(),20],
 
-                [new Date('2021-08-25, 09:00 +0800').getTime(),66],
+                [new Date('2021-08-25, 09:00 +0800').getTime(),56],
                 [new Date('2021-08-25, 14:00 +0800').getTime(),20],
-                [new Date('2021-08-25, 19:00 +0800').getTime(),50],
+                [new Date('2021-08-25, 19:00 +0800').getTime(),20],
 
                 [new Date('2021-08-26, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-26, 14:00 +0800').getTime(),15],
-                [new Date('2021-08-26, 19:00 +0800').getTime(),60],
+                [new Date('2021-08-26, 19:00 +0800').getTime(),20],
 
                 [new Date('2021-08-27, 09:00 +0800').getTime(),0],
                 [new Date('2021-08-27, 14:00 +0800').getTime(),22],
@@ -85,13 +85,13 @@ class EmotionDetailed extends React.Component {
 
                 [new Date('2021-08-28, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-28, 14:00 +0800').getTime(),0],
-                [new Date('2021-08-28, 19:00 +0800').getTime(),69]]
+                [new Date('2021-08-28, 19:00 +0800').getTime(),39]]
                      
               },
               {
                 name: 'Frustration Summarized',
                 type: "bubble",
-                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,40/2),
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,24/2),
               },
 
               
@@ -416,51 +416,51 @@ class EmotionDetailed extends React.Component {
                 //data: [0,5,4,50,0,0,59,76,66,66,0,0,50]
                 data: [
                 [new Date('2021-08-15, 09:00 +0800').getTime(),0],
-                [new Date('2021-08-15, 14:00 +0800').getTime(),22],
-                [new Date('2021-08-15, 19:00 +0800').getTime(),4],
+                [new Date('2021-08-15, 14:00 +0800').getTime(),62],
+                [new Date('2021-08-15, 19:00 +0800').getTime(),44],
 
                 [new Date('2021-08-16, 09:00 +0800').getTime(),7], 
                 [new Date('2021-08-16, 14:00 +0800').getTime(),55],
-                [new Date('2021-08-16, 19:00 +0800').getTime(),14], 
+                [new Date('2021-08-16, 19:00 +0800').getTime(),64], 
 
-                [new Date('2021-08-17, 09:00 +0800').getTime(),6], 
-                [new Date('2021-08-17, 14:00 +0800').getTime(),15], 
-                [new Date('2021-08-17, 19:00 +0800').getTime(),21], 
+                [new Date('2021-08-17, 09:00 +0800').getTime(),76], 
+                [new Date('2021-08-17, 14:00 +0800').getTime(),45], 
+                [new Date('2021-08-17, 19:00 +0800').getTime(),61], 
 
                 [new Date('2021-08-18, 09:00 +0800').getTime(),73], 
                 [new Date('2021-08-18, 14:00 +0800').getTime(),20],
-                [new Date('2021-08-18, 19:00 +0800').getTime(),22], 
+                [new Date('2021-08-18, 19:00 +0800').getTime(),62], 
 
-                [new Date('2021-08-19, 09:00 +0800').getTime(),0], 
-                [new Date('2021-08-19, 14:00 +0800').getTime(),40], 
-                [new Date('2021-08-19, 19:00 +0800').getTime(),73], 
+                [new Date('2021-08-19, 09:00 +0800').getTime(),10], 
+                [new Date('2021-08-19, 14:00 +0800').getTime(),50], 
+                [new Date('2021-08-19, 19:00 +0800').getTime(),83], 
 
-                [new Date('2021-08-20, 09:00 +0800').getTime(),0], 
-                [new Date('2021-08-20, 14:00 +0800').getTime(),67], 
-                [new Date('2021-08-20, 19:00 +0800').getTime(),41], 
+                [new Date('2021-08-20, 09:00 +0800').getTime(),20], 
+                [new Date('2021-08-20, 14:00 +0800').getTime(),87], 
+                [new Date('2021-08-20, 19:00 +0800').getTime(),61], 
 
                 [new Date('2021-08-21, 09:00 +0800').getTime(),50],
-                [new Date('2021-08-21, 14:00 +0800').getTime(),1],
+                [new Date('2021-08-21, 14:00 +0800').getTime(),81],
                 [new Date('2021-08-21, 19:00 +0800').getTime(),65],
 
-                [new Date('2021-08-22, 09:00 +0800').getTime(),0],
-                [new Date('2021-08-22, 14:00 +0800').getTime(),15],
+                [new Date('2021-08-22, 09:00 +0800').getTime(),30],
+                [new Date('2021-08-22, 14:00 +0800').getTime(),55],
                 [new Date('2021-08-22, 19:00 +0800').getTime(),40],
 
-                [new Date('2021-08-23, 09:00 +0800').getTime(),0],
-                [new Date('2021-08-23, 14:00 +0800').getTime(),50],
-                [new Date('2021-08-23, 19:00 +0800').getTime(),0],
+                [new Date('2021-08-23, 09:00 +0800').getTime(),30],
+                [new Date('2021-08-23, 14:00 +0800').getTime(),60],
+                [new Date('2021-08-23, 19:00 +0800').getTime(),40],
 
                 [new Date('2021-08-24, 09:00 +0800').getTime(),67],
-                [new Date('2021-08-24, 14:00 +0800').getTime(),0],
-                [new Date('2021-08-24, 19:00 +0800').getTime(),10],
+                [new Date('2021-08-24, 14:00 +0800').getTime(),60],
+                [new Date('2021-08-24, 19:00 +0800').getTime(),30],
 
                 [new Date('2021-08-25, 09:00 +0800').getTime(),50],
                 [new Date('2021-08-25, 14:00 +0800').getTime(),85],
                 [new Date('2021-08-25, 19:00 +0800').getTime(),50],
 
-                [new Date('2021-08-26, 09:00 +0800').getTime(),0],
-                [new Date('2021-08-26, 14:00 +0800').getTime(),20],
+                [new Date('2021-08-26, 09:00 +0800').getTime(),40],
+                [new Date('2021-08-26, 14:00 +0800').getTime(),60],
                 [new Date('2021-08-26, 19:00 +0800').getTime(),25],
 
                 [new Date('2021-08-27, 09:00 +0800').getTime(),0],
@@ -476,7 +476,7 @@ class EmotionDetailed extends React.Component {
               {
                 name: 'Happy Summarized',
                 type: "bubble",
-                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,34/2),
+                data: dataGeneration(new Date('2021-08-16, 09:00 +0800').getTime(),50,54/2),
               },
           ],
             options4: {
@@ -702,14 +702,18 @@ class EmotionDetailed extends React.Component {
             <div id="chart">                
                 <Chart options={this.state.options3} series={this.state.series3} type="line" height={100} 
                         style={{marginLeft: "1em", marginRight: "1em", marginTop: "-2em" }}/>
+                <hr style={{marginLeft: "2em", marginRight: "1.5em", marginTop: "-1em" }}></hr>
                 <Chart options={this.state.options4} series={this.state.series4} type="line" height={100} 
-                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-2em" }}/>
+                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-1.2em" }}/>
+                <hr style={{marginLeft: "2em", marginRight: "1.5em", marginTop: "-1em" }}></hr>                       
                 <Chart options={this.state.options2} series={this.state.series2} height={100} 
-                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-2.5em" }}/>
+                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-1.2em" }}/>
+                <hr style={{marginLeft: "2em", marginRight: "1.5em", marginTop: "-1em" }}></hr>
                 <Chart options={this.state.options5} series={this.state.series5} type="line" height={100} 
-                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-2.5em" }}/>
+                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-1.2em" }}/>
+                <hr style={{marginLeft: "2em", marginRight: "1.5em", marginTop: "-1em" }}></hr>
                 <Chart options={this.state.options1} series={this.state.series1} height={100} 
-                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-2.5em" }}/>
+                        style={{marginLeft: "1em", marginRight: "1em", marginTop: "-1.2em" }}/>
         
                 <div id="expvsrel"> 
                     <table>

@@ -101,7 +101,7 @@ render() {
     return (
       <div>
         <div>
-               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0em"}}>
+               <table style={{marginRight: "0.2em", position: "relative", float: "right", marginTop: "0.2em"}}>
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/peer_worry/morning.png' height='16px' width='16px' 
@@ -123,7 +123,7 @@ render() {
                     </table>
               </div>
           <div id="chart">
-            <Chart options={this.state.options} series={this.state.series} type="bar" height={300} style={{marginLeft: "1em", marginRight: "0.3em" }}/>
+            <Chart options={this.state.options} series={this.state.series} type="bar" height={180} style={{marginLeft: "1em", marginRight: "0.3em" }}/>
         </div>
       </div>
         
