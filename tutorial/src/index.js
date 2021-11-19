@@ -31,7 +31,7 @@ ReactDOM.render(
       <SymptomIntensity />
     </div>
     <div class="" >
-      <h4 class="charttitle"> When My Symptoms Occured </h4>
+      <h4 class="charttitle"> When My Symptoms Occurred </h4>
       <SymptomOccNew />
     </div>
     <div class="">

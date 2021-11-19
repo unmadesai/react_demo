@@ -281,7 +281,7 @@ class SymptomOccNew extends React.Component {
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/occurence.png' height='16px' width='16px' 
-                                 style={{verticalAlign: "-2px"}}/> Occured </p>
+                                 style={{verticalAlign: "-2px"}}/> Occurred </p>
                          </td>
                          <td class="">
                              <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/symptom_occurence/no_occurence.png' height='16px' width='16px' 

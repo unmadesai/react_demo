@@ -20,7 +20,7 @@ class PeerInteractionQualityNew extends React.Component {
                        [new Date('2021-08-15, 09:00 +0800').getTime(),-20],
                        [new Date('2021-08-16, 09:00 +0800').getTime(),-20], 
                        [new Date('2021-08-17, 09:00 +0800').getTime(),-20], 
-                       [new Date('2021-08-18, 09:00 +0800').getTime(),-20], 
+                       [new Date('2021-08-18, 09:00 +0800').getTime(),40], 
                        [new Date('2021-08-19, 09:00 +0800').getTime(),80], 
                        [new Date('2021-08-20, 09:00 +0800').getTime(),80], 
                       //  [new Date('2021-08-21, 09:00 +0800').getTime(),20],
@@ -38,7 +38,7 @@ class PeerInteractionQualityNew extends React.Component {
                        [new Date('2021-08-16, 14:00 +0800').getTime(),-20], 
                        [new Date('2021-08-17, 14:00 +0800').getTime(),-20], 
                        [new Date('2021-08-18, 14:00 +0800').getTime(),80], 
-                       [new Date('2021-08-19, 14:00 +0800').getTime(),-40], 
+                       [new Date('2021-08-19, 14:00 +0800').getTime(),40], 
                        [new Date('2021-08-20, 14:00 +0800').getTime(),20], 
                        [new Date('2021-08-21, 14:00 +0800').getTime(),20],
                        [new Date('2021-08-22, 14:00 +0800').getTime(),-20],
@@ -53,7 +53,7 @@ class PeerInteractionQualityNew extends React.Component {
                 name: 'Evening',
                 data: [[new Date('2021-08-15, 19:00 +0800').getTime(),-40],
                        [new Date('2021-08-16, 19:00 +0800').getTime(),-20], 
-                       [new Date('2021-08-17, 19:00 +0800').getTime(),-40], 
+                       [new Date('2021-08-17, 19:00 +0800').getTime(),40], 
                        [new Date('2021-08-18, 19:00 +0800').getTime(),80], 
                        [new Date('2021-08-19, 19:00 +0800').getTime(),-20], 
                        [new Date('2021-08-20, 19:00 +0800').getTime(),-20], 
@@ -221,7 +221,7 @@ render() {
   return (
         <div>
           <div>
-               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0em"}}>
+               <table style={{marginRight: "0.7em", position: "relative", float: "right", marginTop: "0em", marginBottom: "-0.5em"}}>
                    <tr>
                        <td class="">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/peer_quality/morning.png' height='16px' width='16px' 
@@ -243,7 +243,7 @@ render() {
                     </table>
           </div>
           <div id="chart">
-             <Chart options={this.state.options} series={this.state.series} type="scatter" height={250} style={{marginLeft: "0.2em", marginRight: "1em" }}/>
+             <Chart options={this.state.options} series={this.state.series} type="scatter" height={160} style={{marginLeft: "0.2em", marginRight: "1em" }}/>
             <div id="expvsrel" style={{ marginTop: "0em"}}> 
               <table>
                 <tr>
