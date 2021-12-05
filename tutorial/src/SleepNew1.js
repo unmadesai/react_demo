@@ -16,7 +16,8 @@ class SleepNew1 extends React.Component {
 
         this.state = {
           
-            series: [{
+            series: [
+              {
                 data: [{
                   x: '15 Aug',
                   //12-(wakeup time), 24-(going to sleep time)
@@ -123,7 +124,13 @@ class SleepNew1 extends React.Component {
                   fillColor: '#99EBA6',
 
                 }]
-            }],
+              },
+              // {
+              //   type: 'scatter',
+              //   name: 'No Data',
+              // data: [,,,10,,,,,,,,,,]
+              // },
+            ],
             options: {
               chart: {
                 type: 'rangeBar',
@@ -164,6 +171,22 @@ class SleepNew1 extends React.Component {
               },
               fill: {
                   opacity: 1,
+              },
+              colors: ['#2B61E4'],
+              markers: {
+                size: [0, 10],
+                strokeWidth: 0,
+                hover: {
+                  sizeOffset: 0
+                }
+              },
+              fill: {
+                type: ['solid','image'],
+                image: {
+                    src: ['images/worry_certainty/nodata.png'],
+                    width: 15,
+                    height: 15
+                },
               },
               xaxis: {
                 type: 'categories',
@@ -216,7 +239,7 @@ class SleepNew1 extends React.Component {
             return (
             <div>
                 <div>
-                <table style={{marginLeft: "32em", marginTop: "-0.5em"}}>
+                <table style={{marginLeft: "27em", marginTop: "-0.5em"}}>
                    <tr>
                         <td class="sleeplabel">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#99EBA6"}}>Poor </p>
@@ -229,7 +252,11 @@ class SleepNew1 extends React.Component {
                          </td>
                          <td class="sleeplabel">
                            <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.5em", backgroundColor: "#11551D", color: "#ffffff"}}>Great </p>
-                         </td>                     
+                         </td>   
+                         <td class="sleeplabel">
+                             <p style={{marginTop: "0em", marginBottom: "0.2em", padding: "0.1em"}}><img src='images/worry_certainty/nodata.png' height='13px' width='13px' 
+                                 style={{verticalAlign: "-2px"}}/> No Data </p>                
+                         </td>                  
                    </tr>
                </table>
            </div>

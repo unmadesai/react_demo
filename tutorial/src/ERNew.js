@@ -22,7 +22,7 @@ class ERNew extends React.Component {
                        [new Date('2021-08-22, 01:00 +0800').getTime(),100],
                        [new Date('2021-08-23, 01:00 +0800').getTime(),85],
                        [new Date('2021-08-24, 01:00 +0800').getTime(),70],
-                       [new Date('2021-08-25, 01:00 +0800').getTime(),64],
+                      //  [new Date('2021-08-25, 01:00 +0800').getTime(),64],
                        [new Date('2021-08-26, 01:00 +0800').getTime(),92],
                        [new Date('2021-08-27, 01:00 +0800').getTime(),92],
                        [new Date('2021-08-28, 01:00 +0800').getTime(),96]
@@ -161,20 +161,24 @@ render() {
   return (
     <div>
       <div>
-        <table style={{marginRight: "0.3em", position: "relative", float: "right", marginTop: "0.1em"}}>
+        <table style={{marginLeft: "0.2em", marginRight: "-0.2em", position: "relative", float: "right", marginTop: "0.1em"}}>
             <tr>
                 <td class="">
                     <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/expectation_reality/morning.png' height='16px' width='16px' 
-                          style={{verticalAlign: "-2px"}}/> Morning (Expected) </p>
+                          style={{verticalAlign: "-2px"}}/> Morning (Exp) </p>
                   </td>
                   <td class="">
                       <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/expectation_reality/afternoon.png' height='16px' width='16px' 
-                          style={{verticalAlign: "-2px"}}/> Afternoon (Reality) </p>
+                          style={{verticalAlign: "-2px"}}/> Afternoon (Real) </p>
                   </td>
                   <td class="">
                       <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/worry_intensity/high.png' height='16px' width='16px' 
-                          style={{verticalAlign: "-2px"}}/> Evening (Reality) </p>                
+                          style={{verticalAlign: "-2px"}}/> Evening (Real) </p>                
                   </td>             
+                  <td class="">
+                      <p style={{marginTop: "0em", marginBottom: "-1em", padding: "0.1em"}}><img src='images/worry_certainty/nodata.png' height='13px' width='13px' 
+                                 style={{verticalAlign: "-2px"}}/> No Data </p>                
+                  </td> 
               </tr>
             </table>
       </div>
