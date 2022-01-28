@@ -16,7 +16,7 @@ function generateData(time, count, yrange) {
     //81-100 = great sleep = marked #11551D
     //for consistency, recording poor sleep as 25, average sleep as 45, good sleep as 65 and great sleep as 85, and no sleep or other periods as 0 
     //this is just for quick prototyping, feel free to change logic as required, can probably be made MUCH more concise
-    //h0-h23 is 24 hours of day, think of it as a 24x7 table, we fill in n columns per day based on when they go to sleep and when they wake up
+    //h0-h23 is 24 hours of day, think of it as a 24x7 table, we fill in n bars/boxes/cells per day based on when they go to sleep and when they wake up
     //eg slept at 10pm and woke up at 7am = h13(24-10-1 [-1 since time starts from top of bar]) to h5 (12-7) should be coloured
     var h0 = [0,0,0,0,0,0,0];
     var h1 = [0,0,0,0,0,0,0];
