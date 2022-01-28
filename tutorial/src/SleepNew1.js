@@ -238,7 +238,7 @@ class SleepNew1 extends React.Component {
         render() {
             return (
             <div>
-                <div>
+              <div>
                 <table style={{marginLeft: "27em", marginTop: "-0.5em"}}>
                    <tr>
                         <td class="sleeplabel">
@@ -259,8 +259,8 @@ class SleepNew1 extends React.Component {
                          </td>                  
                    </tr>
                </table>
-           </div>
-          <div id="sleephours" style={{marginTop: "0em"}}> 
+            </div>
+            <div id="sleephours" style={{marginTop: "0em"}}> 
               <table>
                 <tr>
                   {/* <!-- comment out if not on that day --> */}

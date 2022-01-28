@@ -15,10 +15,9 @@ import PeerWorry from "./PeerInteractionWorry.js";
 import PeerInteractionQualityNew from "./PeerInteractionQualityNew.js";
 import Emotion from "./Emotions.js";
 import EmotionDetailed from "./EmotionsDetailed.js";
-import SleepNew from './SleepNew.js';
 import ERBar from "./ERBar.js";
 import SleepNew1 from "./SleepNew1.js";
-
+import SleepSymOccCopy from "./SleepSymOccCopy.js";
 
 import Trial  from "./trial.js";
 
@@ -76,6 +75,10 @@ ReactDOM.render(
     <div class="">
       <h4 class="charttitle"> My sleep</h4>
       <SleepNew1 />
+    </div>
+    <div class="">
+      <h4 class="charttitle"> My sleep new</h4>
+      <SleepSymOccCopy />
     </div>
   </div>,
   document.getElementById("root")
