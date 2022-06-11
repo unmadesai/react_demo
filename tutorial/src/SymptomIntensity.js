@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import datacsv from './index';
+
+console.log(datacsv);
+console.log("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
 
 function generateData(time, count, yrange) {
     var i = 0;
@@ -184,6 +188,7 @@ class SymptomIntensity extends React.Component {
           },       
         };
       }
+
 
 
   render() {
